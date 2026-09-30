@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "reexecuted_races": 174,
+  "reexecuted_active_reveals": 3338,
+  "races_by_split": {
+    "train": 24,
+    "validation": 6,
+    "test": 144
+  },
+  "feedback_labels_verified": {
+    "train": 410,
+    "validation": 144
+  },
+  "risk_statuses_of_collected_feedback": {
+    "exact_global_model_count": 554
+  },
+  "all_board_outcomes_retained": {
+    "mine": 138,
+    "all_safe_revealed": 210
+  },
+  "geometrically_distinct_maps": 42,
+  "terminal_full_mine_map_scrubbing_checked": true,
+  "each_decision_only_current_board": true,
+  "validation_selected_epoch_recomputed": true,
+  "frozen_weights_unchanged": true,
+  "limitation": "Checks data provenance and replay semantics, not strategic optimality or general superiority"
+}

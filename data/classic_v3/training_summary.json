@@ -1,0 +1,83 @@
+{
+  "architecture": [
+    10,
+    16,
+    1
+  ],
+  "method": "supervised regression of actually observed local reveal utility",
+  "teacher_action_labels_used": false,
+  "probability_labels_from_single_outcomes": false,
+  "training_examples": 410,
+  "validation_examples": 144,
+  "independent_maps": {
+    "train": 24,
+    "validation": 6,
+    "test": 12
+  },
+  "training_seed": 20261003,
+  "epochs_completed": 100,
+  "selected_epoch": 80,
+  "selected_validation_mse": 0.0185710990123178,
+  "history": [
+    {
+      "epoch": 0,
+      "training_mse": 1.161809814096698,
+      "validation_mse": 1.3041271447668332
+    },
+    {
+      "epoch": 10,
+      "training_mse": 0.6805144596684805,
+      "validation_mse": 0.7734272065229447
+    },
+    {
+      "epoch": 20,
+      "training_mse": 0.37825996914165405,
+      "validation_mse": 0.4468307938353081
+    },
+    {
+      "epoch": 30,
+      "training_mse": 0.19210267513573698,
+      "validation_mse": 0.22513782312898328
+    },
+    {
+      "epoch": 40,
+      "training_mse": 0.06436755116920587,
+      "validation_mse": 0.08873743491599123
+    },
+    {
+      "epoch": 50,
+      "training_mse": 0.01624434552775533,
+      "validation_mse": 0.031223732752941522
+    },
+    {
+      "epoch": 60,
+      "training_mse": 0.01353028958817062,
+      "validation_mse": 0.020623704752522346
+    },
+    {
+      "epoch": 70,
+      "training_mse": 0.011541681304398232,
+      "validation_mse": 0.019354984551396785
+    },
+    {
+      "epoch": 80,
+      "training_mse": 0.009499899169514001,
+      "validation_mse": 0.0185710990123178
+    },
+    {
+      "epoch": 90,
+      "training_mse": 0.008756812721623814,
+      "validation_mse": 0.019134939977062317
+    },
+    {
+      "epoch": 100,
+      "training_mse": 0.008275610507938026,
+      "validation_mse": 0.019494505213744108
+    }
+  ],
+  "elapsed_seconds": 1.171166300002369,
+  "model_sha256": "b5e17506d2448c5ad844f5e10e541e9b5fc5891a7b3269bbbeedf6b451a6a31c",
+  "initial_sha256": "c5602b33c091479a04353eaa1f74173ae5bd81556a186a0a46ca47ac5468a010",
+  "protocol_sha256": "ba26daa6dced507483b538ef90721f12943459100da908bd69d6c7321ce228e0",
+  "test_used_for_selection": false
+}

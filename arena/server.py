@@ -1,6 +1,6 @@
 """Loopback-only HTTP UI; policy callers receive public observations only."""
 from __future__ import annotations
-import argparse, copy, json, mimetypes, random, secrets, threading
+import argparse, copy, json, mimetypes, random, secrets, threading, time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -19,10 +19,11 @@ class Session:
         if not isinstance(data, dict):
             raise ValueError('请求必须为JSON对象')
         mode = data.get('mode', 'arena')
-        if mode not in ('arena', 'classic'):
+        if mode not in ('arena', 'classic', 'classic_race'):
             raise ValueError('未知模式')
-        controllers = data.get('controllers', ['human', 'B2'])
-        allowed = {'human', 'B0', 'B1', 'B2', 'L', 'L_initial', 'L_no_opponent', 'L_v2', 'E'}
+        controllers = data.get('controllers', ['R1', 'C1'] if mode=='classic_race' else ['human', 'B2'])
+        allowed = ({'human','R0','R1','C1'} if mode == 'classic_race' else
+                   {'human', 'B0', 'B1', 'B2', 'B3', 'L3', 'L3_initial', 'L', 'L_initial', 'L_no_opponent', 'L_v2', 'E'})
         if not isinstance(controllers, list) or len(controllers) != 2 or any(not isinstance(c, str) or c not in allowed for c in controllers):
             raise ValueError('未知策略')
         source = data.get('source', 'unverified_interaction')
@@ -34,7 +35,11 @@ class Session:
         if preset not in ('legacy', 'beginner', 'intermediate', 'expert'):
             raise ValueError('未知难度')
         if mode == 'arena':
-            env = Arena(seed=seed, preset='legacy' if preset == 'beginner' else preset)
+            env = Arena(seed=seed, preset='legacy' if preset == 'beginner' else preset,
+                        scoring=data.get('scoring','diamonds'))
+        elif mode == 'classic_race':
+            from .classic_race import ClassicRace
+            env = ClassicRace(seed=seed,preset='beginner' if preset=='legacy' else preset)
         else:
             env = Classic(seed=seed) if preset == 'legacy' else Classic(seed=seed, preset=preset)
         # Commit a new session only after every input and environment is valid.
@@ -98,6 +103,7 @@ class Session:
             self.paused = True
             return self.state()
         if route == '/api/flag':
+            if self.mode == 'classic_race':raise ValueError('竞速棋盘仅记录揭格行动')
             r, c = int(data['r']), int(data['c'])
             if not (0 <= r < obs.get('height', obs['size']) and 0 <= c < obs['size']):
                 raise ValueError('标记超出棋盘')
@@ -116,21 +122,33 @@ class Session:
             if self.paused: raise ValueError('对局暂停中')
             if self.mode == 'classic':
                 self.env.reveal(int(data['r']), int(data['c']))
+            elif self.mode == 'classic_race':
+                if self.controllers[obs['turn']] != 'human':raise ValueError('当前为AI轮次')
+                self.last = None
+                self.env.step([int(data['r']),int(data['c'])],metadata={'policy':'human_input','source':self.source})
             else:
                 if self.controllers[obs['turn']] != 'human':
                     raise ValueError('当前为AI轮次')
                 self.last = None
                 self.env.step(data['action'], metadata={'policy':'human_input', 'source':self.source})
         elif route == '/api/ai':
-            if self.mode != 'arena' or obs['done']: raise ValueError('无可执行AI轮次')
+            if self.mode not in ('arena','classic_race') or obs['done']: raise ValueError('无可执行AI轮次')
             if self.paused and not data.get('single'): raise ValueError('对局暂停中')
             policy = self.controllers[obs['turn']]
             if policy == 'human': raise ValueError('当前为人工轮次')
-            from .policies import choose
-            self.last = choose(copy.deepcopy(obs), policy=policy, rng=self.rng)
-            self.env.step(self.last['action'], metadata={**self.last, 'source': self.source,
-                           'actor_source': ('search_trained_policy' if policy == 'E' else
-                                            'learning_policy' if policy.startswith('L') else 'heuristic_policy')})
+            if self.mode == 'classic_race':
+                from .classic_race import choose
+                started=time.perf_counter()
+                self.last=choose(copy.deepcopy(obs['boards'][obs['turn']]),policy=policy,rng=self.rng)
+                self.last['actor']=obs['turn']
+                seconds=time.perf_counter()-started
+                self.env.step(self.last['cell'],metadata={**self.last,'source':self.source},computation_seconds=seconds)
+            else:
+                from .policies import choose
+                self.last = choose(copy.deepcopy(obs), policy=policy, rng=self.rng)
+                self.env.step(self.last['action'], metadata={**self.last, 'source': self.source,
+                               'actor_source': ('search_trained_policy' if policy == 'E' else
+                                                'learning_policy' if policy.startswith('L') else 'heuristic_policy')})
         else:
             raise ValueError('未知接口')
         self.frames.append(self._ui_frame())
@@ -140,7 +158,7 @@ class Session:
         return {'schema':'arena-ui-replay-1', 'mode':self.mode,
                 'source':self.source, 'controllers':self.controllers.copy(),
                 'frames':copy.deepcopy(self.frames),
-                'records':self.env.save_replay() if self.mode == 'arena' else None,
+                'records':self.env.save_replay() if self.mode in ('arena','classic_race') else None,
                 'notice':'公开观察回放，不含隐藏雷图；不证明真实人类参与。'}
 
 class Handler(BaseHTTPRequestHandler):
@@ -193,7 +211,7 @@ class Handler(BaseHTTPRequestHandler):
 def main():
     parser=argparse.ArgumentParser(); parser.add_argument('--port',type=int,default=8765)
     args=parser.parse_args(); Handler.session=Session()
-    Handler.session.reset({'preset':'intermediate'})
+    Handler.session.reset({'preset':'intermediate','scoring':'survival-v1','controllers':['human','B3']})
     server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler)
     print(f'Minesweeper Resource Arena: http://127.0.0.1:{args.port}',flush=True)
     try: server.serve_forever()

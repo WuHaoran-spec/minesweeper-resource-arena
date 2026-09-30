@@ -1,0 +1,73 @@
+{
+  "protocol_version": "survival-v3-cpu-pilot-1",
+  "rule_version": "arena-v3.0",
+  "scoring": "survival-v1",
+  "utility": "100*gems + 10*lives - own_actions/max_steps",
+  "score_order": "gems first; then lives; then own actions; not a guarantee of risk aversion",
+  "base_maps_per_preset": {
+    "train": 12,
+    "validation": 4,
+    "test": 6
+  },
+  "presets": [
+    "intermediate",
+    "expert"
+  ],
+  "private_manifest_sha256": "3be744b40b1fb1d62e8cd3ebf3e34ff25c3f2aef93da35f43397b7521a6abc15",
+  "split_unit": "base map including swapped seats, first turn, rotations and mirrors",
+  "collection_games_per_map": 2,
+  "formal_pairs": [
+    [
+      "B2",
+      "B3"
+    ],
+    [
+      "B2",
+      "L3"
+    ],
+    [
+      "L_v2",
+      "L3"
+    ],
+    [
+      "B3",
+      "L3"
+    ],
+    [
+      "B2",
+      "L3_initial"
+    ]
+  ],
+  "formal_variants": "swap false/true x first 0/1",
+  "formal_games": 240,
+  "method": "B3 public-state heuristic imitation, one train-only correction round",
+  "teacher_is_optimal": false,
+  "features": 40,
+  "hidden": 48,
+  "parameters": 2017,
+  "optimizer": "Adam",
+  "optimizer_seed": 20261007,
+  "optimizer_runs": 1,
+  "batch_size": 256,
+  "learning_rate": 0.002,
+  "initial_epochs": 35,
+  "correction_epochs": 18,
+  "checkpoint_selection": "lowest validation cross entropy within fixed epoch budget",
+  "correction_selection": "training-map learner losses or teacher-action disagreements",
+  "state_selection": "deduplicate public observation except game_id/revision; <=192 evenly spaced eligible states per episode",
+  "risk_weights_by_lives": {
+    "3": 8.0,
+    "2": 18.0,
+    "1": 72.0
+  },
+  "history": "each player last 24 public post-action positions; no hidden map",
+  "timeouts_deaths_losses": "retain every full raw trajectory; never filter test maps by outcome",
+  "wall_clock": "reported only; never reward or feature",
+  "human_records": 0,
+  "source_sha256": {
+    "arena/env.py": "c9778cbd4ad5d2d75edfc7bee80e559f1d1ff683e14dc5cce75fb475d839b5c4",
+    "arena/risk.py": "67d5d45a2c6176e31f8d6ad3098623023948a68a49ee5f4619101d3378c0f1a3",
+    "arena/survival.py": "b920cc5971b84398229ab15c0349daae59a93c115e3561a871d44efe71c40ae8",
+    "arena/policies.py": "d92b67879941cb6d7412c6b0c9d1000320eb7dd852fe947b1b2b1ffb84f37409"
+  }
+}

@@ -45,7 +45,7 @@ def _paths(target, p, size):
 
 def prepare(obs, no_opponent=False):
     # Legacy feature numerics stay unchanged for the published v1 experiments.
-    if obs.get('rule_version', '').startswith('arena-v2'):
+    if obs.get('rule_version', '').startswith(('arena-v2', 'arena-v3')):
         return prepare_v2(obs, no_opponent)
     size = obs['size']
     p, status, detail = infer(obs)
@@ -191,7 +191,10 @@ def choose(obs, policy='B2', rng=None):
     if policy == 'E':
         from .exploration import choose_exploration
         return choose_exploration(obs, rng=rng)
-    v2=obs.get('rule_version','').startswith('arena-v2')
+    if policy in ('B3', 'L3', 'L3_initial'):
+        from .survival import choose_survival
+        return choose_survival(obs, policy=policy, rng=rng)
+    v2=obs.get('rule_version','').startswith(('arena-v2','arena-v3'))
     prepare_fn=prepare_v2 if v2 or policy in ('L_v2','L_v2_initial') else prepare
     X, legal, p, status, detail, targets, base, costs = prepare_fn(obs, policy == 'L_no_opponent')
     diag = {'risk': detail, 'version': policy+('-v2' if v2 else '-v1'), 'target_kind': 'explicit_heuristic_target'}

@@ -65,8 +65,11 @@ class Arena:
     """
 
     def __init__(self, seed: int = 0, first: int = 0, swap: bool = False,
-                 max_steps: int | None = None, preset: str = 'legacy'):
+                 max_steps: int | None = None, preset: str = 'legacy', scoring: str = 'diamonds'):
         config = arena_preset(preset)
+        if scoring not in ('diamonds', 'survival-v1') or (preset == 'legacy' and scoring != 'diamonds'):
+            raise ValueError('unsupported scoring for this preset')
+        self.scoring = scoring
         max_steps = config['max_steps'] if max_steps is None else max_steps
         if type(seed) is not int:
             raise ValueError("seed must be an integer")
@@ -79,6 +82,8 @@ class Arena:
         self.width, self.height = config['width'], config['height']
         self.mine_count, self.resource_count = config['mine_count'], config['resource_count']
         self.rule_version = config['rule_version']
+        if scoring == 'survival-v1':
+            self.rule_version = 'arena-v3.0'
         self._corners = ((0, 0), (self.height - 1, self.width - 1))
         self._starts = list(reversed(self._corners)) if swap else list(self._corners)
         self.max_steps = max_steps
@@ -101,6 +106,8 @@ class Arena:
         self.lives = [config['initial_lives'], config['initial_lives']]
         self.turn = first
         self.steps = 0
+        self.action_counts = [0, 0]
+        self.recent_positions = [[list(p)] for p in self.positions]
         self.done = False
         self.winner: int | str | None = None
         self.reason: str | None = None
@@ -161,7 +168,15 @@ class Arena:
         if self.preset != 'legacy':
             observation.update(width=self.width, height=self.height, resource_count=self.resource_count,
                                lives=self.lives.copy(), preset=self.preset)
+        if self.scoring == 'survival-v1':
+            observation.update(scoring=self.scoring, action_counts=self.action_counts.copy(),
+                               recent_positions=deepcopy(self.recent_positions),
+                               utility_scores=self.utility_scores())
         return observation
+
+    def utility_scores(self):
+        """Versioned terminal utility; wall-clock UI delays never alter score."""
+        return [100*self.scores[i]+10*self.lives[i]-self.action_counts[i]/self.max_steps for i in (0, 1)]
 
     def step(self, action: str, metadata: dict | None = None) -> dict:
         if self.done:
@@ -191,6 +206,9 @@ class Arena:
             self._diamonds.remove(cell)
             self.scores[actor] += 1
         self.steps += 1
+        self.action_counts[actor] += 1
+        self.recent_positions[actor].append(list(self.positions[actor]))
+        self.recent_positions[actor] = self.recent_positions[actor][-24:]
         self.revision += 1
         if not self._diamonds:
             self.reason = "diamonds_collected"
@@ -200,7 +218,10 @@ class Arena:
             self.reason = "max_steps"
         if self.reason:
             self.done = True
-            self.winner = "draw" if self.scores[0] == self.scores[1] else int(self.scores[1] > self.scores[0])
+            # Compare integer numerators to avoid float rounding changing ties.
+            values = ([self.max_steps*(100*self.scores[i]+10*self.lives[i])-self.action_counts[i] for i in (0,1)]
+                      if self.scoring == 'survival-v1' else self.scores)
+            self.winner = "draw" if values[0] == values[1] else int(values[1] > values[0])
         else:
             other = 1 - actor
             self.turn = other if self.alive[other] else actor
@@ -208,6 +229,8 @@ class Arena:
         feedback = {"collected": collected, "exploded": exploded, "score_delta": int(collected)}
         if self.preset != 'legacy':
             feedback.update(life_lost=int(exploded), respawned=respawned, lives_after=self.lives[actor])
+        if self.scoring == 'survival-v1':
+            feedback['utility_delta'] = 100*int(collected)-10*int(exploded)-1/self.max_steps
         self._history.append({
             "rule_version": self.rule_version,
             "game_id": self.game_id,
@@ -223,13 +246,14 @@ class Arena:
 
     def reset(self, seed: int | None = None, first: int | None = None,
               swap: bool | None = None, max_steps: int | None = None,
-              preset: str | None = None) -> dict:
+              preset: str | None = None, scoring: str | None = None) -> dict:
         """Reset atomically; the new opaque game_id invalidates old requests."""
         limit = max_steps if max_steps is not None else (None if preset is not None and preset != self.preset else self.max_steps)
         self.__init__(self._seed if seed is None else seed,
                       self._first if first is None else first,
                       self._swap if swap is None else swap,
-                      limit, self.preset if preset is None else preset)
+                      limit, self.preset if preset is None else preset,
+                      self.scoring if scoring is None else scoring)
         return self.observe()
 
     def render(self) -> dict:
@@ -259,6 +283,8 @@ class Arena:
         }
         if self.preset != 'legacy':
             snapshot.update(schema='arena-private-snapshot-v2', config=self._config.copy())
+        if self.scoring == 'survival-v1':
+            snapshot.update(schema='arena-private-snapshot-v3', scoring=self.scoring)
         return deepcopy(snapshot)
 
     @classmethod
@@ -266,13 +292,15 @@ class Arena:
         value = deepcopy(snapshot)
         legacy = value.get('schema') == 'arena-private-snapshot-v1' and value.get('rule_version') == RULE_VERSION
         modern = value.get('schema') == 'arena-private-snapshot-v2' and value.get('rule_version') == 'arena-v2.0'
-        if not (legacy or modern):
+        survival = value.get('schema') == 'arena-private-snapshot-v3' and value.get('rule_version') == 'arena-v3.0'
+        if not (legacy or modern or survival):
             raise ValueError("unsupported private snapshot version")
         obs = value["observation"]
         preset = 'legacy' if legacy else value['config']['preset']
-        if modern and value['config'] != arena_preset(preset):
+        if (modern or survival) and value['config'] != arena_preset(preset):
             raise ValueError('snapshot preset configuration does not match its rule version')
-        env = cls(value["seed"], value["first"], value["swap"], obs["max_steps"], preset=preset)
+        env = cls(value["seed"], value["first"], value["swap"], obs["max_steps"], preset=preset,
+                  scoring=value.get('scoring', 'diamonds'))
         env._mines = {tuple(x) for x in value["mines"]}
         env._initial_diamonds = {tuple(x) for x in value["initial_diamonds"]}
         env._diamonds = {tuple(x) for x in obs["diamonds"]}
@@ -281,7 +309,10 @@ class Arena:
         env.positions = [tuple(x) for x in obs["positions"]]
         for name in ("game_id", "revision", "turn", "steps", "done", "winner", "reason", "scores", "alive"):
             setattr(env, name, deepcopy(obs[name]))
-        env.lives = obs['lives'].copy() if modern else [int(alive) for alive in obs['alive']]
+        env.lives = obs['lives'].copy() if modern or survival else [int(alive) for alive in obs['alive']]
+        if survival:
+            env.action_counts = obs['action_counts'].copy()
+            env.recent_positions = deepcopy(obs['recent_positions'])
         env._history = value["history"]
         env._initial_observation = value["initial_observation"]
         return env

@@ -1,0 +1,25 @@
+{
+  "base_maps": 44,
+  "dihedral_map_overlap": 0,
+  "all_public_replays_verified_again": 352,
+  "public_truth_fields_absent": true,
+  "model_hashes": {
+    "survival_v3_initial": "4ca4286f40b7fee4cf8edbb9701522e197085edc227f51037763e3af59e736b4",
+    "survival_v3_final": "fd0a936822ebbc3d8c3fdb55d162528c054f29e3f8bc010450190ea321c26448"
+  },
+  "feature_reconstruction": {
+    "train": {
+      "raw_transitions": 5778,
+      "selected_features_rebuilt": 5597
+    },
+    "validation": {
+      "raw_transitions": 1761,
+      "selected_features_rebuilt": 1761
+    },
+    "corrections": {
+      "raw_transitions": 5598,
+      "selected_features_rebuilt": 2920
+    }
+  },
+  "human_records": 0
+}

@@ -103,7 +103,9 @@ class Audit:
             if match:
                 line = value.count('\n', 0, match.start()) + 1
                 self.finding(f'{label}:line{line}', category)
-        for match in EMAIL.finditer(value):
+        # An email must contain @. This equivalent guard avoids quadratic
+        # backtracking on long numerical solver records without weakening checks.
+        for match in EMAIL.finditer(value) if '@' in value else ():
             if not match.group().lower().endswith('@users.noreply.github.com'):
                 self.finding(label, 'email_address')
                 break

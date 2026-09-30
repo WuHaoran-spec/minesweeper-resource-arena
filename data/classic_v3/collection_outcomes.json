@@ -1,0 +1,1056 @@
+{
+  "train": [
+    {
+      "episode_id": "train-m00",
+      "map_id": "classic-train-m00",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 43,
+          "active_reveals": 1,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 26,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        1,
+        26
+      ],
+      "computation_seconds": [
+        0.0007712000005994923,
+        0.019552100013243034
+      ],
+      "elapsed_seconds": 0.03216860000247834
+    },
+    {
+      "episode_id": "train-m01",
+      "map_id": "classic-train-m01",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 59,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 11,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        11
+      ],
+      "computation_seconds": [
+        0.001168400005553849,
+        0.007953899999847636
+      ],
+      "elapsed_seconds": 0.015165500000875909
+    },
+    {
+      "episode_id": "train-m02",
+      "map_id": "classic-train-m02",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 58,
+          "active_reveals": 1,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 13,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        1,
+        13
+      ],
+      "computation_seconds": [
+        0.0007364999983110465,
+        0.00879649997659726
+      ],
+      "elapsed_seconds": 0.015639099998224992
+    },
+    {
+      "episode_id": "train-m03",
+      "map_id": "classic-train-m03",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 57,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 15,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        15
+      ],
+      "computation_seconds": [
+        0.0008961000057752244,
+        0.009970899984182324
+      ],
+      "elapsed_seconds": 0.01836810000531841
+    },
+    {
+      "episode_id": "train-m04",
+      "map_id": "classic-train-m04",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 50,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 17,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        17
+      ],
+      "computation_seconds": [
+        0.0014749999972991645,
+        0.010964999994030222
+      ],
+      "elapsed_seconds": 0.020961200003512204
+    },
+    {
+      "episode_id": "train-m05",
+      "map_id": "classic-train-m05",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 50,
+          "active_reveals": 4,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 69,
+          "active_reveals": 21,
+          "reason": "mine"
+        }
+      ],
+      "active_reveals": [
+        4,
+        21
+      ],
+      "computation_seconds": [
+        0.0024750000084168278,
+        0.014903300019796006
+      ],
+      "elapsed_seconds": 0.027951299998676404
+    },
+    {
+      "episode_id": "train-m06",
+      "map_id": "classic-train-m06",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 35,
+          "active_reveals": 5,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 25,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        5,
+        25
+      ],
+      "computation_seconds": [
+        0.0027304999966872856,
+        0.016433500015409663
+      ],
+      "elapsed_seconds": 0.034011900002951734
+    },
+    {
+      "episode_id": "train-m07",
+      "map_id": "classic-train-m07",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 63,
+          "active_reveals": 1,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 8,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        1,
+        8
+      ],
+      "computation_seconds": [
+        0.00016830000095069408,
+        0.005146200011949986
+      ],
+      "elapsed_seconds": 0.00942669999494683
+    },
+    {
+      "episode_id": "train-m08",
+      "map_id": "classic-train-m08",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 57,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 10,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        10
+      ],
+      "computation_seconds": [
+        0.0012015999964205548,
+        0.005599700009042863
+      ],
+      "elapsed_seconds": 0.01218469999730587
+    },
+    {
+      "episode_id": "train-m09",
+      "map_id": "classic-train-m09",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 61,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 70,
+          "active_reveals": 6,
+          "reason": "mine"
+        }
+      ],
+      "active_reveals": [
+        2,
+        6
+      ],
+      "computation_seconds": [
+        0.0003529999958118424,
+        0.003750400006538257
+      ],
+      "elapsed_seconds": 0.00768660000176169
+    },
+    {
+      "episode_id": "train-m10",
+      "map_id": "classic-train-m10",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 64,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 8,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        8
+      ],
+      "computation_seconds": [
+        0.0012306999997235835,
+        0.004366699999081902
+      ],
+      "elapsed_seconds": 0.0102201999980025
+    },
+    {
+      "episode_id": "train-m11",
+      "map_id": "classic-train-m11",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 48,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 22,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        22
+      ],
+      "computation_seconds": [
+        0.0008557999972254038,
+        0.017825899987656157
+      ],
+      "elapsed_seconds": 0.028957299997273367
+    },
+    {
+      "episode_id": "train-m12",
+      "map_id": "classic-train-m12",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 60,
+          "active_reveals": 1,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 8,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        1,
+        8
+      ],
+      "computation_seconds": [
+        0.0007371000028797425,
+        0.0044761000099242665
+      ],
+      "elapsed_seconds": 0.009651799999119248
+    },
+    {
+      "episode_id": "train-m13",
+      "map_id": "classic-train-m13",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 53,
+          "active_reveals": 1,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 18,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        1,
+        18
+      ],
+      "computation_seconds": [
+        0.0001756999990902841,
+        0.010622699992381968
+      ],
+      "elapsed_seconds": 0.01901450000150362
+    },
+    {
+      "episode_id": "train-m14",
+      "map_id": "classic-train-m14",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 62,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 10,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        10
+      ],
+      "computation_seconds": [
+        0.0014263000048231333,
+        0.005978000015602447
+      ],
+      "elapsed_seconds": 0.012975000005098991
+    },
+    {
+      "episode_id": "train-m15",
+      "map_id": "classic-train-m15",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 62,
+          "active_reveals": 6,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 15,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        6,
+        15
+      ],
+      "computation_seconds": [
+        0.0037889000013819896,
+        0.011158200009958819
+      ],
+      "elapsed_seconds": 0.024691400001756847
+    },
+    {
+      "episode_id": "train-m16",
+      "map_id": "classic-train-m16",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 49,
+          "active_reveals": 1,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 70,
+          "active_reveals": 14,
+          "reason": "mine"
+        }
+      ],
+      "active_reveals": [
+        1,
+        14
+      ],
+      "computation_seconds": [
+        0.0006158000032883137,
+        0.007983899995451793
+      ],
+      "elapsed_seconds": 0.015280699997674674
+    },
+    {
+      "episode_id": "train-m17",
+      "map_id": "classic-train-m17",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 41,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 18,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        18
+      ],
+      "computation_seconds": [
+        0.0007750000004307367,
+        0.01187799999024719
+      ],
+      "elapsed_seconds": 0.02089729999715928
+    },
+    {
+      "episode_id": "train-m18",
+      "map_id": "classic-train-m18",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 62,
+          "active_reveals": 1,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 9,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        1,
+        9
+      ],
+      "computation_seconds": [
+        0.0008832000021357089,
+        0.006261900001845788
+      ],
+      "elapsed_seconds": 0.0117030999972485
+    },
+    {
+      "episode_id": "train-m19",
+      "map_id": "classic-train-m19",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 53,
+          "active_reveals": 10,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 26,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        10,
+        26
+      ],
+      "computation_seconds": [
+        0.007828200003132224,
+        0.019246699994255323
+      ],
+      "elapsed_seconds": 0.04267160000017611
+    },
+    {
+      "episode_id": "train-m20",
+      "map_id": "classic-train-m20",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 59,
+          "active_reveals": 4,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 13,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        4,
+        13
+      ],
+      "computation_seconds": [
+        0.002891300006012898,
+        0.007570499998109881
+      ],
+      "elapsed_seconds": 0.01841009999770904
+    },
+    {
+      "episode_id": "train-m21",
+      "map_id": "classic-train-m21",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 67,
+          "active_reveals": 3,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 9,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        3,
+        9
+      ],
+      "computation_seconds": [
+        0.0015398000032291748,
+        0.005489600007422268
+      ],
+      "elapsed_seconds": 0.01279649999924004
+    },
+    {
+      "episode_id": "train-m22",
+      "map_id": "classic-train-m22",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 49,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 12,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        12
+      ],
+      "computation_seconds": [
+        0.0011060000033467077,
+        0.006331499993393663
+      ],
+      "elapsed_seconds": 0.013337600001250394
+    },
+    {
+      "episode_id": "train-m23",
+      "map_id": "classic-train-m23",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 51,
+          "active_reveals": 1,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 16,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        1,
+        16
+      ],
+      "computation_seconds": [
+        0.00017439999646740034,
+        0.010038600012194365
+      ],
+      "elapsed_seconds": 0.02027589999488555
+    }
+  ],
+  "validation": [
+    {
+      "episode_id": "validation-m00",
+      "map_id": "classic-validation-m00",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 32,
+          "active_reveals": 1,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 24,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        1,
+        24
+      ],
+      "computation_seconds": [
+        0.000647900000330992,
+        0.015293700031179469
+      ],
+      "elapsed_seconds": 0.026392100000521168
+    },
+    {
+      "episode_id": "validation-m01",
+      "map_id": "classic-validation-m01",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 63,
+          "active_reveals": 6,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 70,
+          "active_reveals": 20,
+          "reason": "mine"
+        }
+      ],
+      "active_reveals": [
+        6,
+        20
+      ],
+      "computation_seconds": [
+        0.004528099998424295,
+        0.011784900001657661
+      ],
+      "elapsed_seconds": 0.02773670000169659
+    },
+    {
+      "episode_id": "validation-m02",
+      "map_id": "classic-validation-m02",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 57,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 19,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        19
+      ],
+      "computation_seconds": [
+        0.0015108999941730872,
+        0.012272199979634024
+      ],
+      "elapsed_seconds": 0.023554600003990345
+    },
+    {
+      "episode_id": "validation-m03",
+      "map_id": "classic-validation-m03",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 32,
+          "active_reveals": 4,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 24,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        4,
+        24
+      ],
+      "computation_seconds": [
+        0.00231760000315262,
+        0.01709869999467628
+      ],
+      "elapsed_seconds": 0.0315069999996922
+    },
+    {
+      "episode_id": "validation-m04",
+      "map_id": "classic-validation-m04",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 0,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 34,
+          "active_reveals": 2,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 29,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        2,
+        29
+      ],
+      "computation_seconds": [
+        0.0015180999980657361,
+        0.01926000002276851
+      ],
+      "elapsed_seconds": 0.034612299998116214
+    },
+    {
+      "episode_id": "validation-m05",
+      "map_id": "classic-validation-m05",
+      "policies": [
+        "R0",
+        "R1"
+      ],
+      "first": 1,
+      "winner": 1,
+      "results": [
+        {
+          "done": true,
+          "cleared": false,
+          "safe_revealed": 65,
+          "active_reveals": 4,
+          "reason": "mine"
+        },
+        {
+          "done": true,
+          "cleared": true,
+          "safe_revealed": 71,
+          "active_reveals": 9,
+          "reason": "all_safe_revealed"
+        }
+      ],
+      "active_reveals": [
+        4,
+        9
+      ],
+      "computation_seconds": [
+        0.0021668999979738146,
+        0.0059334999896236695
+      ],
+      "elapsed_seconds": 0.014305500000773463
+    }
+  ]
+}

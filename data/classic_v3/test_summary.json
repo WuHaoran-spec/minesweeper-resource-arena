@@ -1,0 +1,43 @@
+{
+  "completed_races": 144,
+  "planned_races": 144,
+  "independent_test_maps": 12,
+  "groups": {
+    "R0": {
+      "board_runs": 96,
+      "clears": 0,
+      "mine_failures": 96,
+      "race_wins": 2,
+      "race_draws": 0,
+      "race_losses": 94,
+      "mean_safe_revealed": 51.958333333333336,
+      "median_active_reveals": 2.0
+    },
+    "R1": {
+      "board_runs": 96,
+      "clears": 96,
+      "mine_failures": 0,
+      "race_wins": 60,
+      "race_draws": 8,
+      "race_losses": 28,
+      "mean_safe_revealed": 71.0,
+      "median_active_reveals": 13.5
+    },
+    "C1": {
+      "board_runs": 96,
+      "clears": 88,
+      "mine_failures": 8,
+      "race_wins": 74,
+      "race_draws": 8,
+      "race_losses": 14,
+      "mean_safe_revealed": 68.25,
+      "median_active_reveals": 12.5
+    }
+  },
+  "model_sha256": "b5e17506d2448c5ad844f5e10e541e9b5fc5891a7b3269bbbeedf6b451a6a31c",
+  "frozen_checkpoint_unchanged": true,
+  "elapsed_seconds": 7.037796099997649,
+  "all_failures_retained": true,
+  "limitation": "Only 12 independent beginner maps; seat/first repetitions are not independent samples",
+  "human_records": 0
+}

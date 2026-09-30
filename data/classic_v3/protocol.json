@@ -1,0 +1,60 @@
+{
+  "version": "classic-race-feedback-v3-pilot",
+  "preset": "beginner",
+  "dimensions": [
+    9,
+    9
+  ],
+  "mine_count": 10,
+  "secondary_benchmark": true,
+  "same_map_independent_public_observations": true,
+  "automatic_protected_first_cell": [
+    4,
+    4
+  ],
+  "active_reveal_count_excludes_automatic_first": true,
+  "ranking": [
+    "cleared",
+    "safe_revealed",
+    "fewer_active_reveals"
+  ],
+  "computation_time_affects_rank": false,
+  "independent_maps": {
+    "train": 24,
+    "validation": 6,
+    "test": 12
+  },
+  "manifest_sha256": "46b80fbe66080fdedd59b7dc967b122e7d5c68c96b47cbe214655e5b2eb24bb4",
+  "collection": "one R0 versus R1 race per training/validation map; every actually selected action retained",
+  "architecture": [
+    10,
+    16,
+    1
+  ],
+  "activation": "tanh hidden, linear output",
+  "feature_names": [
+    "mine_marginal",
+    "safe_marginal",
+    "marginal_variance",
+    "unknown_neighbors",
+    "revealed_neighbors",
+    "neighbor_clue_mean",
+    "neighbor_degree",
+    "center_distance",
+    "revealed_fraction",
+    "bias"
+  ],
+  "training_seed": 20261003,
+  "epochs": 100,
+  "optimizer": "full-batch Adam, learning rate 0.005",
+  "target": "safe_result_indicator + 0.25*min(new_safe_revealed,10)/10",
+  "target_is_mine_probability": false,
+  "teacher_action_labels_used": false,
+  "unselected_hidden_cell_labels_used": false,
+  "selection": "lowest validation MSE among epoch 0 and every 10 epochs; earlier on ties",
+  "test": "12 maps x three unordered pairs of R0/R1/C1 x two seat assignments x two first players = 144 races",
+  "planned_test_races": 144,
+  "failures_retained": true,
+  "human_records": 0,
+  "source": "automated generated classic boards, selected-action observations and feedback"
+}

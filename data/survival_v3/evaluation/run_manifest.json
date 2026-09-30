@@ -1,0 +1,12 @@
+{
+  "source": "automated synthetic policy games",
+  "rule_version": "arena-v3.0",
+  "scoring": "survival-v1",
+  "human_records": 0,
+  "model_sha256": {
+    "L3": "fd0a936822ebbc3d8c3fdb55d162528c054f29e3f8bc010450190ea321c26448",
+    "L3_initial": "4ca4286f40b7fee4cf8edbb9701522e197085edc227f51037763e3af59e736b4",
+    "L_v2": "24eb8b59771a014389c31371fffc37f09b0c040f842e3249acebba56990eb8e2"
+  },
+  "protocol_sha256": "f84964b0dc7578ecd0a05ccc2960f0b063ed367d37db2ae0741b8711cefd4281"
+}

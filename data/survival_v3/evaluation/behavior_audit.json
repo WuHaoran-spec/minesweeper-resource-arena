@@ -1,0 +1,183 @@
+{
+  "source": "all 240 frozen formal replays; descriptive post-hoc analysis only",
+  "not_used_for_training_or_checkpoint_selection": true,
+  "groups": [
+    {
+      "preset": "intermediate",
+      "policy": "B2",
+      "games": 72,
+      "eliminations": 2,
+      "mine_hits": 38,
+      "gems": 260,
+      "actions": 2660,
+      "wait_actions": 0,
+      "immediate_backtracks": 80
+    },
+    {
+      "preset": "intermediate",
+      "policy": "B3",
+      "games": 48,
+      "eliminations": 0,
+      "mine_hits": 10,
+      "gems": 173,
+      "actions": 1763,
+      "wait_actions": 0,
+      "immediate_backtracks": 23
+    },
+    {
+      "preset": "intermediate",
+      "policy": "L3",
+      "games": 72,
+      "eliminations": 0,
+      "mine_hits": 19,
+      "gems": 237,
+      "actions": 2675,
+      "wait_actions": 0,
+      "immediate_backtracks": 43
+    },
+    {
+      "preset": "intermediate",
+      "policy": "L_v2",
+      "games": 24,
+      "eliminations": 1,
+      "mine_hits": 13,
+      "gems": 89,
+      "actions": 871,
+      "wait_actions": 0,
+      "immediate_backtracks": 28
+    },
+    {
+      "preset": "intermediate",
+      "policy": "L3_initial",
+      "games": 24,
+      "eliminations": 0,
+      "mine_hits": 6,
+      "gems": 81,
+      "actions": 893,
+      "wait_actions": 0,
+      "immediate_backtracks": 22
+    },
+    {
+      "preset": "expert",
+      "policy": "B2",
+      "games": 72,
+      "eliminations": 53,
+      "mine_hits": 190,
+      "gems": 300,
+      "actions": 4660,
+      "wait_actions": 0,
+      "immediate_backtracks": 142
+    },
+    {
+      "preset": "expert",
+      "policy": "B3",
+      "games": 48,
+      "eliminations": 24,
+      "mine_hits": 114,
+      "gems": 220,
+      "actions": 4098,
+      "wait_actions": 0,
+      "immediate_backtracks": 75
+    },
+    {
+      "preset": "expert",
+      "policy": "L3",
+      "games": 72,
+      "eliminations": 28,
+      "mine_hits": 152,
+      "gems": 401,
+      "actions": 6336,
+      "wait_actions": 0,
+      "immediate_backtracks": 118
+    },
+    {
+      "preset": "expert",
+      "policy": "L_v2",
+      "games": 24,
+      "eliminations": 18,
+      "mine_hits": 61,
+      "gems": 97,
+      "actions": 1489,
+      "wait_actions": 0,
+      "immediate_backtracks": 51
+    },
+    {
+      "preset": "expert",
+      "policy": "L3_initial",
+      "games": 24,
+      "eliminations": 10,
+      "mine_hits": 50,
+      "gems": 136,
+      "actions": 1982,
+      "wait_actions": 0,
+      "immediate_backtracks": 38
+    }
+  ],
+  "cases": [
+    {
+      "kind": "B3_mine_hit",
+      "preset": "intermediate",
+      "episode_id": "intermediate-m000-p0-s0-f0",
+      "step": 78,
+      "file": "cases/intermediate_B3_mine_hit.json"
+    },
+    {
+      "kind": "B3_lower_risk_than_B2",
+      "preset": "intermediate",
+      "episode_id": "intermediate-m000-p0-s1-f0",
+      "step": 70,
+      "file": "cases/intermediate_B3_lower_risk_than_B2.json"
+    },
+    {
+      "kind": "L3_mine_hit",
+      "preset": "intermediate",
+      "episode_id": "intermediate-m000-p1-s0-f0",
+      "step": 86,
+      "file": "cases/intermediate_L3_mine_hit.json"
+    },
+    {
+      "kind": "L3_lower_risk_than_B2",
+      "preset": "intermediate",
+      "episode_id": "intermediate-m000-p1-s1-f0",
+      "step": 70,
+      "file": "cases/intermediate_L3_lower_risk_than_B2.json"
+    },
+    {
+      "kind": "B3_mine_hit",
+      "preset": "expert",
+      "episode_id": "expert-m000-p0-s0-f0",
+      "step": 10,
+      "file": "cases/expert_B3_mine_hit.json"
+    },
+    {
+      "kind": "L3_mine_hit",
+      "preset": "expert",
+      "episode_id": "expert-m000-p1-s0-f0",
+      "step": 10,
+      "file": "cases/expert_L3_mine_hit.json"
+    },
+    {
+      "kind": "B3_lower_risk_than_B2",
+      "preset": "expert",
+      "episode_id": "expert-m001-p0-s1-f0",
+      "step": 104,
+      "file": "cases/expert_B3_lower_risk_than_B2.json"
+    },
+    {
+      "kind": "L3_lower_risk_than_B2",
+      "preset": "expert",
+      "episode_id": "expert-m001-p2-s1-f0",
+      "step": 112,
+      "file": "cases/expert_L3_lower_risk_than_B2.json"
+    },
+    {
+      "kind": "L3_elimination",
+      "preset": "expert",
+      "episode_id": "expert-m002-p1-s0-f0",
+      "step": 145,
+      "file": "cases/expert_L3_elimination.json"
+    }
+  ],
+  "case_selection": "first matching event per preset and category; all games remain in full log",
+  "aggregate_caution": "policy group mixes opponents and is not an independently paired policy comparison"
+}

@@ -1,0 +1,8 @@
+{
+  "source": "published public feature arrays; no private map seeds read",
+  "model_hashes_match_published": {
+    "survival_v3_initial": true,
+    "survival_v3_final": true
+  },
+  "platform_note": "bitwise equality verified here; different numerical libraries may round differently"
+}
