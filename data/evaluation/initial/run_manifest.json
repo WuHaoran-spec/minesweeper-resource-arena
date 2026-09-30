@@ -1,0 +1,26 @@
+{
+  "stage": "initial",
+  "base_map_count": 100,
+  "split": "test_initial",
+  "pairs": [
+    [
+      "B1",
+      "B2"
+    ],
+    [
+      "B1",
+      "L_initial"
+    ],
+    [
+      "B2",
+      "L_initial"
+    ]
+  ],
+  "model_sha256": {
+    "L_initial": "b1510e3e4d19650dd47fca4fc97e395bdc541a7075aa26a82506a9eda311693b"
+  },
+  "protocol_sha256": "5fe6715dee2ae44ec48205e2533ede3df84df0c8d2ab415f23dbc90fc01ff731",
+  "source": "automated_synthetic_policy_matches",
+  "human_records": 0,
+  "timing": "perf_counter wall time; shared warm process/cache, includes risk and features"
+}

@@ -1,0 +1,23 @@
+{
+  "rule_version": "arena-v1.0",
+  "size": 9,
+  "mine_count": 10,
+  "diamond_count": 3,
+  "starts": [[0, 0], [8, 8]],
+  "default_max_steps": 200,
+  "actions": ["up", "down", "left", "right", "wait"],
+  "movement_neighborhood": 4,
+  "clue_neighborhood": 8,
+  "map_prior": "Uniformly choose 3 distinct diamonds among 79 non-start cells; then uniformly choose 10 fixed mines among the remaining 76 cells.",
+  "start_clues_revealed": true,
+  "diamond_clues_revealed_before_arrival": false,
+  "zero_expansion": false,
+  "shared_occupancy": true,
+  "mine_effect": "Eliminate actor permanently, reveal mine, preserve score, skip future turns.",
+  "win_criterion": "Diamond count only; equal counts draw.",
+  "terminal_precedence": ["diamonds_collected", "no_survivors", "max_steps"],
+  "known_exploded_mines_traversable": false,
+  "unknown_mines_removed_from_mask": false,
+  "map_filtering": false,
+  "classic": {"size": 9, "mine_count": 10, "zero_expansion": true, "first_click_protection": false}
+}

@@ -1,0 +1,4739 @@
+{
+  "schema": "arena-ui-replay-1",
+  "mode": "arena",
+  "source": "browser_automation",
+  "controllers": [
+    "human",
+    "B2"
+  ],
+  "frames": [
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 0,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "scores": [
+        0,
+        0
+      ],
+      "alive": [
+        true,
+        true
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 0,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "down",
+        "right",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 1,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 1,
+      "positions": [
+        [
+          1,
+          0
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "scores": [
+        0,
+        0
+      ],
+      "alive": [
+        true,
+        true
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 1,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "up",
+        "left",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 2,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          1,
+          0
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        0,
+        0
+      ],
+      "alive": [
+        true,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 2,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "up",
+        "down",
+        "right",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 3,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          2,
+          0
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        0,
+        0
+      ],
+      "alive": [
+        true,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 3,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "up",
+        "down",
+        "right",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 4,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          3,
+          0
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        0,
+        0
+      ],
+      "alive": [
+        true,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 4,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "up",
+        "down",
+        "right",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 5,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          4,
+          0
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        0,
+        0
+      ],
+      "alive": [
+        true,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 5,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "up",
+        "down",
+        "right",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 6,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        1,
+        0
+      ],
+      "alive": [
+        true,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 6,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "up",
+        "down",
+        "right",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 7,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          4,
+          0
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        1,
+        0
+      ],
+      "alive": [
+        true,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 7,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "up",
+        "down",
+        "right",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 8,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          4,
+          1
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        1,
+        0
+      ],
+      "alive": [
+        true,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 8,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "up",
+        "down",
+        "left",
+        "right",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 9,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          4,
+          2
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        1,
+        0
+      ],
+      "alive": [
+        true,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 9,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "up",
+        "down",
+        "left",
+        "right",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 10,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          4,
+          3
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        1,
+        0
+      ],
+      "alive": [
+        true,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 10,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "up",
+        "down",
+        "left",
+        "right",
+        "wait"
+      ],
+      "ui_flags": []
+    },
+    {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 11,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        1,
+        0
+      ],
+      "alive": [
+        false,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          -1
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 11,
+      "max_steps": 200,
+      "done": true,
+      "winner": 0,
+      "reason": "no_survivors",
+      "legal_actions": [],
+      "ui_flags": []
+    }
+  ],
+  "records": {
+    "schema": "arena-public-replay-v1",
+    "rule_version": "arena-v1.0",
+    "game_id": "560f420676094431a4e544017410c6f7",
+    "initial_observation": {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 0,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "scores": [
+        0,
+        0
+      ],
+      "alive": [
+        true,
+        true
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 0,
+      "max_steps": 200,
+      "done": false,
+      "winner": null,
+      "reason": null,
+      "legal_actions": [
+        "down",
+        "right",
+        "wait"
+      ]
+    },
+    "records": [
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 1,
+        "actor": 0,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 0,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              0,
+              0
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            true
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 0,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "down",
+            "right",
+            "wait"
+          ]
+        },
+        "action": "down",
+        "metadata": {
+          "policy": "human_input",
+          "source": "browser_automation"
+        },
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 1,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 1,
+          "positions": [
+            [
+              1,
+              0
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            true
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 1,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "left",
+            "wait"
+          ]
+        }
+      },
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 2,
+        "actor": 1,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 1,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 1,
+          "positions": [
+            [
+              1,
+              0
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            true
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 1,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "left",
+            "wait"
+          ]
+        },
+        "action": "left",
+        "metadata": {
+          "action": "left",
+          "target": [
+            8,
+            5
+          ],
+          "policy": "B2",
+          "risk_status": "exact_global_model_count",
+          "risk": [
+            0.0,
+            0.5,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.0,
+            0.5,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.0,
+            0.0,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.0,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.0,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.3333333333333333,
+            0.3333333333333333,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.11764705882352941,
+            0.0,
+            0.11764705882352941,
+            0.3333333333333333,
+            0.0
+          ],
+          "diagnostics": {
+            "risk": {
+              "models": 44352058608,
+              "components": 2,
+              "nodes": 14
+            },
+            "version": "B2-v1",
+            "target_kind": "explicit_heuristic_target",
+            "action_costs": {
+              "up": 10.53623,
+              "left": 6.08447,
+              "wait": 9.05758
+            }
+          },
+          "source": "browser_automation",
+          "actor_source": "heuristic_policy"
+        },
+        "feedback": {
+          "collected": false,
+          "exploded": true,
+          "score_delta": 0
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 2,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              1,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 2,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        }
+      },
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 3,
+        "actor": 0,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 2,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              1,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 2,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        },
+        "action": "down",
+        "metadata": {
+          "policy": "human_input",
+          "source": "browser_automation"
+        },
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 3,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              2,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 3,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        }
+      },
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 4,
+        "actor": 0,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 3,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              2,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 3,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        },
+        "action": "down",
+        "metadata": {
+          "policy": "human_input",
+          "source": "browser_automation"
+        },
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 4,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              3,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 4,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        }
+      },
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 5,
+        "actor": 0,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 4,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              3,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 4,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        },
+        "action": "down",
+        "metadata": {
+          "policy": "human_input",
+          "source": "browser_automation"
+        },
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 5,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 5,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        }
+      },
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 6,
+        "actor": 0,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 5,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            0,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 5,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        },
+        "action": "down",
+        "metadata": {
+          "policy": "human_input",
+          "source": "browser_automation"
+        },
+        "feedback": {
+          "collected": true,
+          "exploded": false,
+          "score_delta": 1
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 6,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 6,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        }
+      },
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 7,
+        "actor": 0,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 6,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 6,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        },
+        "action": "up",
+        "metadata": {
+          "policy": "human_input",
+          "source": "browser_automation"
+        },
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 7,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 7,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        }
+      },
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 8,
+        "actor": 0,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 7,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              0
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 7,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "right",
+            "wait"
+          ]
+        },
+        "action": "right",
+        "metadata": {
+          "policy": "human_input",
+          "source": "browser_automation"
+        },
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 8,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              1
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 8,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "left",
+            "right",
+            "wait"
+          ]
+        }
+      },
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 9,
+        "actor": 0,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 8,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              1
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 8,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "left",
+            "right",
+            "wait"
+          ]
+        },
+        "action": "right",
+        "metadata": {
+          "policy": "human_input",
+          "source": "browser_automation"
+        },
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 9,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              2
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              4,
+              2,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 9,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "left",
+            "right",
+            "wait"
+          ]
+        }
+      },
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 10,
+        "actor": 0,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 9,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              2
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              4,
+              2,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 9,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "left",
+            "right",
+            "wait"
+          ]
+        },
+        "action": "right",
+        "metadata": {
+          "policy": "human_input",
+          "source": "browser_automation"
+        },
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 10,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              3
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              4,
+              2,
+              1
+            ],
+            [
+              4,
+              3,
+              2
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 10,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "left",
+            "right",
+            "wait"
+          ]
+        }
+      },
+      {
+        "rule_version": "arena-v1.0",
+        "game_id": "560f420676094431a4e544017410c6f7",
+        "step": 11,
+        "actor": 0,
+        "observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 10,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              3
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            true,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              4,
+              2,
+              1
+            ],
+            [
+              4,
+              3,
+              2
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 10,
+          "max_steps": 200,
+          "done": false,
+          "winner": null,
+          "reason": null,
+          "legal_actions": [
+            "up",
+            "down",
+            "left",
+            "right",
+            "wait"
+          ]
+        },
+        "action": "right",
+        "metadata": {
+          "policy": "human_input",
+          "source": "browser_automation"
+        },
+        "feedback": {
+          "collected": false,
+          "exploded": true,
+          "score_delta": 0
+        },
+        "next_observation": {
+          "rule_version": "arena-v1.0",
+          "game_id": "560f420676094431a4e544017410c6f7",
+          "revision": 11,
+          "size": 9,
+          "mine_count": 10,
+          "turn": 0,
+          "positions": [
+            [
+              4,
+              4
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "scores": [
+            1,
+            0
+          ],
+          "alive": [
+            false,
+            false
+          ],
+          "diamonds": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              5
+            ]
+          ],
+          "known_safe": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "revealed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              4,
+              2,
+              1
+            ],
+            [
+              4,
+              3,
+              2
+            ],
+            [
+              4,
+              4,
+              -1
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              8,
+              7,
+              -1
+            ],
+            [
+              8,
+              8,
+              1
+            ]
+          ],
+          "steps": 11,
+          "max_steps": 200,
+          "done": true,
+          "winner": 0,
+          "reason": "no_survivors",
+          "legal_actions": []
+        }
+      }
+    ],
+    "final_observation": {
+      "rule_version": "arena-v1.0",
+      "game_id": "560f420676094431a4e544017410c6f7",
+      "revision": 11,
+      "size": 9,
+      "mine_count": 10,
+      "turn": 0,
+      "positions": [
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "scores": [
+        1,
+        0
+      ],
+      "alive": [
+        false,
+        false
+      ],
+      "diamonds": [
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "known_safe": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "revealed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          -1
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          8,
+          7,
+          -1
+        ],
+        [
+          8,
+          8,
+          1
+        ]
+      ],
+      "steps": 11,
+      "max_steps": 200,
+      "done": true,
+      "winner": 0,
+      "reason": "no_survivors",
+      "legal_actions": []
+    },
+    "result": {
+      "done": true,
+      "winner": 0,
+      "reason": "no_survivors",
+      "scores": [
+        1,
+        0
+      ]
+    }
+  },
+  "notice": "公开观察回放，不含隐藏雷图；不证明真实人类参与。"
+}

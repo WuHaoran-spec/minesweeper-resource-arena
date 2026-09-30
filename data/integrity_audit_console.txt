@@ -1,0 +1,89 @@
+{
+  "base_maps_total": 530,
+  "base_map_partitions": {
+    "train": 200,
+    "validation": 30,
+    "test_initial": 100,
+    "test_retest": 100,
+    "test_random": 100
+  },
+  "no_duplicate_or_dihedral_maps": true,
+  "private_manifest_sha256": "6c753c289d8d628232717f16331f25c009e874b8114555cd758f84ea6bda7909",
+  "formal_games": 5200,
+  "replays_verified_again": 5200,
+  "stages": {
+    "initial": {
+      "replays_verified_again": 1200,
+      "csv_sha256": "2644b8e92233dc4af25a43bd52915e1ecd5d27ddf6c82b76777b9c06c573d8e5",
+      "replay_gzip_sha256": "403a4ae69e10677d9a2e33a2e76efd4eb5be6725fb3752841ba31455767b5e12"
+    },
+    "retest": {
+      "replays_verified_again": 2800,
+      "csv_sha256": "7252f64774d3da606d2e849a91387145101378b922715d948ae23cf361fa31cb",
+      "replay_gzip_sha256": "897f2a759fcc2db2192003926f859dafc5dacc0884999e40bb4b0f34e4e001a7"
+    },
+    "random": {
+      "replays_verified_again": 1200,
+      "csv_sha256": "91766d996d45f2b817a71a9a21549de8efd04a5ca1c02bf64d053336d163f95e",
+      "replay_gzip_sha256": "1851a52e4900a43fd7da8bbff979beb7a74ef8e7939735f40823793cec41fb5a"
+    }
+  },
+  "test_base_maps_with_adjacent_diamond": 44,
+  "first_player_wins": 2488,
+  "second_player_wins": 2232,
+  "draws": 480,
+  "eliminated_final_winners": 929,
+  "risk_status_counts": {
+    "exact_global_model_count": 99822,
+    "approximate_cutoff": 97
+  },
+  "models": {
+    "L_final.npz": {
+      "sha256": "0a3649d98d8ff3905b0629d8b5286e127dd96e8f5af25602e8feb0d49631807d",
+      "selected_epoch": 20,
+      "optimizer_steps": 700,
+      "parameters": 929
+    },
+    "L_initial.npz": {
+      "sha256": "b1510e3e4d19650dd47fca4fc97e395bdc541a7075aa26a82506a9eda311693b",
+      "selected_epoch": 45,
+      "optimizer_steps": 1035,
+      "parameters": 929
+    },
+    "L_no_opponent_initial.npz": {
+      "sha256": "22a73c41d6a2979647b78fb173ac6b347e5f00b5734bd6430ac331ee78ef24b7",
+      "selected_epoch": 45,
+      "optimizer_steps": 1035,
+      "parameters": 929
+    },
+    "L_no_opponent.npz": {
+      "sha256": "acd34d00cde8dc3657f593f2d277f871022c75da76f0a4f5e8693e7d46c0c544",
+      "selected_epoch": 20,
+      "optimizer_steps": 700,
+      "parameters": 929
+    }
+  },
+  "feature_shape_and_legal_labels": true,
+  "observation_and_replay_no_truth_fields": true,
+  "human_records": 0,
+  "public_data_feature_reconstruction": {
+    "train": {
+      "games": 400,
+      "states": 5722,
+      "all_features_and_labels_rebuilt_from_public_replays": true,
+      "features_sha256": "cd4c307b3240b09f318c5654986cf0ccfe659f17edbc039c248bce0a8999f5b4"
+    },
+    "validation": {
+      "games": 60,
+      "states": 891,
+      "all_features_and_labels_rebuilt_from_public_replays": true,
+      "features_sha256": "c4b8a65f65b26bd93dfb1149c6b84cb33148591dbcafcb12c09cf629924e1fd3"
+    },
+    "train_corrections": {
+      "games": 400,
+      "states": 3217,
+      "all_features_and_labels_rebuilt_from_public_replays": true,
+      "features_sha256": "e399dbf751da7bc3264680c400793ff7a21b172367e40142c54469dc04b34d11"
+    }
+  }
+}

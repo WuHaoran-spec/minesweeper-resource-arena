@@ -1,0 +1,211 @@
+initial: 10/100 maps, 120 games, elapsed 1.5s
+initial: 20/100 maps, 240 games, elapsed 2.7s
+initial: 30/100 maps, 360 games, elapsed 3.7s
+initial: 40/100 maps, 480 games, elapsed 5.0s
+initial: 50/100 maps, 600 games, elapsed 6.4s
+initial: 60/100 maps, 720 games, elapsed 7.8s
+initial: 70/100 maps, 840 games, elapsed 9.4s
+initial: 80/100 maps, 960 games, elapsed 10.9s
+initial: 90/100 maps, 1080 games, elapsed 12.2s
+initial: 100/100 maps, 1200 games, elapsed 13.7s
+{
+  "stage": "initial",
+  "games": 1200,
+  "independent_base_maps": 100,
+  "elapsed_seconds": 13.747361800000363,
+  "all_replays_verified": 1200,
+  "risk_status_counts": {
+    "exact_global_model_count": 19830,
+    "approximate_cutoff": 69
+  },
+  "event_counts": {
+    "contested_target_candidate": 3337,
+    "learning_policy_failure": 354,
+    "target_switch_candidate": 457,
+    "draw": 118,
+    "B1_B2_disagreement": 26
+  },
+  "behavior_definitions": {
+    "contested_target_candidate": "both alive; current emitted/inferred target equals other actor last target and remains available",
+    "target_switch_candidate": "same actor changes target while both old and new targets remain available; learned target is inferred",
+    "B1_B2_disagreement": "different B1/B2 actions on same public observation, checked every fifth step",
+    "learning_policy_failure": "learning policy loses by final diamonds, regardless of survival",
+    "target_interpretation": "B1/B2 targets are explicit; L targets are post-hoc path attribution, not a learned target head"
+  },
+  "pairs": [
+    {
+      "policy": "B2",
+      "opponent": "B1",
+      "games": 400,
+      "independent_maps": 100,
+      "wins": 179,
+      "draws": 42,
+      "losses": 179,
+      "win_rate": 0.4475,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.005,
+      "map_bootstrap_95ci_diamond_difference": [
+        0.0,
+        0.015
+      ],
+      "eliminations_policy": 174,
+      "eliminations_opponent": 172,
+      "timeouts": 0,
+      "mean_steps": 16.4325,
+      "policy_mean_decision_ms": 0.27969291385564876,
+      "opponent_mean_decision_ms": 0.2944324946886851
+    },
+    {
+      "policy": "L_initial",
+      "opponent": "B1",
+      "games": 400,
+      "independent_maps": 100,
+      "wins": 186,
+      "draws": 37,
+      "losses": 177,
+      "win_rate": 0.465,
+      "win_plus_half_draw": 0.51125,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.48875,
+        0.535
+      ],
+      "mean_diamond_difference": 0.0475,
+      "map_bootstrap_95ci_diamond_difference": [
+        -0.0575,
+        0.15006249999999965
+      ],
+      "eliminations_policy": 156,
+      "eliminations_opponent": 169,
+      "timeouts": 0,
+      "mean_steps": 16.7175,
+      "policy_mean_decision_ms": 0.32914400476858346,
+      "opponent_mean_decision_ms": 0.27260529161743635
+    },
+    {
+      "policy": "L_initial",
+      "opponent": "B2",
+      "games": 400,
+      "independent_maps": 100,
+      "wins": 184,
+      "draws": 39,
+      "losses": 177,
+      "win_rate": 0.46,
+      "win_plus_half_draw": 0.50875,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.48875,
+        0.53
+      ],
+      "mean_diamond_difference": 0.0375,
+      "map_bootstrap_95ci_diamond_difference": [
+        -0.06,
+        0.1425
+      ],
+      "eliminations_policy": 157,
+      "eliminations_opponent": 171,
+      "timeouts": 0,
+      "mean_steps": 16.5975,
+      "policy_mean_decision_ms": 0.2721845924387227,
+      "opponent_mean_decision_ms": 0.2350724011713672
+    }
+  ],
+  "cases": [
+    {
+      "kind": "contested_target_candidate",
+      "episode_id": "initial-m000-p0-s0-f0",
+      "step": 14,
+      "file": "cases/contested_target_candidate_1.json"
+    },
+    {
+      "kind": "contested_target_candidate",
+      "episode_id": "initial-m000-p0-s1-f1",
+      "step": 14,
+      "file": "cases/contested_target_candidate_2.json"
+    },
+    {
+      "kind": "contested_target_candidate",
+      "episode_id": "initial-m000-p1-s0-f0",
+      "step": 14,
+      "file": "cases/contested_target_candidate_3.json"
+    },
+    {
+      "kind": "learning_policy_failure",
+      "episode_id": "initial-m000-p1-s0-f0",
+      "step": 14,
+      "file": "cases/learning_policy_failure_1.json"
+    },
+    {
+      "kind": "learning_policy_failure",
+      "episode_id": "initial-m000-p1-s1-f0",
+      "step": 14,
+      "file": "cases/learning_policy_failure_2.json"
+    },
+    {
+      "kind": "learning_policy_failure",
+      "episode_id": "initial-m000-p2-s0-f0",
+      "step": 14,
+      "file": "cases/learning_policy_failure_3.json"
+    },
+    {
+      "kind": "target_switch_candidate",
+      "episode_id": "initial-m004-p0-s0-f0",
+      "step": 5,
+      "file": "cases/target_switch_candidate_1.json"
+    },
+    {
+      "kind": "target_switch_candidate",
+      "episode_id": "initial-m004-p0-s0-f1",
+      "step": 4,
+      "file": "cases/target_switch_candidate_2.json"
+    },
+    {
+      "kind": "target_switch_candidate",
+      "episode_id": "initial-m004-p0-s1-f0",
+      "step": 4,
+      "file": "cases/target_switch_candidate_3.json"
+    },
+    {
+      "kind": "draw",
+      "episode_id": "initial-m017-p0-s0-f0",
+      "step": 4,
+      "file": "cases/draw_1.json"
+    },
+    {
+      "kind": "draw",
+      "episode_id": "initial-m017-p0-s0-f1",
+      "step": 4,
+      "file": "cases/draw_2.json"
+    },
+    {
+      "kind": "draw",
+      "episode_id": "initial-m017-p0-s1-f0",
+      "step": 4,
+      "file": "cases/draw_3.json"
+    },
+    {
+      "kind": "B1_B2_disagreement",
+      "episode_id": "initial-m052-p0-s1-f0",
+      "step": 5,
+      "file": "cases/B1_B2_disagreement_1.json"
+    },
+    {
+      "kind": "B1_B2_disagreement",
+      "episode_id": "initial-m052-p2-s0-f1",
+      "step": 5,
+      "file": "cases/B1_B2_disagreement_2.json"
+    },
+    {
+      "kind": "B1_B2_disagreement",
+      "episode_id": "initial-m061-p0-s0-f1",
+      "step": 10,
+      "file": "cases/B1_B2_disagreement_3.json"
+    }
+  ],
+  "human_records": 0,
+  "model_sha256": {
+    "L_initial": "b1510e3e4d19650dd47fca4fc97e395bdc541a7075aa26a82506a9eda311693b"
+  }
+}

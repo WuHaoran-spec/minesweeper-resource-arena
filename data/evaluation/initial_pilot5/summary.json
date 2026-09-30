@@ -1,0 +1,162 @@
+{
+  "stage": "initial_pilot5",
+  "games": 60,
+  "independent_base_maps": 5,
+  "elapsed_seconds": 0.6693349999986822,
+  "all_replays_verified": 60,
+  "risk_status_counts": {
+    "exact_global_model_count": 924
+  },
+  "event_counts": {
+    "contested_target_candidate": 162,
+    "learning_policy_failure": 20,
+    "target_switch_candidate": 12
+  },
+  "behavior_definitions": {
+    "contested_target_candidate": "both alive; current emitted/inferred target equals other actor last target and remains available",
+    "target_switch_candidate": "same actor changes target while both old and new targets remain available; learned target is inferred",
+    "B1_B2_disagreement": "different B1/B2 actions on same public observation, checked every fifth step",
+    "learning_policy_failure": "learning policy loses by final diamonds, regardless of survival",
+    "target_interpretation": "B1/B2 targets are explicit; L targets are post-hoc path attribution, not a learned target head"
+  },
+  "pairs": [
+    {
+      "policy": "B2",
+      "opponent": "B1",
+      "games": 20,
+      "independent_maps": 5,
+      "wins": 10,
+      "draws": 0,
+      "losses": 10,
+      "win_rate": 0.5,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "map_bootstrap_95ci_diamond_difference": [
+        0.0,
+        0.0
+      ],
+      "eliminations_policy": 4,
+      "eliminations_opponent": 4,
+      "timeouts": 0,
+      "mean_steps": 15.4,
+      "policy_mean_decision_ms": 0.27812142845457904,
+      "opponent_mean_decision_ms": 0.29262467525130614
+    },
+    {
+      "policy": "L_initial",
+      "opponent": "B1",
+      "games": 20,
+      "independent_maps": 5,
+      "wins": 10,
+      "draws": 0,
+      "losses": 10,
+      "win_rate": 0.5,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "map_bootstrap_95ci_diamond_difference": [
+        0.0,
+        0.0
+      ],
+      "eliminations_policy": 4,
+      "eliminations_opponent": 4,
+      "timeouts": 0,
+      "mean_steps": 15.4,
+      "policy_mean_decision_ms": 0.3463896105072367,
+      "opponent_mean_decision_ms": 0.2925045453877545
+    },
+    {
+      "policy": "L_initial",
+      "opponent": "B2",
+      "games": 20,
+      "independent_maps": 5,
+      "wins": 10,
+      "draws": 0,
+      "losses": 10,
+      "win_rate": 0.5,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "map_bootstrap_95ci_diamond_difference": [
+        0.0,
+        0.0
+      ],
+      "eliminations_policy": 4,
+      "eliminations_opponent": 4,
+      "timeouts": 0,
+      "mean_steps": 15.4,
+      "policy_mean_decision_ms": 0.27489025972960457,
+      "opponent_mean_decision_ms": 0.23766623383959418
+    }
+  ],
+  "cases": [
+    {
+      "kind": "contested_target_candidate",
+      "episode_id": "initial_pilot5-m000-p0-s0-f0",
+      "step": 14,
+      "file": "cases/contested_target_candidate_1.json"
+    },
+    {
+      "kind": "contested_target_candidate",
+      "episode_id": "initial_pilot5-m000-p0-s1-f1",
+      "step": 14,
+      "file": "cases/contested_target_candidate_2.json"
+    },
+    {
+      "kind": "contested_target_candidate",
+      "episode_id": "initial_pilot5-m000-p1-s0-f0",
+      "step": 14,
+      "file": "cases/contested_target_candidate_3.json"
+    },
+    {
+      "kind": "learning_policy_failure",
+      "episode_id": "initial_pilot5-m000-p1-s0-f0",
+      "step": 14,
+      "file": "cases/learning_policy_failure_1.json"
+    },
+    {
+      "kind": "learning_policy_failure",
+      "episode_id": "initial_pilot5-m000-p1-s1-f0",
+      "step": 14,
+      "file": "cases/learning_policy_failure_2.json"
+    },
+    {
+      "kind": "learning_policy_failure",
+      "episode_id": "initial_pilot5-m000-p2-s0-f0",
+      "step": 14,
+      "file": "cases/learning_policy_failure_3.json"
+    },
+    {
+      "kind": "target_switch_candidate",
+      "episode_id": "initial_pilot5-m004-p0-s0-f0",
+      "step": 5,
+      "file": "cases/target_switch_candidate_1.json"
+    },
+    {
+      "kind": "target_switch_candidate",
+      "episode_id": "initial_pilot5-m004-p0-s0-f1",
+      "step": 4,
+      "file": "cases/target_switch_candidate_2.json"
+    },
+    {
+      "kind": "target_switch_candidate",
+      "episode_id": "initial_pilot5-m004-p0-s1-f0",
+      "step": 4,
+      "file": "cases/target_switch_candidate_3.json"
+    }
+  ],
+  "human_records": 0,
+  "model_sha256": {
+    "L_initial": "b1510e3e4d19650dd47fca4fc97e395bdc541a7075aa26a82506a9eda311693b"
+  }
+}

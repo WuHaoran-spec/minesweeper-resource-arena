@@ -1,0 +1,15 @@
+{
+  "selection": "training maps only; losses or action disagreements",
+  "collection": {
+    "games": 400,
+    "raw_states": 6909,
+    "unique_states": 3217,
+    "failures": 166,
+    "disagreements": 342,
+    "source": "learning_policy_rollout_with_teacher_corrections",
+    "human_records": 0
+  },
+  "combined_examples": 8939,
+  "test_used_for_training": false,
+  "rounds": 1
+}

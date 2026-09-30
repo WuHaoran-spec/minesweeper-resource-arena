@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+private_truth/
+PRIVATE_REFERENCE_DO_NOT_PUBLISH/
+private_course/
+work/
+*.log
+browser_downloads/
+
+runs/
+private_delivery/
+experiment_truth/

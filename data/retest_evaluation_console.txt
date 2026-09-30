@@ -1,0 +1,317 @@
+retest: 10/100 maps, 280 games, elapsed 3.3s
+retest: 20/100 maps, 560 games, elapsed 6.2s
+retest: 30/100 maps, 840 games, elapsed 9.0s
+retest: 40/100 maps, 1120 games, elapsed 12.6s
+retest: 50/100 maps, 1400 games, elapsed 15.9s
+retest: 60/100 maps, 1680 games, elapsed 18.5s
+retest: 70/100 maps, 1960 games, elapsed 22.1s
+retest: 80/100 maps, 2240 games, elapsed 24.9s
+retest: 90/100 maps, 2520 games, elapsed 29.1s
+retest: 100/100 maps, 2800 games, elapsed 32.5s
+{
+  "stage": "retest",
+  "games": 2800,
+  "independent_base_maps": 100,
+  "elapsed_seconds": 32.53037210000184,
+  "all_replays_verified": 2800,
+  "risk_status_counts": {
+    "exact_global_model_count": 47226,
+    "approximate_cutoff": 28
+  },
+  "event_counts": {
+    "target_switch_candidate": 1013,
+    "learning_policy_failure": 1197,
+    "contested_target_candidate": 9488,
+    "B1_B2_disagreement": 67,
+    "draw": 98
+  },
+  "behavior_definitions": {
+    "contested_target_candidate": "both alive; current emitted/inferred target equals other actor last target and remains available",
+    "target_switch_candidate": "same actor changes target while both old and new targets remain available; learned target is inferred",
+    "B1_B2_disagreement": "different B1/B2 actions on same public observation, checked every fifth step",
+    "learning_policy_failure": "learning policy loses by final diamonds, regardless of survival",
+    "target_interpretation": "B1/B2 targets are explicit; L targets are post-hoc path attribution, not a learned target head"
+  },
+  "pairs": [
+    {
+      "policy": "B2",
+      "opponent": "B1",
+      "games": 400,
+      "independent_maps": 100,
+      "wins": 196,
+      "draws": 12,
+      "losses": 192,
+      "win_rate": 0.49,
+      "win_plus_half_draw": 0.505,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.5,
+        0.5125
+      ],
+      "mean_diamond_difference": 0.0375,
+      "map_bootstrap_95ci_diamond_difference": [
+        -0.005,
+        0.085
+      ],
+      "eliminations_policy": 157,
+      "eliminations_opponent": 158,
+      "timeouts": 0,
+      "mean_steps": 16.8475,
+      "policy_mean_decision_ms": 0.2936195962056639,
+      "opponent_mean_decision_ms": 0.3040040937517204
+    },
+    {
+      "policy": "L",
+      "opponent": "B1",
+      "games": 400,
+      "independent_maps": 100,
+      "wins": 188,
+      "draws": 11,
+      "losses": 201,
+      "win_rate": 0.47,
+      "win_plus_half_draw": 0.48375,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.4625,
+        0.50125
+      ],
+      "mean_diamond_difference": -0.0325,
+      "map_bootstrap_95ci_diamond_difference": [
+        -0.105,
+        0.0375
+      ],
+      "eliminations_policy": 162,
+      "eliminations_opponent": 159,
+      "timeouts": 0,
+      "mean_steps": 16.7975,
+      "policy_mean_decision_ms": 0.31292043496381555,
+      "opponent_mean_decision_ms": 0.2653936644773548
+    },
+    {
+      "policy": "L",
+      "opponent": "B2",
+      "games": 400,
+      "independent_maps": 100,
+      "wins": 187,
+      "draws": 11,
+      "losses": 202,
+      "win_rate": 0.4675,
+      "win_plus_half_draw": 0.48125,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.46,
+        0.49875
+      ],
+      "mean_diamond_difference": -0.07,
+      "map_bootstrap_95ci_diamond_difference": [
+        -0.1425,
+        0.0
+      ],
+      "eliminations_policy": 163,
+      "eliminations_opponent": 158,
+      "timeouts": 0,
+      "mean_steps": 16.825,
+      "policy_mean_decision_ms": 0.285245178577584,
+      "opponent_mean_decision_ms": 0.24502575670393842
+    },
+    {
+      "policy": "L_initial",
+      "opponent": "B1",
+      "games": 400,
+      "independent_maps": 100,
+      "wins": 185,
+      "draws": 18,
+      "losses": 197,
+      "win_rate": 0.4625,
+      "win_plus_half_draw": 0.485,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.46125,
+        0.5062812499999998
+      ],
+      "mean_diamond_difference": -0.01,
+      "map_bootstrap_95ci_diamond_difference": [
+        -0.1025,
+        0.0725
+      ],
+      "eliminations_policy": 157,
+      "eliminations_opponent": 155,
+      "timeouts": 0,
+      "mean_steps": 16.945,
+      "policy_mean_decision_ms": 0.31776512653699207,
+      "opponent_mean_decision_ms": 0.2750342308001413
+    },
+    {
+      "policy": "L_initial",
+      "opponent": "B2",
+      "games": 400,
+      "independent_maps": 100,
+      "wins": 184,
+      "draws": 18,
+      "losses": 198,
+      "win_rate": 0.46,
+      "win_plus_half_draw": 0.4825,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.45875,
+        0.505
+      ],
+      "mean_diamond_difference": -0.0375,
+      "map_bootstrap_95ci_diamond_difference": [
+        -0.1275,
+        0.04506249999999966
+      ],
+      "eliminations_policy": 157,
+      "eliminations_opponent": 155,
+      "timeouts": 0,
+      "mean_steps": 16.96,
+      "policy_mean_decision_ms": 0.28333649441663555,
+      "opponent_mean_decision_ms": 0.24076497929816973
+    },
+    {
+      "policy": "L_no_opponent",
+      "opponent": "B1",
+      "games": 400,
+      "independent_maps": 100,
+      "wins": 187,
+      "draws": 14,
+      "losses": 199,
+      "win_rate": 0.4675,
+      "win_plus_half_draw": 0.485,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.4675,
+        0.5025
+      ],
+      "mean_diamond_difference": -0.0025,
+      "map_bootstrap_95ci_diamond_difference": [
+        -0.06,
+        0.0575
+      ],
+      "eliminations_policy": 160,
+      "eliminations_opponent": 157,
+      "timeouts": 0,
+      "mean_steps": 16.885,
+      "policy_mean_decision_ms": 0.27607024936415414,
+      "opponent_mean_decision_ms": 0.24604810985932488
+    },
+    {
+      "policy": "L_no_opponent",
+      "opponent": "B2",
+      "games": 400,
+      "independent_maps": 100,
+      "wins": 186,
+      "draws": 14,
+      "losses": 200,
+      "win_rate": 0.465,
+      "win_plus_half_draw": 0.4825,
+      "map_bootstrap_95ci_win_plus_half_draw": [
+        0.465,
+        0.5
+      ],
+      "mean_diamond_difference": -0.04,
+      "map_bootstrap_95ci_diamond_difference": [
+        -0.105,
+        0.02
+      ],
+      "eliminations_policy": 161,
+      "eliminations_opponent": 156,
+      "timeouts": 0,
+      "mean_steps": 16.875,
+      "policy_mean_decision_ms": 0.2616383035750741,
+      "opponent_mean_decision_ms": 0.23859648966136188
+    }
+  ],
+  "cases": [
+    {
+      "kind": "target_switch_candidate",
+      "episode_id": "retest-m000-p0-s0-f0",
+      "step": 6,
+      "file": "cases/target_switch_candidate_1.json"
+    },
+    {
+      "kind": "target_switch_candidate",
+      "episode_id": "retest-m000-p0-s0-f1",
+      "step": 6,
+      "file": "cases/target_switch_candidate_2.json"
+    },
+    {
+      "kind": "target_switch_candidate",
+      "episode_id": "retest-m000-p0-s1-f0",
+      "step": 6,
+      "file": "cases/target_switch_candidate_3.json"
+    },
+    {
+      "kind": "learning_policy_failure",
+      "episode_id": "retest-m000-p1-s1-f0",
+      "step": 12,
+      "file": "cases/learning_policy_failure_1.json"
+    },
+    {
+      "kind": "learning_policy_failure",
+      "episode_id": "retest-m000-p1-s1-f1",
+      "step": 12,
+      "file": "cases/learning_policy_failure_2.json"
+    },
+    {
+      "kind": "learning_policy_failure",
+      "episode_id": "retest-m000-p2-s1-f0",
+      "step": 12,
+      "file": "cases/learning_policy_failure_3.json"
+    },
+    {
+      "kind": "contested_target_candidate",
+      "episode_id": "retest-m001-p0-s0-f0",
+      "step": 13,
+      "file": "cases/contested_target_candidate_1.json"
+    },
+    {
+      "kind": "contested_target_candidate",
+      "episode_id": "retest-m001-p0-s0-f0",
+      "step": 15,
+      "file": "cases/contested_target_candidate_2.json"
+    },
+    {
+      "kind": "contested_target_candidate",
+      "episode_id": "retest-m001-p0-s0-f0",
+      "step": 16,
+      "file": "cases/contested_target_candidate_3.json"
+    },
+    {
+      "kind": "B1_B2_disagreement",
+      "episode_id": "retest-m001-p0-s0-f1",
+      "step": 10,
+      "file": "cases/B1_B2_disagreement_1.json"
+    },
+    {
+      "kind": "B1_B2_disagreement",
+      "episode_id": "retest-m001-p1-s0-f1",
+      "step": 10,
+      "file": "cases/B1_B2_disagreement_2.json"
+    },
+    {
+      "kind": "B1_B2_disagreement",
+      "episode_id": "retest-m001-p2-s0-f1",
+      "step": 10,
+      "file": "cases/B1_B2_disagreement_3.json"
+    },
+    {
+      "kind": "draw",
+      "episode_id": "retest-m008-p3-s0-f0",
+      "step": 8,
+      "file": "cases/draw_1.json"
+    },
+    {
+      "kind": "draw",
+      "episode_id": "retest-m008-p4-s0-f0",
+      "step": 8,
+      "file": "cases/draw_2.json"
+    },
+    {
+      "kind": "draw",
+      "episode_id": "retest-m010-p0-s0-f0",
+      "step": 4,
+      "file": "cases/draw_3.json"
+    }
+  ],
+  "human_records": 0,
+  "model_sha256": {
+    "L": "0a3649d98d8ff3905b0629d8b5286e127dd96e8f5af25602e8feb0d49631807d",
+    "L_initial": "b1510e3e4d19650dd47fca4fc97e395bdc541a7075aa26a82506a9eda311693b",
+    "L_no_opponent": "acd34d00cde8dc3657f593f2d277f871022c75da76f0a4f5e8693e7d46c0c544"
+  }
+}

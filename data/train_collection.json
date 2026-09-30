@@ -1,0 +1,9 @@
+{
+  "games": 400,
+  "raw_states": 6781,
+  "unique_states": 5722,
+  "failures": 0,
+  "disagreements": 13,
+  "source": "heuristic_teacher_data",
+  "human_records": 0
+}

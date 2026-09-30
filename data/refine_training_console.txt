@@ -1,0 +1,31 @@
+train_corrections: 25/200 maps, 330 states
+train_corrections: 50/200 maps, 752 states
+train_corrections: 75/200 maps, 1133 states
+train_corrections: 100/200 maps, 1510 states
+train_corrections: 125/200 maps, 1872 states
+train_corrections: 150/200 maps, 2322 states
+train_corrections: 175/200 maps, 2742 states
+train_corrections: 200/200 maps, 3217 states
+L_final.npz: epoch 1/20, loss 0.2369, val acc 0.9136
+L_final.npz: epoch 5/20, loss 0.2059, val acc 0.9349
+L_final.npz: epoch 10/20, loss 0.1763, val acc 0.9394
+L_final.npz: epoch 15/20, loss 0.1548, val acc 0.9416
+L_final.npz: epoch 20/20, loss 0.1402, val acc 0.9405
+{"file": "L_final.npz", "sha256": "0a3649d98d8ff3905b0629d8b5286e127dd96e8f5af25602e8feb0d49631807d", "seed": 20260930, "method": "supervised behavior cloning", "teacher": "B2-v1", "train_examples": 8939, "validation_examples": 891, "epochs": 20, "optimizer_steps": 700, "elapsed_seconds": 0.4091766999990796, "no_opponent": false, "initial_weights": true, "final": {"epoch": 20, "train_loss": 0.1401529312133789, "train_accuracy": 0.9450721557221166, "validation_loss": 0.15604650974273682, "validation_accuracy": 0.9405162738496072, "optimizer_steps": 700}, "selection": "minimum validation loss", "selected_epoch": 20, "selected": {"epoch": 20, "train_loss": 0.1401529312133789, "train_accuracy": 0.9450721557221166, "validation_loss": 0.15604650974273682, "validation_accuracy": 0.9405162738496072, "optimizer_steps": 700}, "parameter_count": 929}
+L_no_opponent_initial.npz: epoch 1/45, loss 1.0481, val acc 0.7834
+L_no_opponent_initial.npz: epoch 5/45, loss 0.5464, val acc 0.7935
+L_no_opponent_initial.npz: epoch 10/45, loss 0.4661, val acc 0.8137
+L_no_opponent_initial.npz: epoch 15/45, loss 0.4219, val acc 0.8193
+L_no_opponent_initial.npz: epoch 20/45, loss 0.3820, val acc 0.8272
+L_no_opponent_initial.npz: epoch 25/45, loss 0.3476, val acc 0.8373
+L_no_opponent_initial.npz: epoch 30/45, loss 0.3191, val acc 0.8664
+L_no_opponent_initial.npz: epoch 35/45, loss 0.2926, val acc 0.8934
+L_no_opponent_initial.npz: epoch 40/45, loss 0.2656, val acc 0.8979
+L_no_opponent_initial.npz: epoch 45/45, loss 0.2404, val acc 0.9102
+{"file": "L_no_opponent_initial.npz", "sha256": "22a73c41d6a2979647b78fb173ac6b347e5f00b5734bd6430ac331ee78ef24b7", "seed": 20260930, "method": "supervised behavior cloning", "teacher": "B2-v1", "train_examples": 5722, "validation_examples": 891, "epochs": 45, "optimizer_steps": 1035, "elapsed_seconds": 0.6126918999980262, "no_opponent": true, "initial_weights": false, "final": {"epoch": 45, "train_loss": 0.24035781621932983, "train_accuracy": 0.9124432016777351, "validation_loss": 0.23282593488693237, "validation_accuracy": 0.9102132435465768, "optimizer_steps": 1035}, "selection": "minimum validation loss", "selected_epoch": 45, "selected": {"epoch": 45, "train_loss": 0.24035781621932983, "train_accuracy": 0.9124432016777351, "validation_loss": 0.23282593488693237, "validation_accuracy": 0.9102132435465768, "optimizer_steps": 1035}, "parameter_count": 929}
+L_no_opponent.npz: epoch 1/20, loss 0.2569, val acc 0.9147
+L_no_opponent.npz: epoch 5/20, loss 0.2260, val acc 0.9192
+L_no_opponent.npz: epoch 10/20, loss 0.1968, val acc 0.9226
+L_no_opponent.npz: epoch 15/20, loss 0.1766, val acc 0.9293
+L_no_opponent.npz: epoch 20/20, loss 0.1619, val acc 0.9304
+{"file": "L_no_opponent.npz", "sha256": "acd34d00cde8dc3657f593f2d277f871022c75da76f0a4f5e8693e7d46c0c544", "seed": 20260930, "method": "supervised behavior cloning", "teacher": "B2-v1", "train_examples": 8939, "validation_examples": 891, "epochs": 20, "optimizer_steps": 700, "elapsed_seconds": 0.40716880000036326, "no_opponent": true, "initial_weights": true, "final": {"epoch": 20, "train_loss": 0.16194245219230652, "train_accuracy": 0.9394786888913749, "validation_loss": 0.15480300784111023, "validation_accuracy": 0.9304152637485971, "optimizer_steps": 700}, "selection": "minimum validation loss", "selected_epoch": 20, "selected": {"epoch": 20, "train_loss": 0.16194245219230652, "train_accuracy": 0.9394786888913749, "validation_loss": 0.15480300784111023, "validation_accuracy": 0.9304152637485971, "optimizer_steps": 700}, "parameter_count": 929}

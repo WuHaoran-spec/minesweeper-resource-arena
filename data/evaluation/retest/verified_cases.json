@@ -1,0 +1,298 @@
+[
+  {
+    "kind": "explicit_target_switch",
+    "episode_id": "retest-m000-p0-s0-f0",
+    "step": 7,
+    "actor": 1,
+    "positions": [
+      [
+        1,
+        0
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    "scores": [
+      0,
+      1
+    ],
+    "diamonds": [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "action": "right",
+    "risk_of_destination": 0.0,
+    "risk_status": "exact_global_model_count",
+    "target": [
+      3,
+      7
+    ],
+    "previous_target": [
+      3,
+      5
+    ],
+    "description": "同一行动者目标从[3, 5]转为[3, 7]，两个钻石当时均未被领取。",
+    "feedback": {
+      "collected": false,
+      "exploded": false,
+      "score_delta": 0
+    },
+    "result": {
+      "done": true,
+      "winner": 1,
+      "reason": "diamonds_collected",
+      "scores": [
+        0,
+        3
+      ]
+    },
+    "verification": "logical predicate checked against actual logged public state; full replay verified during evaluation",
+    "human_review": false,
+    "public_replay_file": "verified_cases/explicit_target_switch.json"
+  },
+  {
+    "kind": "learned_failure",
+    "episode_id": "retest-m000-p1-s1-f0",
+    "step": 2,
+    "actor": 1,
+    "positions": [
+      [
+        7,
+        8
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "scores": [
+      0,
+      0
+    ],
+    "diamonds": [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        7,
+        6
+      ]
+    ],
+    "action": "down",
+    "risk_of_destination": 0.6666666666666666,
+    "risk_status": "exact_global_model_count",
+    "target": [
+      3,
+      5
+    ],
+    "previous_target": null,
+    "description": "最终L输局，且该步踩雷；踩雷前风险只是后验/估计，不是读取真值。",
+    "feedback": {
+      "collected": false,
+      "exploded": true,
+      "score_delta": 0
+    },
+    "result": {
+      "done": true,
+      "winner": 0,
+      "reason": "diamonds_collected",
+      "scores": [
+        3,
+        0
+      ]
+    },
+    "verification": "logical predicate checked against actual logged public state; full replay verified during evaluation",
+    "human_review": false,
+    "public_replay_file": "verified_cases/learned_failure.json"
+  },
+  {
+    "kind": "algorithm_disagreement",
+    "episode_id": "retest-m001-p0-s0-f0",
+    "step": 10,
+    "actor": 1,
+    "positions": [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        8
+      ]
+    ],
+    "scores": [
+      0,
+      0
+    ],
+    "diamonds": [
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "action": "left",
+    "risk_of_destination": 0.0,
+    "risk_status": "exact_global_model_count",
+    "target": [
+      4,
+      6
+    ],
+    "previous_target": [
+      4,
+      6
+    ],
+    "description": "同一公开观察：B1=up，B2=left。",
+    "feedback": {
+      "collected": false,
+      "exploded": false,
+      "score_delta": 0
+    },
+    "result": {
+      "done": true,
+      "winner": 1,
+      "reason": "diamonds_collected",
+      "scores": [
+        0,
+        3
+      ]
+    },
+    "verification": "logical predicate checked against actual logged public state; full replay verified during evaluation",
+    "human_review": false,
+    "public_replay_file": "verified_cases/algorithm_disagreement.json"
+  },
+  {
+    "kind": "explicit_contest",
+    "episode_id": "retest-m001-p0-s0-f0",
+    "step": 14,
+    "actor": 1,
+    "positions": [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "scores": [
+      0,
+      1
+    ],
+    "diamonds": [
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "action": "left",
+    "risk_of_destination": 0.0,
+    "risk_status": "exact_global_model_count",
+    "target": [
+      4,
+      5
+    ],
+    "previous_target": [
+      4,
+      6
+    ],
+    "description": "当前规则策略目标与另一方上次显式输出目标相同，双方仍存活。",
+    "feedback": {
+      "collected": true,
+      "exploded": false,
+      "score_delta": 1
+    },
+    "result": {
+      "done": true,
+      "winner": 1,
+      "reason": "diamonds_collected",
+      "scores": [
+        0,
+        3
+      ]
+    },
+    "verification": "logical predicate checked against actual logged public state; full replay verified during evaluation",
+    "human_review": false,
+    "public_replay_file": "verified_cases/explicit_contest.json"
+  },
+  {
+    "kind": "approximate_risk",
+    "episode_id": "retest-m071-p0-s0-f0",
+    "step": 18,
+    "actor": 1,
+    "positions": [
+      [
+        4,
+        1
+      ],
+      [
+        6,
+        2
+      ]
+    ],
+    "scores": [
+      1,
+      1
+    ],
+    "diamonds": [
+      [
+        6,
+        0
+      ]
+    ],
+    "action": "left",
+    "risk_of_destination": 0.24402621866211602,
+    "risk_status": "approximate_cutoff",
+    "target": [
+      6,
+      0
+    ],
+    "previous_target": [
+      6,
+      0
+    ],
+    "description": "模型计数达到预算，明确标记近似；不声称精确概率。",
+    "feedback": {
+      "collected": false,
+      "exploded": false,
+      "score_delta": 0
+    },
+    "result": {
+      "done": true,
+      "winner": 1,
+      "reason": "diamonds_collected",
+      "scores": [
+        1,
+        2
+      ]
+    },
+    "verification": "logical predicate checked against actual logged public state; full replay verified during evaluation",
+    "human_review": false,
+    "public_replay_file": "verified_cases/approximate_risk.json"
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-30",
+  "platform": "Windows",
+  "python_unit_tests_passed": 52,
+  "replay_malformed_cases_rejected": 11,
+  "human_records": 0,
+  "source": "browser_automation",
+  "trained_model_sha256": "0a3649d98d8ff3905b0629d8b5286e127dd96e8f5af25602e8feb0d49631807d",
+  "checks": [
+    {
+      "check": "keyboard_arena_move",
+      "passed": true,
+      "detail": "ArrowRight changed 0 to 1 total actions; B2 step changed 1 to 2."
+    },
+    {
+      "check": "pause_single_step",
+      "passed": true,
+      "detail": "AI single step returned exact_global_model_count and explicit target while paused."
+    },
+    {
+      "check": "snapshot_restore",
+      "passed": true,
+      "detail": "Restored from action 3 to saved action 2; source counterfactual_replay."
+    },
+    {
+      "check": "export_replay",
+      "passed": true,
+      "detail": "Export button created public JSON; entered replay frame 0."
+    },
+    {
+      "check": "classic_keyboard_flags_zero_and_end",
+      "passed": true,
+      "detail": "F added/removed flag; opening (1,1) expanded to 55 safe cells, next reveal to 56, then mine loss. All browser automation."
+    },
+    {
+      "check": "new_weight_in_browser",
+      "passed": true,
+      "detail": "L-v1 loaded final trained weights; actual logits down=-10.241851,right=-13.585143,wait=-31.959757 at first public state; stepped to 3 with heatmap."
+    },
+    {
+      "check": "L_vs_B2_complete",
+      "passed": true,
+      "counter": "12 / 200 步",
+      "result": "玩家 B 获胜 · 钻石取完"
+    },
+    {
+      "check": "attached_replay_import",
+      "passed": true,
+      "detail": "User attachment contains exactly one public frame at step 5; pasted JSON imported and labeled counterfactual_replay. No attachment was published."
+    },
+    {
+      "check": "full_game_public_replay",
+      "passed": true,
+      "detail": "L/B2 exported 13 frames; pasted JSON loaded frame0/12, slider End reached12/12 with same B win."
+    },
+    {
+      "check": "human_input_vs_B2_complete",
+      "passed": true,
+      "qaMoves": 10,
+      "counter": "11 / 200 步",
+      "result": "玩家 A 获胜 · no_survivors"
+    },
+    {
+      "check": "human_input_vs_L_complete",
+      "passed": true,
+      "qaMoves": 7,
+      "counter": "17 / 200 步",
+      "result": "玩家 B 获胜 · 钻石取完"
+    }
+  ],
+  "limitations": [
+    "Native file chooser timed out in this automation host; JSON paste import was verified instead.",
+    "No screen-recorded video and no human usability study."
+  ]
+}

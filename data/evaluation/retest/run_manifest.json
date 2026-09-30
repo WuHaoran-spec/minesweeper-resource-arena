@@ -1,0 +1,44 @@
+{
+  "stage": "retest",
+  "base_map_count": 100,
+  "split": "test_retest",
+  "pairs": [
+    [
+      "B1",
+      "B2"
+    ],
+    [
+      "B1",
+      "L"
+    ],
+    [
+      "B2",
+      "L"
+    ],
+    [
+      "B1",
+      "L_initial"
+    ],
+    [
+      "B2",
+      "L_initial"
+    ],
+    [
+      "B1",
+      "L_no_opponent"
+    ],
+    [
+      "B2",
+      "L_no_opponent"
+    ]
+  ],
+  "model_sha256": {
+    "L": "0a3649d98d8ff3905b0629d8b5286e127dd96e8f5af25602e8feb0d49631807d",
+    "L_initial": "b1510e3e4d19650dd47fca4fc97e395bdc541a7075aa26a82506a9eda311693b",
+    "L_no_opponent": "acd34d00cde8dc3657f593f2d277f871022c75da76f0a4f5e8693e7d46c0c544"
+  },
+  "protocol_sha256": "5fe6715dee2ae44ec48205e2533ede3df84df0c8d2ab415f23dbc90fc01ff731",
+  "source": "automated_synthetic_policy_matches",
+  "human_records": 0,
+  "timing": "perf_counter wall time; shared warm process/cache, includes risk and features"
+}

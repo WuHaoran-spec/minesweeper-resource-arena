@@ -1,0 +1,57 @@
+test_200_total_actions_including_wait (test_env.ArenaRulesTests.test_200_total_actions_including_wait) ... ok
+test_arena_does_not_expand_zero_region (test_env.ArenaRulesTests.test_arena_does_not_expand_zero_region) ... ok
+test_both_eliminated_draw (test_env.ArenaRulesTests.test_both_eliminated_draw) ... ok
+test_collect_only_on_arrival_and_only_once (test_env.ArenaRulesTests.test_collect_only_on_arrival_and_only_once) ... ok
+test_elimination_skips_player_and_preserves_score (test_env.ArenaRulesTests.test_elimination_skips_player_and_preserves_score) ... ok
+test_fixed_count_clues_and_safe_conditions (test_env.ArenaRulesTests.test_fixed_count_clues_and_safe_conditions) ... ok
+test_frozen_config_matches_authoritative_constants (test_env.ArenaRulesTests.test_frozen_config_matches_authoritative_constants) ... ok
+test_invalid_input_is_atomic (test_env.ArenaRulesTests.test_invalid_input_is_atomic) ... ok
+test_last_resource_ends_game (test_env.ArenaRulesTests.test_last_resource_ends_game) ... ok
+test_map_is_identical_under_seat_and_first_swap (test_env.ArenaRulesTests.test_map_is_identical_under_seat_and_first_swap) ... ok
+test_observation_and_replay_are_detached_and_private (test_env.ArenaRulesTests.test_observation_and_replay_are_detached_and_private) ... ok
+test_public_exploded_mine_is_excluded (test_env.ArenaRulesTests.test_public_exploded_mine_is_excluded) ... ok
+test_random_legal_actions_terminate_and_conserve_resources (test_env.ArenaRulesTests.test_random_legal_actions_terminate_and_conserve_resources) ... ok
+test_reset_rotates_id_and_clears_old_actions (test_env.ArenaRulesTests.test_reset_rotates_id_and_clears_old_actions) ... ok
+test_score_is_the_only_win_criterion (test_env.ArenaRulesTests.test_score_is_the_only_win_criterion) ... ok
+test_shared_occupancy_is_permitted (test_env.ArenaRulesTests.test_shared_occupancy_is_permitted) ... ok
+test_snapshot_branch_and_replay_are_consistent (test_env.ArenaRulesTests.test_snapshot_branch_and_replay_are_consistent) ... ok
+test_unknown_mines_do_not_change_legal_mask (test_env.ArenaRulesTests.test_unknown_mines_do_not_change_legal_mask) ... ok
+test_fixed_mines_and_no_first_click_protection (test_env.ClassicRulesTests.test_fixed_mines_and_no_first_click_protection) ... ok
+test_flag_is_only_a_mark (test_env.ClassicRulesTests.test_flag_is_only_a_mark) ... ok
+test_no_hidden_map_in_classic_observation (test_env.ClassicRulesTests.test_no_hidden_map_in_classic_observation) ... ok
+test_zero_region_and_win (test_env.ClassicRulesTests.test_zero_region_and_win) ... ok
+test_exact_posterior_matches_exhaustive_uniform_maps (test_learning.RiskAndPolicyTests.test_exact_posterior_matches_exhaustive_uniform_maps) ... ok
+test_no_opponent_features_invariant_to_opponent_position (test_learning.RiskAndPolicyTests.test_no_opponent_features_invariant_to_opponent_position) ... ok
+test_policies_make_only_public_legal_choices (test_learning.RiskAndPolicyTests.test_policies_make_only_public_legal_choices) ... ok
+test_public_exploded_mine_remains_one (test_learning.RiskAndPolicyTests.test_public_exploded_mine_remains_one) ... ok
+test_saved_model_loaded_and_legal (test_learning.RiskAndPolicyTests.test_saved_model_loaded_and_legal) ... ok
+test_b1_action_and_ablation_features_ignore_opponent_fields (test_policies.TrainedPolicyContractTests.test_b1_action_and_ablation_features_ignore_opponent_fields) ... ok
+test_missing_weight_never_silently_uses_heuristic (test_policies.TrainedPolicyContractTests.test_missing_weight_never_silently_uses_heuristic) ... ok
+test_models_play_complete_legal_games (test_policies.TrainedPolicyContractTests.test_models_play_complete_legal_games) ... ok
+test_shipped_weights_match_actual_training_logs (test_policies.TrainedPolicyContractTests.test_shipped_weights_match_actual_training_logs) ... ok
+test_600_random_public_states_match_complete_enumeration (test_risk.IndependentRiskTests.test_600_random_public_states_match_complete_enumeration) ... ok
+test_disconnected_components_receive_global_weight (test_risk.IndependentRiskTests.test_disconnected_components_receive_global_weight) ... ok
+test_impossible_observations_are_rejected (test_risk.IndependentRiskTests.test_impossible_observations_are_rejected) ... ok
+test_large_frontier_cutoff_is_never_exact (test_risk.IndependentRiskTests.test_large_frontier_cutoff_is_never_exact) ... ok
+test_public_safety_and_flags_have_different_meanings (test_risk.IndependentRiskTests.test_public_safety_and_flags_have_different_meanings) ... ok
+test_returned_probability_list_does_not_mutate_cache (test_risk.IndependentRiskTests.test_returned_probability_list_does_not_mutate_cache) ... ok
+test_b1_and_no_opponent_features_ignore_opponent_position_and_score (test_server.RiskBoundaryTests.test_b1_and_no_opponent_features_ignore_opponent_position_and_score) ... ok
+test_small_exact_posteriors_against_independent_enumeration (test_server.RiskBoundaryTests.test_small_exact_posteriors_against_independent_enumeration) ... ok
+test_bad_restore_is_atomic (test_server.SessionTests.test_bad_restore_is_atomic) ... ok
+test_classic_flag_and_snapshot_contract (test_server.SessionTests.test_classic_flag_and_snapshot_contract) ... ok
+test_controller_enforcement_and_illegal_action (test_server.SessionTests.test_controller_enforcement_and_illegal_action) ... ok
+test_flag_is_not_a_risk_constraint (test_server.SessionTests.test_flag_is_not_a_risk_constraint) ... ok
+test_invalid_reset_preserves_entire_current_session (test_server.SessionTests.test_invalid_reset_preserves_entire_current_session) ... ok
+test_old_revision_is_rejected_for_action_and_snapshot (test_server.SessionTests.test_old_revision_is_rejected_for_action_and_snapshot) ... ok
+test_pause_blocks_human_action_and_ai_auto_but_allows_single (test_server.SessionTests.test_pause_blocks_human_action_and_ai_auto_but_allows_single) ... ok
+test_policy_call_receives_public_observation_only (test_server.SessionTests.test_policy_call_receives_public_observation_only) ... ok
+test_public_json_excludes_private_truth_and_marks_automation (test_server.SessionTests.test_public_json_excludes_private_truth_and_marks_automation) ... ok
+test_reset_invalidates_epoch_and_old_requests_are_atomic (test_server.SessionTests.test_reset_invalidates_epoch_and_old_requests_are_atomic) ... ok
+test_return_values_cannot_mutate_session (test_server.SessionTests.test_return_values_cannot_mutate_session) ... ok
+test_snapshot_memory_cap_evicts_oldest (test_server.SessionTests.test_snapshot_memory_cap_evicts_oldest) ... ok
+test_snapshot_restores_state_flags_and_labels_branch (test_server.SessionTests.test_snapshot_restores_state_flags_and_labels_branch) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 0.476s
+
+OK
