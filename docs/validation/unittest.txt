@@ -1,3 +1,23 @@
+test_b1_and_no_opponent_features_are_invariant (test_challenge_policy.ChallengePolicyTests.test_b1_and_no_opponent_features_are_invariant) ... ok
+test_fewer_than_three_remaining_resources (test_challenge_policy.ChallengePolicyTests.test_fewer_than_three_remaining_resources) ... ok
+test_real_challenge_checkpoint_loaded (test_challenge_policy.ChallengePolicyTests.test_real_challenge_checkpoint_loaded) ... ok
+test_rectangular_features_and_all_resources (test_challenge_policy.ChallengePolicyTests.test_rectangular_features_and_all_resources) ... ok
+test_resource_input_order_is_not_a_hidden_feature (test_challenge_policy.ChallengePolicyTests.test_resource_input_order_is_not_a_hidden_feature) ... ok
+test_classic_expert_corner_and_chord_route (test_challenge_server.ChallengeSessionTests.test_classic_expert_corner_and_chord_route) ... ok
+test_expert_reset_flag_bounds_and_snapshot_preserve_dimensions (test_challenge_server.ChallengeSessionTests.test_expert_reset_flag_bounds_and_snapshot_preserve_dimensions) ... ok
+test_search_policy_source_is_not_teacher_or_human (test_challenge_server.ChallengeSessionTests.test_search_policy_source_is_not_teacher_or_human) ... ok
+test_hidden_mine_differences_never_change_public_mask (test_engine_v2.ArenaChallengeTests.test_hidden_mine_differences_never_change_public_mask) ... ok
+test_machine_config_matches_runtime_presets (test_engine_v2.ArenaChallengeTests.test_machine_config_matches_runtime_presets) ... ok
+test_presets_rectangular_counts_and_known_prior (test_engine_v2.ArenaChallengeTests.test_presets_rectangular_counts_and_known_prior) ... ok
+test_rectangular_corners_and_edges_never_wrap (test_engine_v2.ArenaChallengeTests.test_rectangular_corners_and_edges_never_wrap) ... ok
+test_respawn_life_loss_and_elimination_keep_score_and_map (test_engine_v2.ArenaChallengeTests.test_respawn_life_loss_and_elimination_keep_score_and_map) ... ok
+test_respawn_when_opponent_dead_does_not_skip_live_actor (test_engine_v2.ArenaChallengeTests.test_respawn_when_opponent_dead_does_not_skip_live_actor) ... ok
+test_swap_preserves_base_map_and_reset_switches_preset_defaults (test_engine_v2.ArenaChallengeTests.test_swap_preserves_base_map_and_reset_switches_preset_defaults) ... ok
+test_v2_snapshot_and_public_replay_restore_full_configuration (test_engine_v2.ArenaChallengeTests.test_v2_snapshot_and_public_replay_restore_full_configuration) ... ok
+test_chord_correct_flags_and_incorrect_flags (test_engine_v2.ClassicChallengeTests.test_chord_correct_flags_and_incorrect_flags) ... ok
+test_chord_mismatch_is_atomic_and_flags_do_not_move_mines (test_engine_v2.ClassicChallengeTests.test_chord_mismatch_is_atomic_and_flags_do_not_move_mines) ... ok
+test_deferred_first_click_and_neighbor_safety_on_rectangle (test_engine_v2.ClassicChallengeTests.test_deferred_first_click_and_neighbor_safety_on_rectangle) ... ok
+test_rectangular_flood_win_and_legacy_terminal_compatibility (test_engine_v2.ClassicChallengeTests.test_rectangular_flood_win_and_legacy_terminal_compatibility) ... ok
 test_200_total_actions_including_wait (test_env.ArenaRulesTests.test_200_total_actions_including_wait) ... ok
 test_arena_does_not_expand_zero_region (test_env.ArenaRulesTests.test_arena_does_not_expand_zero_region) ... ok
 test_both_eliminated_draw (test_env.ArenaRulesTests.test_both_eliminated_draw) ... ok
@@ -20,6 +40,11 @@ test_fixed_mines_and_no_first_click_protection (test_env.ClassicRulesTests.test_
 test_flag_is_only_a_mark (test_env.ClassicRulesTests.test_flag_is_only_a_mark) ... ok
 test_no_hidden_map_in_classic_observation (test_env.ClassicRulesTests.test_no_hidden_map_in_classic_observation) ... ok
 test_zero_region_and_win (test_env.ClassicRulesTests.test_zero_region_and_win) ... ok
+test_decision_requires_public_observation_and_no_teacher_action (test_exploration.ExplorationPolicyTests.test_decision_requires_public_observation_and_no_teacher_action) ... ok
+test_invalid_parameters_and_terminal_refused (test_exploration.ExplorationPolicyTests.test_invalid_parameters_and_terminal_refused) ... ok
+test_legal_mask_and_out_of_distribution_diagnostic (test_exploration.ExplorationPolicyTests.test_legal_mask_and_out_of_distribution_diagnostic) ... ok
+test_private_nested_fields_refused (test_exploration.ExplorationPolicyTests.test_private_nested_fields_refused) ... ok
+test_terminal_objective_has_no_step_reward (test_exploration.ExplorationPolicyTests.test_terminal_objective_has_no_step_reward) ... ok
 test_exact_posterior_matches_exhaustive_uniform_maps (test_learning.RiskAndPolicyTests.test_exact_posterior_matches_exhaustive_uniform_maps) ... ok
 test_no_opponent_features_invariant_to_opponent_position (test_learning.RiskAndPolicyTests.test_no_opponent_features_invariant_to_opponent_position) ... ok
 test_policies_make_only_public_legal_choices (test_learning.RiskAndPolicyTests.test_policies_make_only_public_legal_choices) ... ok
@@ -34,7 +59,11 @@ test_disconnected_components_receive_global_weight (test_risk.IndependentRiskTes
 test_impossible_observations_are_rejected (test_risk.IndependentRiskTests.test_impossible_observations_are_rejected) ... ok
 test_large_frontier_cutoff_is_never_exact (test_risk.IndependentRiskTests.test_large_frontier_cutoff_is_never_exact) ... ok
 test_public_safety_and_flags_have_different_meanings (test_risk.IndependentRiskTests.test_public_safety_and_flags_have_different_meanings) ... ok
+test_rectangular_marginals_match_independent_enumeration (test_risk.IndependentRiskTests.test_rectangular_marginals_match_independent_enumeration) ... ok
 test_returned_probability_list_does_not_mutate_cache (test_risk.IndependentRiskTests.test_returned_probability_list_does_not_mutate_cache) ... ok
+test_awkward_frontier_stops_at_deterministic_comparison_budget (test_risk_budget.LargeFrontierBudgetTests.test_awkward_frontier_stops_at_deterministic_comparison_budget) ... ok
+test_exhausted_optional_closure_can_still_have_exact_posterior (test_risk_budget.LargeFrontierBudgetTests.test_exhausted_optional_closure_can_still_have_exact_posterior) ... ok
+test_legacy_diagnostics_do_not_gain_new_fields (test_risk_budget.LargeFrontierBudgetTests.test_legacy_diagnostics_do_not_gain_new_fields) ... ok
 test_b1_and_no_opponent_features_ignore_opponent_position_and_score (test_server.RiskBoundaryTests.test_b1_and_no_opponent_features_ignore_opponent_position_and_score) ... ok
 test_small_exact_posteriors_against_independent_enumeration (test_server.RiskBoundaryTests.test_small_exact_posteriors_against_independent_enumeration) ... ok
 test_bad_restore_is_atomic (test_server.SessionTests.test_bad_restore_is_atomic) ... ok
@@ -52,6 +81,6 @@ test_snapshot_memory_cap_evicts_oldest (test_server.SessionTests.test_snapshot_m
 test_snapshot_restores_state_flags_and_labels_branch (test_server.SessionTests.test_snapshot_restores_state_flags_and_labels_branch) ... ok
 
 ----------------------------------------------------------------------
-Ran 52 tests in 0.476s
+Ran 81 tests in 0.688s
 
 OK

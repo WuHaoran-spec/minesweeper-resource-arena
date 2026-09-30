@@ -61,11 +61,25 @@ class Audit:
             self.literals = source.get('literals', [])
             self.patterns.extend(('private_deny_pattern', re.compile(p)) for p in source.get('patterns', []))
         if map_manifest:
-            source = json.loads(Path(map_manifest).read_text(encoding='utf-8-sig'))
-            self.private_map_seeds = {int(seed) for values in source['splits'].values() for seed in values}
+            manifests = map_manifest if isinstance(map_manifest, (list, tuple)) else [map_manifest]
+            def collect_seeds(node):
+                if isinstance(node, dict):
+                    for child in node.values():
+                        collect_seeds(child)
+                elif isinstance(node, list):
+                    for seed in node:
+                        if type(seed) is not int:
+                            raise ValueError('Private map split must contain integer seeds')
+                        self.private_map_seeds.add(seed)
+                else:
+                    raise ValueError('Unsupported private map split structure')
+            for manifest in manifests:
+                source = json.loads(Path(manifest).read_text(encoding='utf-8-sig'))
+                collect_seeds(source['splits'])
             self.private_map_seed_text = {str(seed) for seed in self.private_map_seeds}
             lengths = [len(seed) for seed in self.private_map_seed_text]
-            self.map_seed_pattern = re.compile(r'(?<![0-9])[0-9]{' + str(min(lengths)) + ',' + str(max(lengths)) + r'}(?![0-9])')
+            if lengths:
+                self.map_seed_pattern = re.compile(r'(?<![0-9])[0-9]{' + str(min(lengths)) + ',' + str(max(lengths)) + r'}(?![0-9])')
 
     def finding(self, location, category):
         value = {'location': location, 'category': category}
@@ -288,7 +302,7 @@ def main():
     parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument('--report', type=Path, required=True)
     parser.add_argument('--denylist', type=Path)
-    parser.add_argument('--map-manifest', type=Path, help='Private frozen experiment manifest outside the repository')
+    parser.add_argument('--map-manifest', type=Path, action='append', help='Private frozen manifest; repeat for legacy and challenge maps')
     parser.add_argument('--git-index', action='store_true')
     parser.add_argument('--git-history', action='store_true')
     args = parser.parse_args()
@@ -296,7 +310,7 @@ def main():
         parser.error('Audit report must be outside the public repository')
     if args.denylist and args.denylist.resolve().is_relative_to(args.root.resolve()):
         parser.error('Private denylist must be outside the public repository')
-    if args.map_manifest and args.map_manifest.resolve().is_relative_to(args.root.resolve()):
+    if args.map_manifest and any(path.resolve().is_relative_to(args.root.resolve()) for path in args.map_manifest):
         parser.error('Private map manifest must be outside the public repository')
     audit = Audit(args.root, args.denylist, args.map_manifest)
     audit.worktree()

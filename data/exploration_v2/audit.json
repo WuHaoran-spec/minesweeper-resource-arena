@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "reexecuted_games": 360,
+  "reexecuted_steps": 93260,
+  "stage_games": {
+    "search": 256,
+    "validation": 40,
+    "test": 64
+  },
+  "outcomes_player_1": {
+    "0": 304,
+    "1": 25,
+    "draw": 31
+  },
+  "retained_timeouts": 75,
+  "sampled_exploration_actions": 3059,
+  "candidate_risk_statuses": {
+    "exact_global_model_count": 49502,
+    "approximate_cutoff": 41
+  },
+  "independent_new_maps": 12,
+  "earlier_boards_checked_for_geometric_duplicates": 714,
+  "selection_recomputed_from_validation_only": true,
+  "frozen_test_hashes_match": true,
+  "public_records_private_truth_check": "passed",
+  "scope": "Full state/action/feedback/outcome replay, public metadata and selection checks; no strategic optimality claim"
+}

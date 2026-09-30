@@ -1,0 +1,46 @@
+{
+  "raw_transitions": 10894,
+  "teacher_disagreements": 1707,
+  "games": 80,
+  "learner_losses": 25,
+  "draws": 4,
+  "timeouts": 2,
+  "selected_states": 4463,
+  "risk_status_counts": {
+    "exact_global_model_count": 10609,
+    "approximate_cutoff": 285
+  },
+  "game_step_quantiles": {
+    "0": 41.0,
+    "0.1": 73.9,
+    "0.25": 87.75,
+    "0.5": 115.5,
+    "0.75": 150.5,
+    "0.9": 172.30000000000013,
+    "1": 800.0
+  },
+  "step_quantiles_by_preset": {
+    "intermediate": {
+      "0": 41.0,
+      "0.1": 53.9,
+      "0.25": 75.0,
+      "0.5": 92.5,
+      "0.75": 109.5,
+      "0.9": 126.80000000000003,
+      "1": 800.0
+    },
+    "expert": {
+      "0": 75.0,
+      "0.1": 109.0,
+      "0.25": 124.5,
+      "0.5": 143.0,
+      "0.75": 163.0,
+      "0.9": 192.2,
+      "1": 283.0
+    }
+  },
+  "elapsed_seconds": 46.49629420000565,
+  "all_replays_verified": 80,
+  "features_sha256": "dae5aaf3f46425a259fafc01506814f120bcc69af6901a357889ac620573242f",
+  "human_records": 0
+}

@@ -1,0 +1,6274 @@
+[
+  {
+    "generation": 0,
+    "candidate": 0,
+    "parameter_id": "g0-c0",
+    "parameters": [
+      -2.8027950275268307,
+      0.5830679448136848,
+      -0.5974025026070975,
+      -0.777689881471402,
+      -0.4401693698922099,
+      1.3467070237356942,
+      -0.8672344481647074,
+      0.2308874778199001
+    ],
+    "parameter_sha256": "fd4abe5dcad815dff843e16c85a1ddaeeded8f69e7117e8f510617bce4e7f9c5",
+    "complete": true,
+    "mean_terminal_objective": 0.008928571428571425,
+    "games": [
+      {
+        "episode_id": "g0-c0-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "fd4abe5dcad815dff843e16c85a1ddaeeded8f69e7117e8f510617bce4e7f9c5",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.10219190000498202
+      },
+      {
+        "episode_id": "g0-c0-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "fd4abe5dcad815dff843e16c85a1ddaeeded8f69e7117e8f510617bce4e7f9c5",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.0798376000020653
+      },
+      {
+        "episode_id": "g0-c0-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "fd4abe5dcad815dff843e16c85a1ddaeeded8f69e7117e8f510617bce4e7f9c5",
+        "winner": 1,
+        "scores": [
+          0,
+          2
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0714285714285714,
+        "elapsed_seconds": 0.5855537999959779
+      },
+      {
+        "episode_id": "g0-c0-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "fd4abe5dcad815dff843e16c85a1ddaeeded8f69e7117e8f510617bce4e7f9c5",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.21460189999925205
+      },
+      {
+        "episode_id": "g0-c0-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "fd4abe5dcad815dff843e16c85a1ddaeeded8f69e7117e8f510617bce4e7f9c5",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          1
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.21111430000019027
+      },
+      {
+        "episode_id": "g0-c0-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "fd4abe5dcad815dff843e16c85a1ddaeeded8f69e7117e8f510617bce4e7f9c5",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.7229837999984738
+      },
+      {
+        "episode_id": "g0-c0-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "fd4abe5dcad815dff843e16c85a1ddaeeded8f69e7117e8f510617bce4e7f9c5",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 135,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.27371239999774843
+      },
+      {
+        "episode_id": "g0-c0-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "fd4abe5dcad815dff843e16c85a1ddaeeded8f69e7117e8f510617bce4e7f9c5",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          1
+        ],
+        "steps": 136,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.22713459999795305
+      }
+    ]
+  },
+  {
+    "generation": 0,
+    "candidate": 1,
+    "parameter_id": "g0-c1",
+    "parameters": [
+      -0.3629495949883804,
+      2.976956978543303,
+      0.08160988577701397,
+      0.8009846163093277,
+      -1.6580110267471546,
+      -1.606574138557494,
+      -0.33340626894431047,
+      0.26479945376042185
+    ],
+    "parameter_sha256": "cb2a265574da7d9f81ed6a99a86f6543026d8d2cfd9267425e0c7c811c47a316",
+    "complete": true,
+    "mean_terminal_objective": -0.0625,
+    "games": [
+      {
+        "episode_id": "g0-c1-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "cb2a265574da7d9f81ed6a99a86f6543026d8d2cfd9267425e0c7c811c47a316",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06271460000425577
+      },
+      {
+        "episode_id": "g0-c1-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "cb2a265574da7d9f81ed6a99a86f6543026d8d2cfd9267425e0c7c811c47a316",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06538369999907445
+      },
+      {
+        "episode_id": "g0-c1-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "cb2a265574da7d9f81ed6a99a86f6543026d8d2cfd9267425e0c7c811c47a316",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.545303300001251
+      },
+      {
+        "episode_id": "g0-c1-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "cb2a265574da7d9f81ed6a99a86f6543026d8d2cfd9267425e0c7c811c47a316",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1808898999952362
+      },
+      {
+        "episode_id": "g0-c1-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "cb2a265574da7d9f81ed6a99a86f6543026d8d2cfd9267425e0c7c811c47a316",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.16674849999981234
+      },
+      {
+        "episode_id": "g0-c1-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "cb2a265574da7d9f81ed6a99a86f6543026d8d2cfd9267425e0c7c811c47a316",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.6379433000038262
+      },
+      {
+        "episode_id": "g0-c1-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "cb2a265574da7d9f81ed6a99a86f6543026d8d2cfd9267425e0c7c811c47a316",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 135,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14770649999991292
+      },
+      {
+        "episode_id": "g0-c1-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "cb2a265574da7d9f81ed6a99a86f6543026d8d2cfd9267425e0c7c811c47a316",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 136,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13655540000036126
+      }
+    ]
+  },
+  {
+    "generation": 0,
+    "candidate": 2,
+    "parameter_id": "g0-c2",
+    "parameters": [
+      -1.792152944215995,
+      0.14090882457669202,
+      1.9972526314768224,
+      1.1153693371936395,
+      -1.3029625668759768,
+      2.089420380849183,
+      -1.5120089449632057,
+      -0.4639760023667203
+    ],
+    "parameter_sha256": "863ab7348e14f7d64cbc6f69df86af9c0873acad4fe06ab76327151469b02577",
+    "complete": true,
+    "mean_terminal_objective": -0.0625,
+    "games": [
+      {
+        "episode_id": "g0-c2-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "863ab7348e14f7d64cbc6f69df86af9c0873acad4fe06ab76327151469b02577",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06498930000088876
+      },
+      {
+        "episode_id": "g0-c2-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "863ab7348e14f7d64cbc6f69df86af9c0873acad4fe06ab76327151469b02577",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06211460000486113
+      },
+      {
+        "episode_id": "g0-c2-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "863ab7348e14f7d64cbc6f69df86af9c0873acad4fe06ab76327151469b02577",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.5792883999965852
+      },
+      {
+        "episode_id": "g0-c2-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "863ab7348e14f7d64cbc6f69df86af9c0873acad4fe06ab76327151469b02577",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.20898440000019036
+      },
+      {
+        "episode_id": "g0-c2-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "863ab7348e14f7d64cbc6f69df86af9c0873acad4fe06ab76327151469b02577",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1622231999936048
+      },
+      {
+        "episode_id": "g0-c2-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "863ab7348e14f7d64cbc6f69df86af9c0873acad4fe06ab76327151469b02577",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.63220359999832
+      },
+      {
+        "episode_id": "g0-c2-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "863ab7348e14f7d64cbc6f69df86af9c0873acad4fe06ab76327151469b02577",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 135,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.17134230000374373
+      },
+      {
+        "episode_id": "g0-c2-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "863ab7348e14f7d64cbc6f69df86af9c0873acad4fe06ab76327151469b02577",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 136,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14633409999805735
+      }
+    ]
+  },
+  {
+    "generation": 0,
+    "candidate": 3,
+    "parameter_id": "g0-c3",
+    "parameters": [
+      1.1725161268557351,
+      -1.0888186649025753,
+      2.2739147587997124,
+      -1.0803436036069172,
+      -2.196026998994126,
+      1.5143750568550343,
+      -0.6275394715218338,
+      -1.4907422487558841
+    ],
+    "parameter_sha256": "bfdab164b649382ab83c7af2a4ab6eea36bebd7c5f585ffd7f6261918578e942",
+    "complete": true,
+    "mean_terminal_objective": -0.0625,
+    "games": [
+      {
+        "episode_id": "g0-c3-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "bfdab164b649382ab83c7af2a4ab6eea36bebd7c5f585ffd7f6261918578e942",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.0624007000005804
+      },
+      {
+        "episode_id": "g0-c3-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "bfdab164b649382ab83c7af2a4ab6eea36bebd7c5f585ffd7f6261918578e942",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.07246199999644887
+      },
+      {
+        "episode_id": "g0-c3-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "bfdab164b649382ab83c7af2a4ab6eea36bebd7c5f585ffd7f6261918578e942",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.5811959999991814
+      },
+      {
+        "episode_id": "g0-c3-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "bfdab164b649382ab83c7af2a4ab6eea36bebd7c5f585ffd7f6261918578e942",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14331630000378937
+      },
+      {
+        "episode_id": "g0-c3-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "bfdab164b649382ab83c7af2a4ab6eea36bebd7c5f585ffd7f6261918578e942",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.12813560000358848
+      },
+      {
+        "episode_id": "g0-c3-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "bfdab164b649382ab83c7af2a4ab6eea36bebd7c5f585ffd7f6261918578e942",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.6674698999995599
+      },
+      {
+        "episode_id": "g0-c3-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "bfdab164b649382ab83c7af2a4ab6eea36bebd7c5f585ffd7f6261918578e942",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 135,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15042270000412827
+      },
+      {
+        "episode_id": "g0-c3-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "bfdab164b649382ab83c7af2a4ab6eea36bebd7c5f585ffd7f6261918578e942",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 136,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1430123000027379
+      }
+    ]
+  },
+  {
+    "generation": 0,
+    "candidate": 4,
+    "parameter_id": "g0-c4",
+    "parameters": [
+      0.23540701071943632,
+      0.8650489612688526,
+      -0.4229429543377463,
+      0.8533195464820709,
+      -2.782951274044822,
+      0.09910169088774767,
+      -2.6946750663188603,
+      -0.4198156715352413
+    ],
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "complete": true,
+    "mean_terminal_objective": 0.02678571428571428,
+    "games": [
+      {
+        "episode_id": "g0-c4-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06985279999935301
+      },
+      {
+        "episode_id": "g0-c4-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06427660000190372
+      },
+      {
+        "episode_id": "g0-c4-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": 1,
+        "scores": [
+          0,
+          2
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0714285714285714,
+        "elapsed_seconds": 0.6274803999986034
+      },
+      {
+        "episode_id": "g0-c4-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.155089499996393
+      },
+      {
+        "episode_id": "g0-c4-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.17804829999658978
+      },
+      {
+        "episode_id": "g0-c4-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.6950053999971715
+      },
+      {
+        "episode_id": "g0-c4-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 115,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.17140450000442797
+      },
+      {
+        "episode_id": "g0-c4-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 116,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.18542840000009164
+      }
+    ]
+  },
+  {
+    "generation": 0,
+    "candidate": 5,
+    "parameter_id": "g0-c5",
+    "parameters": [
+      1.5067567397285033,
+      -0.5514804725638613,
+      -0.4738691404402141,
+      -0.4743729114026221,
+      -0.5541950178622559,
+      -1.4124765314655328,
+      0.5162556749912213,
+      0.042838775261210604
+    ],
+    "parameter_sha256": "10d049b3879b49158063ab5b7432134c25c86ec095a2f1b38fcbe0ba2d04de4d",
+    "complete": true,
+    "mean_terminal_objective": -0.0625,
+    "games": [
+      {
+        "episode_id": "g0-c5-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "10d049b3879b49158063ab5b7432134c25c86ec095a2f1b38fcbe0ba2d04de4d",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06215710000105901
+      },
+      {
+        "episode_id": "g0-c5-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "10d049b3879b49158063ab5b7432134c25c86ec095a2f1b38fcbe0ba2d04de4d",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.07030420000228332
+      },
+      {
+        "episode_id": "g0-c5-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "10d049b3879b49158063ab5b7432134c25c86ec095a2f1b38fcbe0ba2d04de4d",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.5758338000014191
+      },
+      {
+        "episode_id": "g0-c5-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "10d049b3879b49158063ab5b7432134c25c86ec095a2f1b38fcbe0ba2d04de4d",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 118,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.19048019999900134
+      },
+      {
+        "episode_id": "g0-c5-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "10d049b3879b49158063ab5b7432134c25c86ec095a2f1b38fcbe0ba2d04de4d",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          1
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.20525420000194572
+      },
+      {
+        "episode_id": "g0-c5-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "10d049b3879b49158063ab5b7432134c25c86ec095a2f1b38fcbe0ba2d04de4d",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.8504525000025751
+      },
+      {
+        "episode_id": "g0-c5-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "10d049b3879b49158063ab5b7432134c25c86ec095a2f1b38fcbe0ba2d04de4d",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 135,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.24351059999753488
+      },
+      {
+        "episode_id": "g0-c5-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "10d049b3879b49158063ab5b7432134c25c86ec095a2f1b38fcbe0ba2d04de4d",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          1
+        ],
+        "steps": 136,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.177335000000312
+      }
+    ]
+  },
+  {
+    "generation": 0,
+    "candidate": 6,
+    "parameter_id": "g0-c6",
+    "parameters": [
+      0.8129527937325028,
+      0.9085074773990172,
+      1.09452732148305,
+      0.708963098104312,
+      -2.499387504697407,
+      -0.7277316876364649,
+      -0.8522868398921832,
+      0.30750686968486624
+    ],
+    "parameter_sha256": "20a970198ce154d77c3c9f76c5bfd11d5117b667599fa8f0a88b446ded44a9d2",
+    "complete": true,
+    "mean_terminal_objective": -0.0625,
+    "games": [
+      {
+        "episode_id": "g0-c6-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "20a970198ce154d77c3c9f76c5bfd11d5117b667599fa8f0a88b446ded44a9d2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.07228649999888148
+      },
+      {
+        "episode_id": "g0-c6-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "20a970198ce154d77c3c9f76c5bfd11d5117b667599fa8f0a88b446ded44a9d2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06893609999679029
+      },
+      {
+        "episode_id": "g0-c6-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "20a970198ce154d77c3c9f76c5bfd11d5117b667599fa8f0a88b446ded44a9d2",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.6135923999972874
+      },
+      {
+        "episode_id": "g0-c6-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "20a970198ce154d77c3c9f76c5bfd11d5117b667599fa8f0a88b446ded44a9d2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15190609999990556
+      },
+      {
+        "episode_id": "g0-c6-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "20a970198ce154d77c3c9f76c5bfd11d5117b667599fa8f0a88b446ded44a9d2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.12771729999803938
+      },
+      {
+        "episode_id": "g0-c6-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "20a970198ce154d77c3c9f76c5bfd11d5117b667599fa8f0a88b446ded44a9d2",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.6581947000013315
+      },
+      {
+        "episode_id": "g0-c6-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "20a970198ce154d77c3c9f76c5bfd11d5117b667599fa8f0a88b446ded44a9d2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 135,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.16208340000594035
+      },
+      {
+        "episode_id": "g0-c6-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "20a970198ce154d77c3c9f76c5bfd11d5117b667599fa8f0a88b446ded44a9d2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 136,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14192770000227029
+      }
+    ]
+  },
+  {
+    "generation": 0,
+    "candidate": 7,
+    "parameter_id": "g0-c7",
+    "parameters": [
+      -0.779477196843427,
+      0.9220862875691211,
+      -0.9140016591445174,
+      0.13275653501582602,
+      -0.8263550355452459,
+      1.545277557862597,
+      -0.1538141428207916,
+      -0.8116533599832206
+    ],
+    "parameter_sha256": "1f9aaa129ff6ef4d42736b3256685afde780c860570a0244b0938d2460d65c06",
+    "complete": true,
+    "mean_terminal_objective": 0.01785714285714285,
+    "games": [
+      {
+        "episode_id": "g0-c7-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "1f9aaa129ff6ef4d42736b3256685afde780c860570a0244b0938d2460d65c06",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06810479999694508
+      },
+      {
+        "episode_id": "g0-c7-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "1f9aaa129ff6ef4d42736b3256685afde780c860570a0244b0938d2460d65c06",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.07981950000248617
+      },
+      {
+        "episode_id": "g0-c7-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "1f9aaa129ff6ef4d42736b3256685afde780c860570a0244b0938d2460d65c06",
+        "winner": 1,
+        "scores": [
+          0,
+          2
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0714285714285714,
+        "elapsed_seconds": 0.6257849000030546
+      },
+      {
+        "episode_id": "g0-c7-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "1f9aaa129ff6ef4d42736b3256685afde780c860570a0244b0938d2460d65c06",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15449150000495138
+      },
+      {
+        "episode_id": "g0-c7-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "1f9aaa129ff6ef4d42736b3256685afde780c860570a0244b0938d2460d65c06",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.19339639999816427
+      },
+      {
+        "episode_id": "g0-c7-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "1f9aaa129ff6ef4d42736b3256685afde780c860570a0244b0938d2460d65c06",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.7006389000016497
+      },
+      {
+        "episode_id": "g0-c7-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "1f9aaa129ff6ef4d42736b3256685afde780c860570a0244b0938d2460d65c06",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 135,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.2166157999963616
+      },
+      {
+        "episode_id": "g0-c7-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "1f9aaa129ff6ef4d42736b3256685afde780c860570a0244b0938d2460d65c06",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 116,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.13137750000169035
+      }
+    ]
+  },
+  {
+    "generation": 1,
+    "candidate": 0,
+    "parameter_id": "g1-c0",
+    "parameters": [
+      0.8154907230960656,
+      0.16418042177098158,
+      -0.41782569892684057,
+      -0.6580952770227511,
+      -3.053055617800381,
+      -0.10146939337603744,
+      -1.0979992397074776,
+      -0.3095901634006756
+    ],
+    "parameter_sha256": "8775d03956cd33c8715585461b031b912b851314bc39fcf8afafd39918bef6b6",
+    "complete": true,
+    "mean_terminal_objective": 0.11607142857142858,
+    "games": [
+      {
+        "episode_id": "g1-c0-e0",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "8775d03956cd33c8715585461b031b912b851314bc39fcf8afafd39918bef6b6",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 125,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.19377670000540093
+      },
+      {
+        "episode_id": "g1-c0-e1",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "8775d03956cd33c8715585461b031b912b851314bc39fcf8afafd39918bef6b6",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          1,
+          3
+        ],
+        "steps": 130,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.2051352000053157
+      },
+      {
+        "episode_id": "g1-c0-e2",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "8775d03956cd33c8715585461b031b912b851314bc39fcf8afafd39918bef6b6",
+        "winner": 1,
+        "scores": [
+          0,
+          2
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0714285714285714,
+        "elapsed_seconds": 1.175864900003944
+      },
+      {
+        "episode_id": "g1-c0-e3",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "8775d03956cd33c8715585461b031b912b851314bc39fcf8afafd39918bef6b6",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 94,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.12480579999828478
+      },
+      {
+        "episode_id": "g1-c0-e4",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "8775d03956cd33c8715585461b031b912b851314bc39fcf8afafd39918bef6b6",
+        "winner": 0,
+        "scores": [
+          6,
+          0
+        ],
+        "lives": [
+          0,
+          0
+        ],
+        "steps": 143,
+        "reason": "no_survivors",
+        "objective": -0.21428571428571427,
+        "elapsed_seconds": 0.2712664999999106
+      },
+      {
+        "episode_id": "g1-c0-e5",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "8775d03956cd33c8715585461b031b912b851314bc39fcf8afafd39918bef6b6",
+        "winner": 1,
+        "scores": [
+          0,
+          5
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.1785714285714286,
+        "elapsed_seconds": 1.3356767000004766
+      },
+      {
+        "episode_id": "g1-c0-e6",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "8775d03956cd33c8715585461b031b912b851314bc39fcf8afafd39918bef6b6",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 105,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.19443199999659555
+      },
+      {
+        "episode_id": "g1-c0-e7",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "8775d03956cd33c8715585461b031b912b851314bc39fcf8afafd39918bef6b6",
+        "winner": 0,
+        "scores": [
+          5,
+          2
+        ],
+        "lives": [
+          1,
+          1
+        ],
+        "steps": 151,
+        "reason": "diamonds_collected",
+        "objective": -0.10714285714285714,
+        "elapsed_seconds": 0.24085439999907976
+      }
+    ]
+  },
+  {
+    "generation": 1,
+    "candidate": 1,
+    "parameter_id": "g1-c1",
+    "parameters": [
+      -0.8897214670445857,
+      0.2758085710636282,
+      -0.809852670136509,
+      1.5432384149631426,
+      -0.5049216571134485,
+      0.35583125643223845,
+      -2.997574589384151,
+      -0.26492985567346616
+    ],
+    "parameter_sha256": "2f06b2af1745f829ba46d88aa1631b53f803ca6fd7c3ebf4d4ed215cc1076153",
+    "complete": true,
+    "mean_terminal_objective": -0.05803571428571429,
+    "games": [
+      {
+        "episode_id": "g1-c1-e0",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "2f06b2af1745f829ba46d88aa1631b53f803ca6fd7c3ebf4d4ed215cc1076153",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 125,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1465265000006184
+      },
+      {
+        "episode_id": "g1-c1-e1",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "2f06b2af1745f829ba46d88aa1631b53f803ca6fd7c3ebf4d4ed215cc1076153",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 126,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14579819999926258
+      },
+      {
+        "episode_id": "g1-c1-e2",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "2f06b2af1745f829ba46d88aa1631b53f803ca6fd7c3ebf4d4ed215cc1076153",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.7954525000022841
+      },
+      {
+        "episode_id": "g1-c1-e3",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "2f06b2af1745f829ba46d88aa1631b53f803ca6fd7c3ebf4d4ed215cc1076153",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 94,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15383599999768194
+      },
+      {
+        "episode_id": "g1-c1-e4",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "2f06b2af1745f829ba46d88aa1631b53f803ca6fd7c3ebf4d4ed215cc1076153",
+        "winner": 0,
+        "scores": [
+          6,
+          0
+        ],
+        "lives": [
+          0,
+          3
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.21428571428571427,
+        "elapsed_seconds": 1.3807633999967948
+      },
+      {
+        "episode_id": "g1-c1-e5",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "2f06b2af1745f829ba46d88aa1631b53f803ca6fd7c3ebf4d4ed215cc1076153",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 1.3090472999974736
+      },
+      {
+        "episode_id": "g1-c1-e6",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "2f06b2af1745f829ba46d88aa1631b53f803ca6fd7c3ebf4d4ed215cc1076153",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 105,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13329199999861885
+      },
+      {
+        "episode_id": "g1-c1-e7",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "2f06b2af1745f829ba46d88aa1631b53f803ca6fd7c3ebf4d4ed215cc1076153",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 106,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15644890000112355
+      }
+    ]
+  },
+  {
+    "generation": 1,
+    "candidate": 2,
+    "parameter_id": "g1-c2",
+    "parameters": [
+      -0.5124416611437149,
+      0.5273233188631791,
+      -0.3271274824168103,
+      0.05044557018091733,
+      -1.5136048451179027,
+      1.0819055698310687,
+      0.08998623404662154,
+      0.18049735669942735
+    ],
+    "parameter_sha256": "259d634ff5c090754e9083ecb9024a7c41066002342cf9520f53a09c514651ce",
+    "complete": true,
+    "mean_terminal_objective": 0.25,
+    "games": [
+      {
+        "episode_id": "g1-c2-e0",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "259d634ff5c090754e9083ecb9024a7c41066002342cf9520f53a09c514651ce",
+        "winner": 0,
+        "scores": [
+          5,
+          2
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 109,
+        "reason": "diamonds_collected",
+        "objective": -0.10714285714285714,
+        "elapsed_seconds": 0.12293100000533741
+      },
+      {
+        "episode_id": "g1-c2-e1",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "259d634ff5c090754e9083ecb9024a7c41066002342cf9520f53a09c514651ce",
+        "winner": 0,
+        "scores": [
+          4,
+          3
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 106,
+        "reason": "diamonds_collected",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.12164189999748487
+      },
+      {
+        "episode_id": "g1-c2-e2",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "259d634ff5c090754e9083ecb9024a7c41066002342cf9520f53a09c514651ce",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.814735699997982
+      },
+      {
+        "episode_id": "g1-c2-e3",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "259d634ff5c090754e9083ecb9024a7c41066002342cf9520f53a09c514651ce",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 94,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13014950000069803
+      },
+      {
+        "episode_id": "g1-c2-e4",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "259d634ff5c090754e9083ecb9024a7c41066002342cf9520f53a09c514651ce",
+        "winner": 1,
+        "scores": [
+          3,
+          4
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 101,
+        "reason": "diamonds_collected",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 0.14232949999859557
+      },
+      {
+        "episode_id": "g1-c2-e5",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "259d634ff5c090754e9083ecb9024a7c41066002342cf9520f53a09c514651ce",
+        "winner": 1,
+        "scores": [
+          0,
+          6
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.2142857142857142,
+        "elapsed_seconds": 1.2262916000036057
+      },
+      {
+        "episode_id": "g1-c2-e6",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "259d634ff5c090754e9083ecb9024a7c41066002342cf9520f53a09c514651ce",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 101,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.15463159999490017
+      },
+      {
+        "episode_id": "g1-c2-e7",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "259d634ff5c090754e9083ecb9024a7c41066002342cf9520f53a09c514651ce",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.18477819999679923
+      }
+    ]
+  },
+  {
+    "generation": 1,
+    "candidate": 3,
+    "parameter_id": "g1-c3",
+    "parameters": [
+      -0.13520170043012814,
+      0.24992180992231205,
+      -0.5237065909343559,
+      -0.011709873822786765,
+      0.8144451250539395,
+      0.06978825330886496,
+      -0.4098725994856387,
+      -0.5269372915748244
+    ],
+    "parameter_sha256": "56e952424364c8df6fc34f6def85c5cf30e0d8ef41fdd81688ece001cd6f44cf",
+    "complete": true,
+    "mean_terminal_objective": -0.05803571428571429,
+    "games": [
+      {
+        "episode_id": "g1-c3-e0",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "56e952424364c8df6fc34f6def85c5cf30e0d8ef41fdd81688ece001cd6f44cf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 125,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14399520000006305
+      },
+      {
+        "episode_id": "g1-c3-e1",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "56e952424364c8df6fc34f6def85c5cf30e0d8ef41fdd81688ece001cd6f44cf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 126,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14722489999985555
+      },
+      {
+        "episode_id": "g1-c3-e2",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "56e952424364c8df6fc34f6def85c5cf30e0d8ef41fdd81688ece001cd6f44cf",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.7865502000058768
+      },
+      {
+        "episode_id": "g1-c3-e3",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "56e952424364c8df6fc34f6def85c5cf30e0d8ef41fdd81688ece001cd6f44cf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 94,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14368229999672621
+      },
+      {
+        "episode_id": "g1-c3-e4",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "56e952424364c8df6fc34f6def85c5cf30e0d8ef41fdd81688ece001cd6f44cf",
+        "winner": 0,
+        "scores": [
+          6,
+          0
+        ],
+        "lives": [
+          0,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.21428571428571427,
+        "elapsed_seconds": 1.307110499998089
+      },
+      {
+        "episode_id": "g1-c3-e5",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "56e952424364c8df6fc34f6def85c5cf30e0d8ef41fdd81688ece001cd6f44cf",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 1.3934876999992412
+      },
+      {
+        "episode_id": "g1-c3-e6",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "56e952424364c8df6fc34f6def85c5cf30e0d8ef41fdd81688ece001cd6f44cf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 105,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13507730000128504
+      },
+      {
+        "episode_id": "g1-c3-e7",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "56e952424364c8df6fc34f6def85c5cf30e0d8ef41fdd81688ece001cd6f44cf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 106,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15514729999995325
+      }
+    ]
+  },
+  {
+    "generation": 1,
+    "candidate": 4,
+    "parameter_id": "g1-c4",
+    "parameters": [
+      0.2069208691265568,
+      0.2519961894509464,
+      -0.16373500182270165,
+      0.021537527518369404,
+      -1.4137434010318992,
+      0.2550118921217977,
+      -1.1009478979320333,
+      0.15526231158889003
+    ],
+    "parameter_sha256": "89672a1cd8d76330e80adc0dc389dc9465701a02e559929a93a46ae7a6fb1a55",
+    "complete": true,
+    "mean_terminal_objective": 0.02232142857142856,
+    "games": [
+      {
+        "episode_id": "g1-c4-e0",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "89672a1cd8d76330e80adc0dc389dc9465701a02e559929a93a46ae7a6fb1a55",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 125,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1473478999978397
+      },
+      {
+        "episode_id": "g1-c4-e1",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "89672a1cd8d76330e80adc0dc389dc9465701a02e559929a93a46ae7a6fb1a55",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 126,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14833520000684075
+      },
+      {
+        "episode_id": "g1-c4-e2",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "89672a1cd8d76330e80adc0dc389dc9465701a02e559929a93a46ae7a6fb1a55",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.8033828000043286
+      },
+      {
+        "episode_id": "g1-c4-e3",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "89672a1cd8d76330e80adc0dc389dc9465701a02e559929a93a46ae7a6fb1a55",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 94,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13054440000269096
+      },
+      {
+        "episode_id": "g1-c4-e4",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "89672a1cd8d76330e80adc0dc389dc9465701a02e559929a93a46ae7a6fb1a55",
+        "winner": 0,
+        "scores": [
+          6,
+          0
+        ],
+        "lives": [
+          0,
+          0
+        ],
+        "steps": 257,
+        "reason": "no_survivors",
+        "objective": -0.21428571428571427,
+        "elapsed_seconds": 0.46372189999965485
+      },
+      {
+        "episode_id": "g1-c4-e5",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "89672a1cd8d76330e80adc0dc389dc9465701a02e559929a93a46ae7a6fb1a55",
+        "winner": 1,
+        "scores": [
+          0,
+          2
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0714285714285714,
+        "elapsed_seconds": 1.3360261999987415
+      },
+      {
+        "episode_id": "g1-c4-e6",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "89672a1cd8d76330e80adc0dc389dc9465701a02e559929a93a46ae7a6fb1a55",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 105,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1669878999964567
+      },
+      {
+        "episode_id": "g1-c4-e7",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "89672a1cd8d76330e80adc0dc389dc9465701a02e559929a93a46ae7a6fb1a55",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.1266844999991008
+      }
+    ]
+  },
+  {
+    "generation": 1,
+    "candidate": 5,
+    "parameter_id": "g1-c5",
+    "parameters": [
+      0.5923588394124403,
+      1.2791378079967326,
+      -1.04696497508742,
+      0.755234084071974,
+      -0.748326143908333,
+      0.34322620224727274,
+      -0.5863361782130462,
+      -0.6673282911893946
+    ],
+    "parameter_sha256": "cffd806e852d01d1979eb5ce6d91927173bec8e507bdb599295e6f7741dc4836",
+    "complete": true,
+    "mean_terminal_objective": 0.01339285714285715,
+    "games": [
+      {
+        "episode_id": "g1-c5-e0",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "cffd806e852d01d1979eb5ce6d91927173bec8e507bdb599295e6f7741dc4836",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 125,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15769339999678778
+      },
+      {
+        "episode_id": "g1-c5-e1",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "cffd806e852d01d1979eb5ce6d91927173bec8e507bdb599295e6f7741dc4836",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 126,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.17300210000394145
+      },
+      {
+        "episode_id": "g1-c5-e2",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "cffd806e852d01d1979eb5ce6d91927173bec8e507bdb599295e6f7741dc4836",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.8228326000025845
+      },
+      {
+        "episode_id": "g1-c5-e3",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "cffd806e852d01d1979eb5ce6d91927173bec8e507bdb599295e6f7741dc4836",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 94,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.124445100002049
+      },
+      {
+        "episode_id": "g1-c5-e4",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "cffd806e852d01d1979eb5ce6d91927173bec8e507bdb599295e6f7741dc4836",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 137,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.22967369999969378
+      },
+      {
+        "episode_id": "g1-c5-e5",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "cffd806e852d01d1979eb5ce6d91927173bec8e507bdb599295e6f7741dc4836",
+        "winner": 1,
+        "scores": [
+          0,
+          1
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 1.3109202999985428
+      },
+      {
+        "episode_id": "g1-c5-e6",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "cffd806e852d01d1979eb5ce6d91927173bec8e507bdb599295e6f7741dc4836",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 105,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13098080000054324
+      },
+      {
+        "episode_id": "g1-c5-e7",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "cffd806e852d01d1979eb5ce6d91927173bec8e507bdb599295e6f7741dc4836",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.15183539999998175
+      }
+    ]
+  },
+  {
+    "generation": 1,
+    "candidate": 6,
+    "parameter_id": "g1-c6",
+    "parameters": [
+      -0.809587926982149,
+      0.7643057276284876,
+      -0.5156689086323252,
+      0.6938504137344284,
+      -1.076344997645557,
+      0.9377893487854394,
+      -0.47404612131432056,
+      -0.7755522338669523
+    ],
+    "parameter_sha256": "db409c7b2713d3f1b30d55c207e716b2c1890a49ba3ab0f10e8d11e3bf4bd95b",
+    "complete": true,
+    "mean_terminal_objective": 0.01339285714285715,
+    "games": [
+      {
+        "episode_id": "g1-c6-e0",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "db409c7b2713d3f1b30d55c207e716b2c1890a49ba3ab0f10e8d11e3bf4bd95b",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 125,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14019700000062585
+      },
+      {
+        "episode_id": "g1-c6-e1",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "db409c7b2713d3f1b30d55c207e716b2c1890a49ba3ab0f10e8d11e3bf4bd95b",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 126,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14521220000460744
+      },
+      {
+        "episode_id": "g1-c6-e2",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "db409c7b2713d3f1b30d55c207e716b2c1890a49ba3ab0f10e8d11e3bf4bd95b",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.7952858000062406
+      },
+      {
+        "episode_id": "g1-c6-e3",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "db409c7b2713d3f1b30d55c207e716b2c1890a49ba3ab0f10e8d11e3bf4bd95b",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 94,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.12729699999908917
+      },
+      {
+        "episode_id": "g1-c6-e4",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "db409c7b2713d3f1b30d55c207e716b2c1890a49ba3ab0f10e8d11e3bf4bd95b",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 137,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.22048799999902258
+      },
+      {
+        "episode_id": "g1-c6-e5",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "db409c7b2713d3f1b30d55c207e716b2c1890a49ba3ab0f10e8d11e3bf4bd95b",
+        "winner": 1,
+        "scores": [
+          0,
+          1
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 1.268621900002472
+      },
+      {
+        "episode_id": "g1-c6-e6",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "db409c7b2713d3f1b30d55c207e716b2c1890a49ba3ab0f10e8d11e3bf4bd95b",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 105,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.16327960000489838
+      },
+      {
+        "episode_id": "g1-c6-e7",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "db409c7b2713d3f1b30d55c207e716b2c1890a49ba3ab0f10e8d11e3bf4bd95b",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.1372438999969745
+      }
+    ]
+  },
+  {
+    "generation": 1,
+    "candidate": 7,
+    "parameter_id": "g1-c7",
+    "parameters": [
+      -0.40675514977126304,
+      0.2525161551730474,
+      -0.4340990691888712,
+      0.8206668419861879,
+      -2.2579197445521015,
+      1.0690166964280758,
+      -2.619133533171917,
+      -0.45119573586524947
+    ],
+    "parameter_sha256": "540a35c8b2d2aa7481aa53232f80f834c0da37791389e56951c7785c5d058801",
+    "complete": true,
+    "mean_terminal_objective": 0.01339285714285715,
+    "games": [
+      {
+        "episode_id": "g1-c7-e0",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "540a35c8b2d2aa7481aa53232f80f834c0da37791389e56951c7785c5d058801",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 125,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1518320999966818
+      },
+      {
+        "episode_id": "g1-c7-e1",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "540a35c8b2d2aa7481aa53232f80f834c0da37791389e56951c7785c5d058801",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 126,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15040849999786587
+      },
+      {
+        "episode_id": "g1-c7-e2",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "540a35c8b2d2aa7481aa53232f80f834c0da37791389e56951c7785c5d058801",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.819172499999695
+      },
+      {
+        "episode_id": "g1-c7-e3",
+        "map_id": "E-train-m02",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "540a35c8b2d2aa7481aa53232f80f834c0da37791389e56951c7785c5d058801",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 94,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1261752999998862
+      },
+      {
+        "episode_id": "g1-c7-e4",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "540a35c8b2d2aa7481aa53232f80f834c0da37791389e56951c7785c5d058801",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 137,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.20482649999757996
+      },
+      {
+        "episode_id": "g1-c7-e5",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "540a35c8b2d2aa7481aa53232f80f834c0da37791389e56951c7785c5d058801",
+        "winner": 1,
+        "scores": [
+          0,
+          1
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 1.313310099998489
+      },
+      {
+        "episode_id": "g1-c7-e6",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "540a35c8b2d2aa7481aa53232f80f834c0da37791389e56951c7785c5d058801",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 105,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.12931649999518413
+      },
+      {
+        "episode_id": "g1-c7-e7",
+        "map_id": "E-train-m03",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "540a35c8b2d2aa7481aa53232f80f834c0da37791389e56951c7785c5d058801",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.15505370000028051
+      }
+    ]
+  },
+  {
+    "generation": 2,
+    "candidate": 0,
+    "parameter_id": "g2-c0",
+    "parameters": [
+      -0.4589610832868117,
+      0.3561347805243255,
+      -0.3375307426245046,
+      0.015564386031069105,
+      -0.7621002373229464,
+      -0.0113234807465461,
+      -0.21237635720451808,
+      -0.7475758995029365
+    ],
+    "parameter_sha256": "d253465f2c55461e58f0ae196f88d790e4f00e745c637fbfd14132298074b113",
+    "complete": true,
+    "mean_terminal_objective": -0.20089285714285715,
+    "games": [
+      {
+        "episode_id": "g2-c0-e0",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "d253465f2c55461e58f0ae196f88d790e4f00e745c637fbfd14132298074b113",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          1,
+          3
+        ],
+        "steps": 169,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.301932599999418
+      },
+      {
+        "episode_id": "g2-c0-e1",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "d253465f2c55461e58f0ae196f88d790e4f00e745c637fbfd14132298074b113",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          1,
+          2
+        ],
+        "steps": 152,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.28697290000127396
+      },
+      {
+        "episode_id": "g2-c0-e2",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "d253465f2c55461e58f0ae196f88d790e4f00e745c637fbfd14132298074b113",
+        "winner": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 1.1498102999976254
+      },
+      {
+        "episode_id": "g2-c0-e3",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "d253465f2c55461e58f0ae196f88d790e4f00e745c637fbfd14132298074b113",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 158,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.24009040000237292
+      },
+      {
+        "episode_id": "g2-c0-e4",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "d253465f2c55461e58f0ae196f88d790e4f00e745c637fbfd14132298074b113",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 139,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.29445899999700487
+      },
+      {
+        "episode_id": "g2-c0-e5",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "d253465f2c55461e58f0ae196f88d790e4f00e745c637fbfd14132298074b113",
+        "winner": 0,
+        "scores": [
+          2,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.07142857142857142,
+        "elapsed_seconds": 1.0690755000032368
+      },
+      {
+        "episode_id": "g2-c0-e6",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "d253465f2c55461e58f0ae196f88d790e4f00e745c637fbfd14132298074b113",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 103,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.2527734000032069
+      },
+      {
+        "episode_id": "g2-c0-e7",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "d253465f2c55461e58f0ae196f88d790e4f00e745c637fbfd14132298074b113",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.18561290000070585
+      }
+    ]
+  },
+  {
+    "generation": 2,
+    "candidate": 1,
+    "parameter_id": "g2-c1",
+    "parameters": [
+      -0.9906270251609464,
+      0.637513015028792,
+      -0.43368312085787897,
+      -0.1767057468051024,
+      -1.8835169776508751,
+      0.5867784227388576,
+      0.303042667789299,
+      0.07753293369788841
+    ],
+    "parameter_sha256": "7d4f68f0aea67edbaaabda8d083dd3b0c65e6a3208cb760f6a8ae39744d143a0",
+    "complete": true,
+    "mean_terminal_objective": 6.938893903907228e-18,
+    "games": [
+      {
+        "episode_id": "g2-c1-e0",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "7d4f68f0aea67edbaaabda8d083dd3b0c65e6a3208cb760f6a8ae39744d143a0",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          1,
+          3
+        ],
+        "steps": 161,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.21273170000495156
+      },
+      {
+        "episode_id": "g2-c1-e1",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "7d4f68f0aea67edbaaabda8d083dd3b0c65e6a3208cb760f6a8ae39744d143a0",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          1
+        ],
+        "steps": 136,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.24124049999954877
+      },
+      {
+        "episode_id": "g2-c1-e2",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "7d4f68f0aea67edbaaabda8d083dd3b0c65e6a3208cb760f6a8ae39744d143a0",
+        "winner": 1,
+        "scores": [
+          1,
+          2
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 1.1286992999957874
+      },
+      {
+        "episode_id": "g2-c1-e3",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "7d4f68f0aea67edbaaabda8d083dd3b0c65e6a3208cb760f6a8ae39744d143a0",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 158,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.19196789999841712
+      },
+      {
+        "episode_id": "g2-c1-e4",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "7d4f68f0aea67edbaaabda8d083dd3b0c65e6a3208cb760f6a8ae39744d143a0",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 107,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.15405090000422206
+      },
+      {
+        "episode_id": "g2-c1-e5",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "7d4f68f0aea67edbaaabda8d083dd3b0c65e6a3208cb760f6a8ae39744d143a0",
+        "winner": 0,
+        "scores": [
+          2,
+          1
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 1.1066224000023794
+      },
+      {
+        "episode_id": "g2-c1-e6",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "7d4f68f0aea67edbaaabda8d083dd3b0c65e6a3208cb760f6a8ae39744d143a0",
+        "winner": 0,
+        "scores": [
+          5,
+          2
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 99,
+        "reason": "diamonds_collected",
+        "objective": -0.10714285714285714,
+        "elapsed_seconds": 0.12331379999523051
+      },
+      {
+        "episode_id": "g2-c1-e7",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "7d4f68f0aea67edbaaabda8d083dd3b0c65e6a3208cb760f6a8ae39744d143a0",
+        "winner": 0,
+        "scores": [
+          5,
+          2
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 56,
+        "reason": "diamonds_collected",
+        "objective": -0.10714285714285714,
+        "elapsed_seconds": 0.09103440000035334
+      }
+    ]
+  },
+  {
+    "generation": 2,
+    "candidate": 2,
+    "parameter_id": "g2-c2",
+    "parameters": [
+      0.4121069896151613,
+      0.44432116891999046,
+      -0.26231929465231324,
+      -0.6826360518902033,
+      -0.8565423339012475,
+      0.6871845991131122,
+      -1.680245152561766,
+      0.47490522942889
+    ],
+    "parameter_sha256": "78b84b263b01f9ef909ec1f595ab80a5e2a9db1c75a22f292022af525a7cf2a0",
+    "complete": true,
+    "mean_terminal_objective": -0.12053571428571429,
+    "games": [
+      {
+        "episode_id": "g2-c2-e0",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "78b84b263b01f9ef909ec1f595ab80a5e2a9db1c75a22f292022af525a7cf2a0",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          1,
+          2
+        ],
+        "steps": 169,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.25035639999987325
+      },
+      {
+        "episode_id": "g2-c2-e1",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "78b84b263b01f9ef909ec1f595ab80a5e2a9db1c75a22f292022af525a7cf2a0",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          1,
+          1
+        ],
+        "steps": 170,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.3166902999946615
+      },
+      {
+        "episode_id": "g2-c2-e2",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "78b84b263b01f9ef909ec1f595ab80a5e2a9db1c75a22f292022af525a7cf2a0",
+        "winner": "draw",
+        "scores": [
+          1,
+          1
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 1.2053698999952758
+      },
+      {
+        "episode_id": "g2-c2-e3",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "78b84b263b01f9ef909ec1f595ab80a5e2a9db1c75a22f292022af525a7cf2a0",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 158,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1814100999981747
+      },
+      {
+        "episode_id": "g2-c2-e4",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "78b84b263b01f9ef909ec1f595ab80a5e2a9db1c75a22f292022af525a7cf2a0",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 107,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.19770820000121603
+      },
+      {
+        "episode_id": "g2-c2-e5",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "78b84b263b01f9ef909ec1f595ab80a5e2a9db1c75a22f292022af525a7cf2a0",
+        "winner": 0,
+        "scores": [
+          2,
+          1
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 1.071901399998751
+      },
+      {
+        "episode_id": "g2-c2-e6",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "78b84b263b01f9ef909ec1f595ab80a5e2a9db1c75a22f292022af525a7cf2a0",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 103,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15482719999999972
+      },
+      {
+        "episode_id": "g2-c2-e7",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "78b84b263b01f9ef909ec1f595ab80a5e2a9db1c75a22f292022af525a7cf2a0",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13706210000236752
+      }
+    ]
+  },
+  {
+    "generation": 2,
+    "candidate": 3,
+    "parameter_id": "g2-c3",
+    "parameters": [
+      0.5525027809846312,
+      0.8252189289535188,
+      -0.3078076874802254,
+      -0.0756380599412973,
+      -1.8554835292026115,
+      1.3961609152630696,
+      -1.1636970437999985,
+      -0.4153521534358584
+    ],
+    "parameter_sha256": "fd21101d5000d6055d903b3cdfb86bfb665d6c79152b5ec125e2ea48fc380cbf",
+    "complete": true,
+    "mean_terminal_objective": -0.062499999999999986,
+    "games": [
+      {
+        "episode_id": "g2-c3-e0",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "fd21101d5000d6055d903b3cdfb86bfb665d6c79152b5ec125e2ea48fc380cbf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          1,
+          3
+        ],
+        "steps": 169,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.2184290000004694
+      },
+      {
+        "episode_id": "g2-c3-e1",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "fd21101d5000d6055d903b3cdfb86bfb665d6c79152b5ec125e2ea48fc380cbf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 144,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.2433046000005561
+      },
+      {
+        "episode_id": "g2-c3-e2",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "fd21101d5000d6055d903b3cdfb86bfb665d6c79152b5ec125e2ea48fc380cbf",
+        "winner": 1,
+        "scores": [
+          1,
+          2
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 1.0824023000022862
+      },
+      {
+        "episode_id": "g2-c3-e3",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "fd21101d5000d6055d903b3cdfb86bfb665d6c79152b5ec125e2ea48fc380cbf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 158,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.27243369999632705
+      },
+      {
+        "episode_id": "g2-c3-e4",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "fd21101d5000d6055d903b3cdfb86bfb665d6c79152b5ec125e2ea48fc380cbf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 155,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.28122219999931986
+      },
+      {
+        "episode_id": "g2-c3-e5",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "fd21101d5000d6055d903b3cdfb86bfb665d6c79152b5ec125e2ea48fc380cbf",
+        "winner": 0,
+        "scores": [
+          2,
+          1
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 1.0928385000006529
+      },
+      {
+        "episode_id": "g2-c3-e6",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "fd21101d5000d6055d903b3cdfb86bfb665d6c79152b5ec125e2ea48fc380cbf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 103,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13999060000060126
+      },
+      {
+        "episode_id": "g2-c3-e7",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "fd21101d5000d6055d903b3cdfb86bfb665d6c79152b5ec125e2ea48fc380cbf",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.14431900000636233
+      }
+    ]
+  },
+  {
+    "generation": 2,
+    "candidate": 4,
+    "parameter_id": "g2-c4",
+    "parameters": [
+      0.2654202831021927,
+      0.7030281737832681,
+      -0.5029170960288198,
+      -0.13527813778924846,
+      -1.611885737888883,
+      1.098966990325979,
+      -0.4076992463462803,
+      -0.14972796792184107
+    ],
+    "parameter_sha256": "9eb583053c3b972b9fc457ef87e6193178686e52641c4124e74f018ba6c80379",
+    "complete": true,
+    "mean_terminal_objective": -0.062499999999999986,
+    "games": [
+      {
+        "episode_id": "g2-c4-e0",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "9eb583053c3b972b9fc457ef87e6193178686e52641c4124e74f018ba6c80379",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          1,
+          3
+        ],
+        "steps": 169,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.22821220000332687
+      },
+      {
+        "episode_id": "g2-c4-e1",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "9eb583053c3b972b9fc457ef87e6193178686e52641c4124e74f018ba6c80379",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 144,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1858118000018294
+      },
+      {
+        "episode_id": "g2-c4-e2",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "9eb583053c3b972b9fc457ef87e6193178686e52641c4124e74f018ba6c80379",
+        "winner": 1,
+        "scores": [
+          1,
+          2
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 1.1504731999957585
+      },
+      {
+        "episode_id": "g2-c4-e3",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "9eb583053c3b972b9fc457ef87e6193178686e52641c4124e74f018ba6c80379",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 158,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.22413980000419542
+      },
+      {
+        "episode_id": "g2-c4-e4",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "9eb583053c3b972b9fc457ef87e6193178686e52641c4124e74f018ba6c80379",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 155,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.20683800000551855
+      },
+      {
+        "episode_id": "g2-c4-e5",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "9eb583053c3b972b9fc457ef87e6193178686e52641c4124e74f018ba6c80379",
+        "winner": 0,
+        "scores": [
+          2,
+          1
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 1.1099745000028634
+      },
+      {
+        "episode_id": "g2-c4-e6",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "9eb583053c3b972b9fc457ef87e6193178686e52641c4124e74f018ba6c80379",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 103,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.12216630000330042
+      },
+      {
+        "episode_id": "g2-c4-e7",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "9eb583053c3b972b9fc457ef87e6193178686e52641c4124e74f018ba6c80379",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1288048999995226
+      }
+    ]
+  },
+  {
+    "generation": 2,
+    "candidate": 5,
+    "parameter_id": "g2-c5",
+    "parameters": [
+      1.312654114781398,
+      0.26159977874404444,
+      -0.48309503455886427,
+      -0.43442627414228846,
+      -2.590110514019672,
+      0.2508582794962106,
+      -0.33631488839764656,
+      -0.0933856746830721
+    ],
+    "parameter_sha256": "556abd33d4dd4d97c921de4dd381c0e50f636c3fe42777ac774149f0aa0111b9",
+    "complete": true,
+    "mean_terminal_objective": -0.062499999999999986,
+    "games": [
+      {
+        "episode_id": "g2-c5-e0",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "556abd33d4dd4d97c921de4dd381c0e50f636c3fe42777ac774149f0aa0111b9",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          1,
+          1
+        ],
+        "steps": 169,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.2828343000001041
+      },
+      {
+        "episode_id": "g2-c5-e1",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "556abd33d4dd4d97c921de4dd381c0e50f636c3fe42777ac774149f0aa0111b9",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          1
+        ],
+        "steps": 144,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.23619460000190884
+      },
+      {
+        "episode_id": "g2-c5-e2",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "556abd33d4dd4d97c921de4dd381c0e50f636c3fe42777ac774149f0aa0111b9",
+        "winner": 1,
+        "scores": [
+          1,
+          2
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 1.1232073999999557
+      },
+      {
+        "episode_id": "g2-c5-e3",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "556abd33d4dd4d97c921de4dd381c0e50f636c3fe42777ac774149f0aa0111b9",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          1
+        ],
+        "steps": 158,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.2714261000000988
+      },
+      {
+        "episode_id": "g2-c5-e4",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "556abd33d4dd4d97c921de4dd381c0e50f636c3fe42777ac774149f0aa0111b9",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 155,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.2100789000032819
+      },
+      {
+        "episode_id": "g2-c5-e5",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "556abd33d4dd4d97c921de4dd381c0e50f636c3fe42777ac774149f0aa0111b9",
+        "winner": 0,
+        "scores": [
+          2,
+          1
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 1.079590699999244
+      },
+      {
+        "episode_id": "g2-c5-e6",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "556abd33d4dd4d97c921de4dd381c0e50f636c3fe42777ac774149f0aa0111b9",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 83,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15076870000484632
+      },
+      {
+        "episode_id": "g2-c5-e7",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "556abd33d4dd4d97c921de4dd381c0e50f636c3fe42777ac774149f0aa0111b9",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13204969999787863
+      }
+    ]
+  },
+  {
+    "generation": 2,
+    "candidate": 6,
+    "parameter_id": "g2-c6",
+    "parameters": [
+      0.5317746730321673,
+      0.3509151999069372,
+      -0.236003018696433,
+      -0.1157050010073505,
+      -2.1073578896649674,
+      1.543585781191935,
+      -1.0177088911540477,
+      -0.36018539940351035
+    ],
+    "parameter_sha256": "c245e71f16a0c37e1acc2444e902799736d73d0329d4e00a70f172535b05f8cc",
+    "complete": true,
+    "mean_terminal_objective": -0.062499999999999986,
+    "games": [
+      {
+        "episode_id": "g2-c6-e0",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "c245e71f16a0c37e1acc2444e902799736d73d0329d4e00a70f172535b05f8cc",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          1,
+          3
+        ],
+        "steps": 169,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.22905490000266582
+      },
+      {
+        "episode_id": "g2-c6-e1",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "c245e71f16a0c37e1acc2444e902799736d73d0329d4e00a70f172535b05f8cc",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          1
+        ],
+        "steps": 144,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.23044140000274638
+      },
+      {
+        "episode_id": "g2-c6-e2",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "c245e71f16a0c37e1acc2444e902799736d73d0329d4e00a70f172535b05f8cc",
+        "winner": 1,
+        "scores": [
+          1,
+          2
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 1.1279577999957837
+      },
+      {
+        "episode_id": "g2-c6-e3",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "c245e71f16a0c37e1acc2444e902799736d73d0329d4e00a70f172535b05f8cc",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 158,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.23032809999858728
+      },
+      {
+        "episode_id": "g2-c6-e4",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "c245e71f16a0c37e1acc2444e902799736d73d0329d4e00a70f172535b05f8cc",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 155,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.2063345000060508
+      },
+      {
+        "episode_id": "g2-c6-e5",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "c245e71f16a0c37e1acc2444e902799736d73d0329d4e00a70f172535b05f8cc",
+        "winner": 0,
+        "scores": [
+          2,
+          1
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 1.1337130000028992
+      },
+      {
+        "episode_id": "g2-c6-e6",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "c245e71f16a0c37e1acc2444e902799736d73d0329d4e00a70f172535b05f8cc",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 113,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.16515259999869158
+      },
+      {
+        "episode_id": "g2-c6-e7",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "c245e71f16a0c37e1acc2444e902799736d73d0329d4e00a70f172535b05f8cc",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1374218999990262
+      }
+    ]
+  },
+  {
+    "generation": 2,
+    "candidate": 7,
+    "parameter_id": "g2-c7",
+    "parameters": [
+      -0.6973542226688447,
+      0.3555074790626141,
+      -0.5980594034644973,
+      -0.144179548660687,
+      -1.9552495134267658,
+      0.9109792173580986,
+      -0.9472932260528455,
+      -0.36157277143116795
+    ],
+    "parameter_sha256": "a49587de9c6db402c760a9a151e34df632bd7acd464990cf32d915a5c5d5cdea",
+    "complete": true,
+    "mean_terminal_objective": -0.062499999999999986,
+    "games": [
+      {
+        "episode_id": "g2-c7-e0",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "a49587de9c6db402c760a9a151e34df632bd7acd464990cf32d915a5c5d5cdea",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          1,
+          3
+        ],
+        "steps": 169,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.22683949999918696
+      },
+      {
+        "episode_id": "g2-c7-e1",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "a49587de9c6db402c760a9a151e34df632bd7acd464990cf32d915a5c5d5cdea",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 144,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.2042386000030092
+      },
+      {
+        "episode_id": "g2-c7-e2",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "a49587de9c6db402c760a9a151e34df632bd7acd464990cf32d915a5c5d5cdea",
+        "winner": 1,
+        "scores": [
+          1,
+          2
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 1.1083944999991218
+      },
+      {
+        "episode_id": "g2-c7-e3",
+        "map_id": "E-train-m04",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "a49587de9c6db402c760a9a151e34df632bd7acd464990cf32d915a5c5d5cdea",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 158,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.22373269999661716
+      },
+      {
+        "episode_id": "g2-c7-e4",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "a49587de9c6db402c760a9a151e34df632bd7acd464990cf32d915a5c5d5cdea",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 155,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.23123289999784902
+      },
+      {
+        "episode_id": "g2-c7-e5",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "a49587de9c6db402c760a9a151e34df632bd7acd464990cf32d915a5c5d5cdea",
+        "winner": 0,
+        "scores": [
+          2,
+          1
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 1.0881229000005987
+      },
+      {
+        "episode_id": "g2-c7-e6",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "a49587de9c6db402c760a9a151e34df632bd7acd464990cf32d915a5c5d5cdea",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 103,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1476559000002453
+      },
+      {
+        "episode_id": "g2-c7-e7",
+        "map_id": "E-train-m05",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "a49587de9c6db402c760a9a151e34df632bd7acd464990cf32d915a5c5d5cdea",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 102,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13137570000253618
+      }
+    ]
+  },
+  {
+    "generation": 3,
+    "candidate": 0,
+    "parameter_id": "g3-c0",
+    "parameters": [
+      0.5244422127303464,
+      0.6691049368729521,
+      -0.4107065401118464,
+      -0.2517199029988647,
+      -1.550999424006884,
+      0.9617259746699416,
+      0.19660643881863393,
+      -0.6297032422804971
+    ],
+    "parameter_sha256": "e36d97e7a41a6074c451f84e0a577f9f9b9d78f556016c31312733c3d7afaf9b",
+    "complete": true,
+    "mean_terminal_objective": -0.013392857142857137,
+    "games": [
+      {
+        "episode_id": "g3-c0-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "e36d97e7a41a6074c451f84e0a577f9f9b9d78f556016c31312733c3d7afaf9b",
+        "winner": 0,
+        "scores": [
+          4,
+          3
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 72,
+        "reason": "diamonds_collected",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.08258400000340771
+      },
+      {
+        "episode_id": "g3-c0-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "e36d97e7a41a6074c451f84e0a577f9f9b9d78f556016c31312733c3d7afaf9b",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.08514999999897555
+      },
+      {
+        "episode_id": "g3-c0-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "e36d97e7a41a6074c451f84e0a577f9f9b9d78f556016c31312733c3d7afaf9b",
+        "winner": 1,
+        "scores": [
+          0,
+          2
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0714285714285714,
+        "elapsed_seconds": 0.5986284000027808
+      },
+      {
+        "episode_id": "g3-c0-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "e36d97e7a41a6074c451f84e0a577f9f9b9d78f556016c31312733c3d7afaf9b",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15910680000524735
+      },
+      {
+        "episode_id": "g3-c0-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "e36d97e7a41a6074c451f84e0a577f9f9b9d78f556016c31312733c3d7afaf9b",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.16530010000133188
+      },
+      {
+        "episode_id": "g3-c0-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "e36d97e7a41a6074c451f84e0a577f9f9b9d78f556016c31312733c3d7afaf9b",
+        "winner": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.6841211999999359
+      },
+      {
+        "episode_id": "g3-c0-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "e36d97e7a41a6074c451f84e0a577f9f9b9d78f556016c31312733c3d7afaf9b",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 115,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.19155120000505121
+      },
+      {
+        "episode_id": "g3-c0-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "e36d97e7a41a6074c451f84e0a577f9f9b9d78f556016c31312733c3d7afaf9b",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 116,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.1337518000000273
+      }
+    ]
+  },
+  {
+    "generation": 3,
+    "candidate": 1,
+    "parameter_id": "g3-c1",
+    "parameters": [
+      0.05330518669036913,
+      0.6030998352321508,
+      -0.5201149136441148,
+      -0.33504762987203274,
+      -1.7870630593915855,
+      0.2821482846204252,
+      0.94537024657212,
+      0.3143605865266744
+    ],
+    "parameter_sha256": "1267f31ddb969392a3f8d2e36b4d7a2a287dc2aac5f124d781e5438135785110",
+    "complete": true,
+    "mean_terminal_objective": 0.004464285714285726,
+    "games": [
+      {
+        "episode_id": "g3-c1-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "1267f31ddb969392a3f8d2e36b4d7a2a287dc2aac5f124d781e5438135785110",
+        "winner": 0,
+        "scores": [
+          4,
+          3
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 72,
+        "reason": "diamonds_collected",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.07084549999854062
+      },
+      {
+        "episode_id": "g3-c1-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "1267f31ddb969392a3f8d2e36b4d7a2a287dc2aac5f124d781e5438135785110",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06512589999329066
+      },
+      {
+        "episode_id": "g3-c1-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "1267f31ddb969392a3f8d2e36b4d7a2a287dc2aac5f124d781e5438135785110",
+        "winner": 1,
+        "scores": [
+          0,
+          2
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0714285714285714,
+        "elapsed_seconds": 0.5884576000025845
+      },
+      {
+        "episode_id": "g3-c1-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "1267f31ddb969392a3f8d2e36b4d7a2a287dc2aac5f124d781e5438135785110",
+        "winner": 0,
+        "scores": [
+          5,
+          2
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 82,
+        "reason": "diamonds_collected",
+        "objective": -0.10714285714285714,
+        "elapsed_seconds": 0.12229040000238456
+      },
+      {
+        "episode_id": "g3-c1-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "1267f31ddb969392a3f8d2e36b4d7a2a287dc2aac5f124d781e5438135785110",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13315500000317115
+      },
+      {
+        "episode_id": "g3-c1-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "1267f31ddb969392a3f8d2e36b4d7a2a287dc2aac5f124d781e5438135785110",
+        "winner": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.6892586999965715
+      },
+      {
+        "episode_id": "g3-c1-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "1267f31ddb969392a3f8d2e36b4d7a2a287dc2aac5f124d781e5438135785110",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 115,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.13405439999769442
+      },
+      {
+        "episode_id": "g3-c1-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "1267f31ddb969392a3f8d2e36b4d7a2a287dc2aac5f124d781e5438135785110",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 116,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.11909319999540458
+      }
+    ]
+  },
+  {
+    "generation": 3,
+    "candidate": 2,
+    "parameter_id": "g3-c2",
+    "parameters": [
+      -0.9280458224665654,
+      0.5765586520957714,
+      -0.4738141706991368,
+      -0.28405745095650703,
+      -1.931787215366208,
+      0.44834971865510603,
+      -1.5457009202619543,
+      -0.41377264461714636
+    ],
+    "parameter_sha256": "8f5b02d60902d9764c6c6a1d53edcf06d6f12129874f9928aea4b7c09dcb36c2",
+    "complete": true,
+    "mean_terminal_objective": -0.05357142857142856,
+    "games": [
+      {
+        "episode_id": "g3-c2-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "8f5b02d60902d9764c6c6a1d53edcf06d6f12129874f9928aea4b7c09dcb36c2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06225789999734843
+      },
+      {
+        "episode_id": "g3-c2-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "8f5b02d60902d9764c6c6a1d53edcf06d6f12129874f9928aea4b7c09dcb36c2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.0714224999974249
+      },
+      {
+        "episode_id": "g3-c2-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "8f5b02d60902d9764c6c6a1d53edcf06d6f12129874f9928aea4b7c09dcb36c2",
+        "winner": 1,
+        "scores": [
+          0,
+          1
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 0.608142900004168
+      },
+      {
+        "episode_id": "g3-c2-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "8f5b02d60902d9764c6c6a1d53edcf06d6f12129874f9928aea4b7c09dcb36c2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15806159999920055
+      },
+      {
+        "episode_id": "g3-c2-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "8f5b02d60902d9764c6c6a1d53edcf06d6f12129874f9928aea4b7c09dcb36c2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1267989000043599
+      },
+      {
+        "episode_id": "g3-c2-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "8f5b02d60902d9764c6c6a1d53edcf06d6f12129874f9928aea4b7c09dcb36c2",
+        "winner": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.6822208000012324
+      },
+      {
+        "episode_id": "g3-c2-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "8f5b02d60902d9764c6c6a1d53edcf06d6f12129874f9928aea4b7c09dcb36c2",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 115,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.12685760000022128
+      },
+      {
+        "episode_id": "g3-c2-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "8f5b02d60902d9764c6c6a1d53edcf06d6f12129874f9928aea4b7c09dcb36c2",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 136,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.20624030000180937
+      }
+    ]
+  },
+  {
+    "generation": 3,
+    "candidate": 3,
+    "parameter_id": "g3-c3",
+    "parameters": [
+      -1.060412736442405,
+      0.971370496411324,
+      -0.265375860038492,
+      -0.015713692514601363,
+      -2.5438768418765827,
+      0.5555927030754234,
+      0.016317836919819584,
+      0.05158722593488613
+    ],
+    "parameter_sha256": "f650a00fe79791255b5837a91413e793a4ec0c6902fd6f3168d0c98da51cf39d",
+    "complete": true,
+    "mean_terminal_objective": -0.013392857142857137,
+    "games": [
+      {
+        "episode_id": "g3-c3-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "f650a00fe79791255b5837a91413e793a4ec0c6902fd6f3168d0c98da51cf39d",
+        "winner": 0,
+        "scores": [
+          4,
+          3
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 72,
+        "reason": "diamonds_collected",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.08310020000499208
+      },
+      {
+        "episode_id": "g3-c3-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "f650a00fe79791255b5837a91413e793a4ec0c6902fd6f3168d0c98da51cf39d",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06732019999617478
+      },
+      {
+        "episode_id": "g3-c3-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "f650a00fe79791255b5837a91413e793a4ec0c6902fd6f3168d0c98da51cf39d",
+        "winner": 1,
+        "scores": [
+          0,
+          2
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0714285714285714,
+        "elapsed_seconds": 0.6626969999997527
+      },
+      {
+        "episode_id": "g3-c3-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "f650a00fe79791255b5837a91413e793a4ec0c6902fd6f3168d0c98da51cf39d",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.15197780000016792
+      },
+      {
+        "episode_id": "g3-c3-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "f650a00fe79791255b5837a91413e793a4ec0c6902fd6f3168d0c98da51cf39d",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13195960000302875
+      },
+      {
+        "episode_id": "g3-c3-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "f650a00fe79791255b5837a91413e793a4ec0c6902fd6f3168d0c98da51cf39d",
+        "winner": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.691885899999761
+      },
+      {
+        "episode_id": "g3-c3-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "f650a00fe79791255b5837a91413e793a4ec0c6902fd6f3168d0c98da51cf39d",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 115,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.1343747999999323
+      },
+      {
+        "episode_id": "g3-c3-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "f650a00fe79791255b5837a91413e793a4ec0c6902fd6f3168d0c98da51cf39d",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 116,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.1300669000047492
+      }
+    ]
+  },
+  {
+    "generation": 3,
+    "candidate": 4,
+    "parameter_id": "g3-c4",
+    "parameters": [
+      -0.10879445360919116,
+      0.7329790401632006,
+      -0.4204851000940727,
+      -0.001261012063356673,
+      -1.9706457196429876,
+      0.3307298640196682,
+      0.6016172375633918,
+      -0.13268316388047874
+    ],
+    "parameter_sha256": "b0947106d70333f4c6e07a0c66816417c526f08245cf137c4129e1ef0b578f77",
+    "complete": true,
+    "mean_terminal_objective": 0.004464285714285726,
+    "games": [
+      {
+        "episode_id": "g3-c4-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "b0947106d70333f4c6e07a0c66816417c526f08245cf137c4129e1ef0b578f77",
+        "winner": 0,
+        "scores": [
+          4,
+          3
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 72,
+        "reason": "diamonds_collected",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.06665969999448862
+      },
+      {
+        "episode_id": "g3-c4-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "b0947106d70333f4c6e07a0c66816417c526f08245cf137c4129e1ef0b578f77",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.07291280000208644
+      },
+      {
+        "episode_id": "g3-c4-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "b0947106d70333f4c6e07a0c66816417c526f08245cf137c4129e1ef0b578f77",
+        "winner": 1,
+        "scores": [
+          0,
+          2
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0714285714285714,
+        "elapsed_seconds": 0.6018186000001151
+      },
+      {
+        "episode_id": "g3-c4-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "b0947106d70333f4c6e07a0c66816417c526f08245cf137c4129e1ef0b578f77",
+        "winner": 0,
+        "scores": [
+          5,
+          2
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 82,
+        "reason": "diamonds_collected",
+        "objective": -0.10714285714285714,
+        "elapsed_seconds": 0.10914050000428688
+      },
+      {
+        "episode_id": "g3-c4-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "b0947106d70333f4c6e07a0c66816417c526f08245cf137c4129e1ef0b578f77",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.135956799997075
+      },
+      {
+        "episode_id": "g3-c4-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "b0947106d70333f4c6e07a0c66816417c526f08245cf137c4129e1ef0b578f77",
+        "winner": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.704632799999672
+      },
+      {
+        "episode_id": "g3-c4-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "b0947106d70333f4c6e07a0c66816417c526f08245cf137c4129e1ef0b578f77",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 115,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.1091595000034431
+      },
+      {
+        "episode_id": "g3-c4-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "b0947106d70333f4c6e07a0c66816417c526f08245cf137c4129e1ef0b578f77",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 116,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.11509450000448851
+      }
+    ]
+  },
+  {
+    "generation": 3,
+    "candidate": 5,
+    "parameter_id": "g3-c5",
+    "parameters": [
+      0.11198723202320368,
+      0.5091579821567259,
+      -0.13844936140814113,
+      -0.12009788626041036,
+      -1.8834049194431433,
+      0.9715942038414955,
+      -1.2042899136233545,
+      -0.1085983664914981
+    ],
+    "parameter_sha256": "310673f896e422befd149fe83e1b3d87beb69ff3c173bafb1bbd9e2f99016dcb",
+    "complete": true,
+    "mean_terminal_objective": -0.05357142857142856,
+    "games": [
+      {
+        "episode_id": "g3-c5-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "310673f896e422befd149fe83e1b3d87beb69ff3c173bafb1bbd9e2f99016dcb",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06968780000170227
+      },
+      {
+        "episode_id": "g3-c5-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "310673f896e422befd149fe83e1b3d87beb69ff3c173bafb1bbd9e2f99016dcb",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06367659999523312
+      },
+      {
+        "episode_id": "g3-c5-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "310673f896e422befd149fe83e1b3d87beb69ff3c173bafb1bbd9e2f99016dcb",
+        "winner": 1,
+        "scores": [
+          0,
+          1
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 0.599907699994219
+      },
+      {
+        "episode_id": "g3-c5-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "310673f896e422befd149fe83e1b3d87beb69ff3c173bafb1bbd9e2f99016dcb",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.18303260000539012
+      },
+      {
+        "episode_id": "g3-c5-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "310673f896e422befd149fe83e1b3d87beb69ff3c173bafb1bbd9e2f99016dcb",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13382239999918966
+      },
+      {
+        "episode_id": "g3-c5-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "310673f896e422befd149fe83e1b3d87beb69ff3c173bafb1bbd9e2f99016dcb",
+        "winner": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.7045030999943265
+      },
+      {
+        "episode_id": "g3-c5-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "310673f896e422befd149fe83e1b3d87beb69ff3c173bafb1bbd9e2f99016dcb",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 115,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.1076342999949702
+      },
+      {
+        "episode_id": "g3-c5-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "310673f896e422befd149fe83e1b3d87beb69ff3c173bafb1bbd9e2f99016dcb",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 136,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.18013409999548458
+      }
+    ]
+  },
+  {
+    "generation": 3,
+    "candidate": 6,
+    "parameter_id": "g3-c6",
+    "parameters": [
+      -0.43613870601396154,
+      0.6248568730221725,
+      -0.2829397572677306,
+      -0.11830708284490195,
+      -2.2101373603713537,
+      0.033808906158206864,
+      0.547501918556048,
+      -0.234538907193453
+    ],
+    "parameter_sha256": "b91f6600509a94591742561cbaf2563ca57c0e628f92a256bd18e5fd5138dc13",
+    "complete": true,
+    "mean_terminal_objective": 0.004464285714285726,
+    "games": [
+      {
+        "episode_id": "g3-c6-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "b91f6600509a94591742561cbaf2563ca57c0e628f92a256bd18e5fd5138dc13",
+        "winner": 0,
+        "scores": [
+          4,
+          3
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 72,
+        "reason": "diamonds_collected",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.08038370000576833
+      },
+      {
+        "episode_id": "g3-c6-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "b91f6600509a94591742561cbaf2563ca57c0e628f92a256bd18e5fd5138dc13",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.07586339999397751
+      },
+      {
+        "episode_id": "g3-c6-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "b91f6600509a94591742561cbaf2563ca57c0e628f92a256bd18e5fd5138dc13",
+        "winner": 1,
+        "scores": [
+          0,
+          2
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0714285714285714,
+        "elapsed_seconds": 0.6095726000057766
+      },
+      {
+        "episode_id": "g3-c6-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "b91f6600509a94591742561cbaf2563ca57c0e628f92a256bd18e5fd5138dc13",
+        "winner": 0,
+        "scores": [
+          5,
+          2
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 82,
+        "reason": "diamonds_collected",
+        "objective": -0.10714285714285714,
+        "elapsed_seconds": 0.11315409999951953
+      },
+      {
+        "episode_id": "g3-c6-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "b91f6600509a94591742561cbaf2563ca57c0e628f92a256bd18e5fd5138dc13",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13461890000326093
+      },
+      {
+        "episode_id": "g3-c6-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "b91f6600509a94591742561cbaf2563ca57c0e628f92a256bd18e5fd5138dc13",
+        "winner": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.7027015000057872
+      },
+      {
+        "episode_id": "g3-c6-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "b91f6600509a94591742561cbaf2563ca57c0e628f92a256bd18e5fd5138dc13",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 115,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.11328489999868907
+      },
+      {
+        "episode_id": "g3-c6-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "b91f6600509a94591742561cbaf2563ca57c0e628f92a256bd18e5fd5138dc13",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 116,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.1362894999983837
+      }
+    ]
+  },
+  {
+    "generation": 3,
+    "candidate": 7,
+    "parameter_id": "g3-c7",
+    "parameters": [
+      0.4087450831965739,
+      0.7061501574855651,
+      -0.4315472170348385,
+      -0.1323875099464607,
+      -2.423024706471506,
+      1.4072353863655698,
+      -1.141219893872662,
+      -0.5084744757598912
+    ],
+    "parameter_sha256": "3aa2f71349f02ebc462196ecfde26313b33a13a66d12f9300aebef6d3e9e07f8",
+    "complete": true,
+    "mean_terminal_objective": -0.05357142857142856,
+    "games": [
+      {
+        "episode_id": "g3-c7-e0",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "3aa2f71349f02ebc462196ecfde26313b33a13a66d12f9300aebef6d3e9e07f8",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 77,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.07130640000104904
+      },
+      {
+        "episode_id": "g3-c7-e1",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "3aa2f71349f02ebc462196ecfde26313b33a13a66d12f9300aebef6d3e9e07f8",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          2
+        ],
+        "steps": 78,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.06442319999769097
+      },
+      {
+        "episode_id": "g3-c7-e2",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "3aa2f71349f02ebc462196ecfde26313b33a13a66d12f9300aebef6d3e9e07f8",
+        "winner": 1,
+        "scores": [
+          0,
+          1
+        ],
+        "lives": [
+          3,
+          1
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 1.0357142857142858,
+        "elapsed_seconds": 0.5920948999992106
+      },
+      {
+        "episode_id": "g3-c7-e3",
+        "map_id": "E-train-m00",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "3aa2f71349f02ebc462196ecfde26313b33a13a66d12f9300aebef6d3e9e07f8",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 122,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1840211000017007
+      },
+      {
+        "episode_id": "g3-c7-e4",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "3aa2f71349f02ebc462196ecfde26313b33a13a66d12f9300aebef6d3e9e07f8",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 129,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.13593609999952605
+      },
+      {
+        "episode_id": "g3-c7-e5",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "frozen_E",
+        "swap": false,
+        "first": 1,
+        "parameter_sha256": "3aa2f71349f02ebc462196ecfde26313b33a13a66d12f9300aebef6d3e9e07f8",
+        "winner": 0,
+        "scores": [
+          1,
+          0
+        ],
+        "lives": [
+          3,
+          0
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": -0.03571428571428571,
+        "elapsed_seconds": 0.7023765000049025
+      },
+      {
+        "episode_id": "g3-c7-e6",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "3aa2f71349f02ebc462196ecfde26313b33a13a66d12f9300aebef6d3e9e07f8",
+        "winner": 0,
+        "scores": [
+          6,
+          1
+        ],
+        "lives": [
+          2,
+          3
+        ],
+        "steps": 115,
+        "reason": "diamonds_collected",
+        "objective": -0.17857142857142858,
+        "elapsed_seconds": 0.10915719999320572
+      },
+      {
+        "episode_id": "g3-c7-e7",
+        "map_id": "E-train-m01",
+        "stage": "search",
+        "opponent": "B2",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "3aa2f71349f02ebc462196ecfde26313b33a13a66d12f9300aebef6d3e9e07f8",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          2,
+          2
+        ],
+        "steps": 136,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.1564146000018809
+      }
+    ]
+  }
+]

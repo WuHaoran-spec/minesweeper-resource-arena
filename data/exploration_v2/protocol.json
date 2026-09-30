@@ -1,0 +1,78 @@
+{
+  "protocol_version": "E-linear8-cem-pilot-v1",
+  "rule_version": "arena-v2.0",
+  "preset": "intermediate",
+  "max_steps": 800,
+  "independent_maps": {
+    "train": 6,
+    "validation": 2,
+    "test": 4
+  },
+  "manifest_sha256": "0bf321f8c8d3abb7a12150dc7721e919a4a8c4f35447d40689a9099d933f3241",
+  "method": "cross-entropy-method derivative-free search of eight linear action-scoring coefficients",
+  "feature_names": [
+    "destination_mine_risk",
+    "destination_revealed",
+    "wait",
+    "nearest_resource_manhattan",
+    "nearest_resource_risk_route",
+    "best_resource_distance_lead",
+    "arrives_at_resource",
+    "distance_to_live_opponent"
+  ],
+  "teacher_action_labels_used": false,
+  "objective": "terminal win=1, draw=0.5, loss=0 + 0.25*(own_diamonds-opponent_diamonds)/7",
+  "step_rewards": null,
+  "generations": 4,
+  "population": 8,
+  "elite_count": 2,
+  "initial_parameter_std": 0.5,
+  "initial_search_std": 1.0,
+  "minimum_search_std": 0.1,
+  "distribution_update": "0.3 old mean/std + 0.7 elite mean/std",
+  "training_seed": 20261002,
+  "action_exploration_epsilon": [
+    0.15,
+    0.1,
+    0.05,
+    0.05
+  ],
+  "training_map_indices_by_generation": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "training_conditions": "two listed maps x swap false/true x first 0/1; candidate is player 1",
+  "opponent_schedule": "condition index modulo 3: B1, B2, frozen previous completed generation training-best",
+  "validation_selection": "initial plus best training candidate from each completed generation; highest validation objective, earlier on ties",
+  "validation_conditions": "two maps x swap false/true x first 0/1; opponent alternates B1/B2 by condition index",
+  "test_conditions": "four independent maps x B1/B2 x swap false/true x first 0/1 x initial/final frozen policies",
+  "planned_training_games": 256,
+  "planned_validation_games": 40,
+  "planned_test_games": 64,
+  "search_wall_budget_seconds": 720,
+  "test_wall_budget_seconds": 180,
+  "budget_boundary": "finish and retain the current game; never rank an incomplete candidate or generation",
+  "behavior_predicates": {
+    "wait": "action=wait",
+    "risk": "selected destination mine marginal >=0.2",
+    "detour": "selected action increases Manhattan distance to its diagnostic target",
+    "switch": "same actor diagnostic target changes while both old and new targets remain available"
+  },
+  "behavior_limit": "Diagnostic targets are path attributions, not learned goal heads; events do not prove causality or emergence",
+  "human_records": 0,
+  "source": "automated self-generated simulation"
+}

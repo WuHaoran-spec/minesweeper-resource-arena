@@ -1,0 +1,12 @@
+{
+  "rule_version": "arena-v2.0",
+  "source": "automated_synthetic_policy_matches",
+  "human_records": 0,
+  "model_sha256": {
+    "L_v2_initial": "3c064eb2d7675469d34de9a349185fef9f7285630b334670c602b6795ae058a8",
+    "L_v2": "24eb8b59771a014389c31371fffc37f09b0c040f842e3249acebba56990eb8e2"
+  },
+  "protocol_sha256": "ad47c40c9479c889df76367fe3b8c517623ca335ea12afbd5c287024fd741771",
+  "limited_maps_per_preset": 1,
+  "stage": "pilot1"
+}

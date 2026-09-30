@@ -1,0 +1,96 @@
+{
+  "source": "browser_automation",
+  "rules": [
+    "arena-v2.0",
+    "classic-v2.0"
+  ],
+  "classic_expert": {
+    "width": 30,
+    "height": 16,
+    "cells": 480,
+    "mine_count": 99,
+    "first_click_safe_reveals": 12,
+    "flag_counter": [
+      99,
+      98,
+      99
+    ]
+  },
+  "arena_expert_battle": {
+    "controllers": [
+      "B1",
+      "B2"
+    ],
+    "steps": 188,
+    "scores": [
+      10,
+      1
+    ],
+    "lives": [
+      1,
+      0
+    ],
+    "reason": "diamonds_collected",
+    "frames": 189,
+    "import_roundtrip": true
+  },
+  "snapshot_branch": {
+    "saved_steps": 1,
+    "after_action_steps": 2,
+    "restored_steps": 1,
+    "cells": 480,
+    "source": "counterfactual_replay"
+  },
+  "human_participants": 0,
+  "used_in_formal_experiments": false,
+  "final_model_battle": {
+    "controllers": [
+      "L_v2",
+      "B2"
+    ],
+    "preset": "expert",
+    "steps": 149,
+    "scores": [
+      8,
+      3
+    ],
+    "lives": [
+      1,
+      0
+    ],
+    "reason": "diamonds_collected",
+    "final_model_sha256": "24eb8b59771a014389c31371fffc37f09b0c040f842e3249acebba56990eb8e2",
+    "latest_closure_budget_visible": 50000
+  },
+  "exploration_battle": {
+    "controllers": [
+      "E",
+      "B2"
+    ],
+    "preset": "intermediate",
+    "steps": 98,
+    "scores": [
+      0,
+      7
+    ],
+    "reason": "diamonds_collected",
+    "model_sha256": "e9e266e71cd2a4d4b3782467d582e614e9cde98265145a248bf5b0c01780bdbe",
+    "downloaded_public_json": true,
+    "replay_frame_1_shows_8_coefficients_and_model_hash": true
+  },
+  "cross_mode_snapshot_restore": {
+    "from": "arena/intermediate/human+B2",
+    "intermediate_new_game": "classic/expert/human+L_v2",
+    "restored": {
+      "mode": "arena",
+      "preset": "intermediate",
+      "controllers": [
+        "human",
+        "B2"
+      ],
+      "cells": 256,
+      "preset_hint_synced": true
+    },
+    "console_errors_after_reload": 0
+  }
+}

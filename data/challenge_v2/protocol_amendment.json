@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-30T01:07:20.046404+00:00",
+  "old_protocol_sha256": "e7dde11978b1a10ce753ca91cdcab343631838c173c4abeb38592ce6c88ea038",
+  "previous_map_counts_per_preset": {
+    "train": 60,
+    "validation": 12,
+    "test": 20
+  },
+  "new_map_counts_per_preset": {
+    "train": 20,
+    "validation": 6,
+    "test": 8
+  },
+  "reason": "Prospective bounded CPU pilot: collection consumed over 150 CPU seconds before completing a dataset; larger-frontier constraint-closure budget is also being bounded before restart. Target roughly 20 minutes, no map/outcome screening.",
+  "selection": "First prefix of each already frozen random private partition, including every current difficult prefix map; no outcome-based replacement",
+  "training_completed_before_amendment": false,
+  "validation_or_test_games_run_before_amendment": 0,
+  "initial_collection_complete": false,
+  "legacy_v1_artifacts_changed": false
+}

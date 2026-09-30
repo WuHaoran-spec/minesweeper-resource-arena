@@ -1,0 +1,7 @@
+{
+  "rounds": 1,
+  "test_used_for_training": false,
+  "combined_examples": 13728,
+  "correction_examples": 4463,
+  "two_rounds_may_repeat_states": true
+}

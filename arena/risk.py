@@ -8,9 +8,15 @@ from functools import lru_cache
 from math import comb
 
 
-def neighbors(cell, size):
+# Subset closure is an optional optimization. Large boards need a separate
+# deterministic bound before the model-enumeration budget is even reached.
+LARGE_BOARD_SUBSET_COMPARISONS = 50000
+
+
+def neighbors(cell, size, height=None):
+    height = size if height is None else height
     r, c = divmod(cell, size)
-    return [rr * size + cc for rr in range(max(0, r-1), min(size, r+2))
+    return [rr * size + cc for rr in range(max(0, r-1), min(height, r+2))
             for cc in range(max(0, c-1), min(size, c+2)) if (rr, cc) != (r, c)]
 
 
@@ -22,7 +28,9 @@ def infer(obs):
     Extra public fields (positions, scores, and flags) are not mine evidence.
     """
     size, total = obs['size'], obs['mine_count']
-    if type(size) is not int or size < 2 or type(total) is not int or not 0 <= total <= size * size:
+    height = obs.get('height', size)
+    if (type(size) is not int or size < 2 or type(height) is not int or height < 2
+            or obs.get('width', size) != size or type(total) is not int or not 0 <= total <= size * height):
         raise ValueError('Invalid public board dimensions or mine count')
     known = set()
     clues = {}
@@ -30,23 +38,23 @@ def infer(obs):
         if len(item) != 2:
             raise ValueError('Invalid known-safe cell')
         r, c = item
-        if type(r) is not int or type(c) is not int or not (0 <= r < size and 0 <= c < size):
+        if type(r) is not int or type(c) is not int or not (0 <= r < height and 0 <= c < size):
             raise ValueError('Known-safe cell is outside the board')
         known.add((r, c))
     for item in obs['revealed']:
         if len(item) != 3:
             raise ValueError('Invalid revealed cell')
         r, c, count = item
-        if type(r) is not int or type(c) is not int or not (0 <= r < size and 0 <= c < size):
+        if type(r) is not int or type(c) is not int or not (0 <= r < height and 0 <= c < size):
             raise ValueError('Revealed cell is outside the board')
-        if type(count) is not int or not -1 <= count <= len(neighbors(r * size + c, size)):
+        if type(count) is not int or not -1 <= count <= len(neighbors(r * size + c, size, height)):
             raise ValueError('Invalid public clue number')
         if (r, c) in clues and clues[r, c] != count:
             raise ValueError('Conflicting public clue numbers')
         if count == -1 and (r, c) in known:
             raise ValueError('A public mine cannot also be known safe')
         clues[r, c] = count
-    key = (size, total, tuple(sorted(known)),
+    key = (size, height, total, tuple(sorted(known)),
            tuple((r, c, n) for (r, c), n in sorted(clues.items())))
     p, status, detail = _infer(key)
     return list(p), status, dict(detail)
@@ -76,13 +84,15 @@ def _put_constraint(target, cells, count):
 
 @lru_cache(maxsize=12000)
 def _infer(key):
-    size, mines_total, known, revealed = key
+    size, height, mines_total, known, revealed = key
     safe = {r * size + c for r, c in known}
     mines = {r * size + c for r, c, n in revealed if n < 0}
     safe.update(r * size + c for r, c, n in revealed if n >= 0)
-    original = [(frozenset(neighbors(r*size+c, size)), n) for r, c, n in revealed if n >= 0]
+    original = [(frozenset(neighbors(r*size+c, size, height)), n) for r, c, n in revealed if n >= 0]
     # Constraint subtraction and subset differences establish logical facts first.
     constraints = {}
+    subset_budget = LARGE_BOARD_SUBSET_COMPARISONS if size * height > 81 else None
+    subset_comparisons, subset_exhausted = 0, False
     for _ in range(20):
         updated = {}
         previous_constraints = constraints
@@ -102,8 +112,15 @@ def _infer(key):
         sets = list(updated)
         for a in sets:
             for b in sets:
+                if subset_budget is not None:
+                    if subset_comparisons >= subset_budget:
+                        subset_exhausted = True
+                        break
+                    subset_comparisons += 1
                 if a < b:
                     _put_constraint(updated, b-a, updated[b]-updated[a])
+            if subset_exhausted:
+                break
         constraints = updated
         if before == (len(safe), len(mines)) and constraints == previous_constraints:
             break
@@ -113,11 +130,17 @@ def _infer(key):
         n = count - len(cells & mines)
         _put_constraint(reduced, frozenset(k), n)
     constraints = list(reduced.items())
-    unknown = set(range(size*size)) - safe - mines
+    # Every original clue is reinserted on each pass. Stopping additional
+    # subset comparisons discards no evidence; complete enumeration remains
+    # exact if it finishes. Never label a search cutoff as exact.
+    closure_detail = (() if subset_budget is None else (
+        ('closure_comparisons', subset_comparisons), ('closure_budget', subset_budget),
+        ('closure_exhausted', subset_exhausted), ('retained_constraints', len(constraints))))
+    unknown = set(range(size*height)) - safe - mines
     remaining = mines_total - len(mines)
     if not 0 <= remaining <= len(unknown):
         raise ValueError('Inconsistent global mine count')
-    p = [0.0] * (size*size)
+    p = [0.0] * (size*height)
     for i in mines:
         p[i] = 1.0
     if not unknown or remaining in (0, len(unknown)):
@@ -125,7 +148,7 @@ def _infer(key):
             raise ValueError('Public clues conflict with the global mine count')
         for i in unknown:
             p[i] = float(remaining > 0)
-        return tuple(p), 'exact_global_model_count', (('models', 1), ('components', 0))
+        return tuple(p), 'exact_global_model_count', (('models', 1), ('components', 0)) + closure_detail
     frontier = set().union(*(cells for cells, _ in constraints)) if constraints else set()
     free = unknown - frontier
     # Connected components keep unrelated clue regions independent until global weighting.
@@ -216,7 +239,7 @@ def _infer(key):
                                 for k, n in all_counts.items()) / denominator
             for i in free:
                 p[i] = free_marginal
-        return tuple(p), 'exact_global_model_count', (('models', denominator), ('components', len(components)), ('nodes', nodes_total))
+        return tuple(p), 'exact_global_model_count', (('models', denominator), ('components', len(components)), ('nodes', nodes_total)) + closure_detail
     # Deterministic iterative local projection: useful but NOT a complete posterior.
     baseline = remaining / len(unknown)
     for i in unknown:
@@ -229,4 +252,4 @@ def _infer(key):
         delta = (remaining - sum(p[i] for i in unknown)) / len(unknown)
         for i in unknown:
             p[i] = min(.999, max(.001, p[i] + .4 * delta))
-    return tuple(p), 'approximate_cutoff', (('components', len(components)), ('nodes', nodes_total), ('reason', 'component >23 cells or >30000 search nodes'))
+    return tuple(p), 'approximate_cutoff', (('components', len(components)), ('nodes', nodes_total), ('reason', 'component >23 cells or >30000 search nodes')) + closure_detail

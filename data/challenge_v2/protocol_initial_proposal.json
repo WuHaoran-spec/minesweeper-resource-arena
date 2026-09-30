@@ -1,0 +1,61 @@
+{
+  "protocol_version": "challenge-v2-20260930",
+  "rule_version": "arena-v2.0",
+  "base_map_counts_per_preset": {
+    "train": 60,
+    "validation": 12,
+    "test": 20
+  },
+  "presets": [
+    "intermediate",
+    "expert"
+  ],
+  "manifest_sha256": "c1f57357d6ee361505cf429dd2292533dd3467c15b110d00908a779a13e1bfd0",
+  "split_unit": "base map; seat, first-player, mirror, snapshot and replay stay in one split",
+  "train_games_per_map": 2,
+  "test_variants_per_map": "swap false/true x first 0/1",
+  "test_pairs": [
+    [
+      "B1",
+      "B2"
+    ],
+    [
+      "B1",
+      "L_v2_initial"
+    ],
+    [
+      "B2",
+      "L_v2_initial"
+    ],
+    [
+      "B1",
+      "L_v2"
+    ],
+    [
+      "B2",
+      "L_v2"
+    ],
+    [
+      "B0",
+      "L_v2"
+    ]
+  ],
+  "method": "B2-v2 supervised imitation; one training-map teacher correction round",
+  "features": 32,
+  "hidden": 48,
+  "parameters": 1633,
+  "optimizer": "Adam",
+  "learning_rate": 0.002,
+  "batch_size": 256,
+  "epochs_initial": 35,
+  "epochs_correction": 18,
+  "training_seed": 20261001,
+  "training_seeds_count": 1,
+  "checkpoint_selection": "lowest held-out validation cross entropy within fixed epoch budget",
+  "teacher_label": "heuristic B2 action, not optimality or exact mine-probability ground truth",
+  "supplemental_selection": "training games lost by initial learner or any teacher-action disagreement",
+  "state_sampling": "deduplicate complete public state excluding opaque ids/revision; at most 192 equally spaced eligible states per game",
+  "raw_log_policy": "all actions, failures, draws and timeouts retained; downsampling affects feature training only",
+  "human_records": 0,
+  "reward_shaping": null
+}

@@ -1,0 +1,1 @@
+Validated legacy 9x9 and rectangular 30x16 replays; 15 malformed cases rejected. Node tests/test_replay.js completed successfully.

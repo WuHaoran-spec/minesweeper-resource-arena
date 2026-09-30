@@ -10,32 +10,52 @@ import unittest
 from arena.risk import infer
 
 
-def adjacent(i, size):
+def adjacent(i, size, height=None):
     """Independent eight-neighbor implementation for the reference enumerator."""
     r, c = divmod(i, size)
-    return {j for j in range(size * size)
+    return {j for j in range(size * (height or size))
             if j != i and abs(j // size - r) <= 1 and abs(j % size - c) <= 1}
 
 
 def exhaustive(obs):
     size = obs['size']
+    height = obs.get('height', size)
     safe = {r * size + c for r, c in obs['known_safe']}
     safe |= {r * size + c for r, c, n in obs['revealed'] if n >= 0}
     bombs = {r * size + c for r, c, n in obs['revealed'] if n == -1}
-    eligible = sorted(set(range(size * size)) - safe - bombs)
+    eligible = sorted(set(range(size * height)) - safe - bombs)
     layouts = []
     for subset in itertools.combinations(eligible, obs['mine_count'] - len(bombs)):
         mines = set(subset) | bombs
-        if all(len(adjacent(r * size + c, size) & mines) == n
+        if all(len(adjacent(r * size + c, size, height) & mines) == n
                for r, c, n in obs['revealed'] if n >= 0):
             layouts.append(mines)
     if not layouts:
         raise ValueError('No compatible layouts in independent enumerator')
     return [sum(i in mines for mines in layouts) / len(layouts)
-            for i in range(size * size)], len(layouts)
+            for i in range(size * height)], len(layouts)
 
 
 class IndependentRiskTests(unittest.TestCase):
+    def test_rectangular_marginals_match_independent_enumeration(self):
+        for case in range(120):
+            rng = random.Random(case + 710000)
+            width, height = rng.choice(((5, 3), (3, 5), (4, 2)))
+            count = rng.randint(1, 3)
+            truth = set(rng.sample(range(width * height), count))
+            safe = rng.sample(sorted(set(range(width * height)) - truth), 3)
+            shown = safe[:rng.randint(0, 3)]
+            obs = {'size': width, 'width': width, 'height': height, 'mine_count': count,
+                   'known_safe': [[i // width, i % width] for i in safe],
+                   'revealed': [[i // width, i % width, len(adjacent(i, width, height) & truth)] for i in shown]}
+            actual, status, detail = infer(obs)
+            expected, models = exhaustive(obs)
+            self.assertEqual(len(actual), width * height)
+            self.assertEqual(status, 'exact_global_model_count')
+            self.assertEqual(detail['models'], models)
+            for p, q in zip(actual, expected):
+                self.assertAlmostEqual(p, q, places=12)
+
     def test_600_random_public_states_match_complete_enumeration(self):
         for seed in range(600):
             with self.subTest(case=seed):

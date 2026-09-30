@@ -1,0 +1,472 @@
+{
+  "analysis_type": "post_hoc_public_single_state_ablation",
+  "source_full_replay": "cases/test-m00-B1-s0-f0-final.json.gz",
+  "replay_sha256": "3f1b31bdd3ff7821a114b8a466767a3dd27d8054509ea684075b4a0d3cc6a8c1",
+  "model_sha256": "e9e266e71cd2a4d4b3782467d582e614e9cde98265145a248bf5b0c01780bdbe",
+  "episode_id": "test-m00-B1-s0-f0-final",
+  "record_index": 9,
+  "step": 10,
+  "observation": {
+    "rule_version": "arena-v2.0",
+    "game_id": "f730e009976b491dbd10888ecf1b3730",
+    "revision": 9,
+    "size": 16,
+    "mine_count": 40,
+    "turn": 1,
+    "positions": [
+      [
+        2,
+        3
+      ],
+      [
+        13,
+        13
+      ]
+    ],
+    "scores": [
+      0,
+      0
+    ],
+    "alive": [
+      true,
+      true
+    ],
+    "diamonds": [
+      [
+        0,
+        15
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        12,
+        10
+      ]
+    ],
+    "known_safe": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        15
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        12,
+        10
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        14,
+        13
+      ],
+      [
+        14,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        13
+      ],
+      [
+        15,
+        14
+      ],
+      [
+        15,
+        15
+      ]
+    ],
+    "revealed": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        13,
+        13,
+        2
+      ],
+      [
+        13,
+        14,
+        2
+      ],
+      [
+        13,
+        15,
+        1
+      ],
+      [
+        14,
+        13,
+        1
+      ],
+      [
+        14,
+        14,
+        0
+      ],
+      [
+        14,
+        15,
+        0
+      ],
+      [
+        15,
+        13,
+        1
+      ],
+      [
+        15,
+        14,
+        0
+      ],
+      [
+        15,
+        15,
+        0
+      ]
+    ],
+    "steps": 9,
+    "max_steps": 800,
+    "done": false,
+    "winner": null,
+    "reason": null,
+    "legal_actions": [
+      "up",
+      "down",
+      "left",
+      "right",
+      "wait"
+    ],
+    "width": 16,
+    "height": 16,
+    "resource_count": 7,
+    "lives": [
+      3,
+      3
+    ],
+    "preset": "intermediate"
+  },
+  "feature_names": [
+    "destination_mine_risk",
+    "destination_revealed",
+    "wait",
+    "nearest_resource_manhattan",
+    "nearest_resource_risk_route",
+    "best_resource_distance_lead",
+    "arrives_at_resource",
+    "distance_to_live_opponent"
+  ],
+  "weights": [
+    0.23540701071943632,
+    0.8650489612688526,
+    -0.4229429543377463,
+    0.8533195464820709,
+    -2.782951274044822,
+    0.09910169088774767,
+    -2.6946750663188603,
+    -0.4198156715352413
+  ],
+  "risk_status": "exact_global_model_count",
+  "actions": {
+    "up": {
+      "features": [
+        1.0,
+        0.0,
+        0.0,
+        0.1,
+        4.0,
+        0.4666666666666667,
+        0.0,
+        0.6666666666666666
+      ],
+      "weighted_contributions": [
+        0.23540701071943632,
+        0.0,
+        -0.0,
+        0.08533195464820709,
+        -11.131805096179288,
+        0.04624745574761558,
+        -0.0,
+        -0.2798771143568275
+      ],
+      "actual_score": -11.044695789420857,
+      "score_with_revealed_coefficient_zero": -11.044695789420857
+    },
+    "down": {
+      "features": [
+        0.0,
+        1.0,
+        0.0,
+        0.16666666666666666,
+        0.24565743044719046,
+        0.4,
+        0.0,
+        0.7333333333333333
+      ],
+      "weighted_contributions": [
+        0.0,
+        0.8650489612688526,
+        -0.0,
+        0.14221992441367848,
+        -0.683652659041586,
+        0.039640676355099075,
+        -0.0,
+        -0.3078648257925103
+      ],
+      "actual_score": 0.055392077203533785,
+      "score_with_revealed_coefficient_zero": -0.8096568840653187
+    },
+    "left": {
+      "features": [
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.1789907637805238,
+        0.4666666666666667,
+        0.0,
+        0.6666666666666666
+      ],
+      "weighted_contributions": [
+        0.0,
+        0.0,
+        -0.0,
+        0.08533195464820709,
+        -0.49812257410526456,
+        0.04624745574761558,
+        -0.0,
+        -0.2798771143568275
+      ],
+      "actual_score": -0.6464202780662694,
+      "score_with_revealed_coefficient_zero": -0.6464202780662694
+    },
+    "right": {
+      "features": [
+        0.0,
+        1.0,
+        0.0,
+        0.16666666666666666,
+        0.24565743044719046,
+        0.4,
+        0.0,
+        0.7333333333333333
+      ],
+      "weighted_contributions": [
+        0.0,
+        0.8650489612688526,
+        -0.0,
+        0.14221992441367848,
+        -0.683652659041586,
+        0.039640676355099075,
+        -0.0,
+        -0.3078648257925103
+      ],
+      "actual_score": 0.055392077203533785,
+      "score_with_revealed_coefficient_zero": -0.8096568840653187
+    },
+    "wait": {
+      "features": [
+        0.0,
+        1.0,
+        1.0,
+        0.13333333333333333,
+        0.2789907637805238,
+        0.43333333333333335,
+        0.0,
+        0.7
+      ],
+      "weighted_contributions": [
+        0.0,
+        0.8650489612688526,
+        -0.4229429543377463,
+        0.11377593953094278,
+        -0.7764177015097466,
+        0.042944066051357324,
+        -0.0,
+        -0.2938709700746689
+      ],
+      "actual_score": -0.47146265907100915,
+      "score_with_revealed_coefficient_zero": -1.3365116203398617
+    }
+  },
+  "recorded_action": "down",
+  "recomputed_action": "down",
+  "single_coefficient_counterfactual_action": "left",
+  "whole_episode_observations": {
+    "final_scores": [
+      0,
+      0
+    ],
+    "reason": "max_steps",
+    "steps": 800,
+    "candidate_actions": {
+      "up": 389,
+      "left": 2,
+      "down": 387
+    },
+    "candidate_unique_pre_action_positions": 6,
+    "repeated_identical_public_states_excluding_clock": 755,
+    "two_action_return_patterns": 772
+  },
+  "limits": "Single-state score intervention only. Does not execute the altered policy, estimate outcome change, prove optimality, or change final weights. Chosen after held-out evaluation for failure analysis.",
+  "selection_for_training": false,
+  "checkpoint_modified": false,
+  "human_records": 0
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "preset": "intermediate",
+    "opponent": "B1",
+    "left": "L_v2",
+    "right": "L_v2_initial",
+    "base_maps": 1,
+    "win_plus_half_draw_difference": 0.0,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "left": "L_v2",
+    "right": "L_v2_initial",
+    "base_maps": 1,
+    "win_plus_half_draw_difference": 0.0,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B1",
+    "left": "L_v2",
+    "right": "L_v2_initial",
+    "base_maps": 1,
+    "win_plus_half_draw_difference": 0.0,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "left": "L_v2",
+    "right": "L_v2_initial",
+    "base_maps": 1,
+    "win_plus_half_draw_difference": 0.0,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.0
+    ]
+  }
+]

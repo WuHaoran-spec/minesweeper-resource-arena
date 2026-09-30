@@ -22,7 +22,7 @@ class Session:
         if mode not in ('arena', 'classic'):
             raise ValueError('未知模式')
         controllers = data.get('controllers', ['human', 'B2'])
-        allowed = {'human', 'B0', 'B1', 'B2', 'L', 'L_initial', 'L_no_opponent'}
+        allowed = {'human', 'B0', 'B1', 'B2', 'L', 'L_initial', 'L_no_opponent', 'L_v2', 'E'}
         if not isinstance(controllers, list) or len(controllers) != 2 or any(not isinstance(c, str) or c not in allowed for c in controllers):
             raise ValueError('未知策略')
         source = data.get('source', 'unverified_interaction')
@@ -30,7 +30,13 @@ class Session:
             raise ValueError('未知数据来源')
         # UI seed never appears in observations, logs, or policy arguments.
         seed = secrets.randbits(52)
-        env = Arena(seed=seed) if mode == 'arena' else Classic(seed=seed)
+        preset = data.get('preset', 'legacy')
+        if preset not in ('legacy', 'beginner', 'intermediate', 'expert'):
+            raise ValueError('未知难度')
+        if mode == 'arena':
+            env = Arena(seed=seed, preset='legacy' if preset == 'beginner' else preset)
+        else:
+            env = Classic(seed=seed) if preset == 'legacy' else Classic(seed=seed, preset=preset)
         # Commit a new session only after every input and environment is valid.
         self.mode, self.controllers, self.source = mode, controllers.copy(), source
         self.env = env
@@ -93,7 +99,7 @@ class Session:
             return self.state()
         if route == '/api/flag':
             r, c = int(data['r']), int(data['c'])
-            if not (0 <= r < obs['size'] and 0 <= c < obs['size']):
+            if not (0 <= r < obs.get('height', obs['size']) and 0 <= c < obs['size']):
                 raise ValueError('标记超出棋盘')
             if self.mode == 'classic':
                 self.env.flag(r, c)
@@ -102,7 +108,11 @@ class Session:
                 else: self.flags.add((r,c))
             self.frames.append(self._ui_frame())
             return self.state()
-        if route == '/api/action':
+        if route == '/api/chord':
+            if self.mode != 'classic': raise ValueError('快速展开仅用于经典模式')
+            if self.paused: raise ValueError('对局暂停中')
+            self.env.chord(int(data['r']), int(data['c']))
+        elif route == '/api/action':
             if self.paused: raise ValueError('对局暂停中')
             if self.mode == 'classic':
                 self.env.reveal(int(data['r']), int(data['c']))
@@ -119,7 +129,8 @@ class Session:
             from .policies import choose
             self.last = choose(copy.deepcopy(obs), policy=policy, rng=self.rng)
             self.env.step(self.last['action'], metadata={**self.last, 'source': self.source,
-                           'actor_source': 'learning_policy' if policy.startswith('L') else 'heuristic_policy'})
+                           'actor_source': ('search_trained_policy' if policy == 'E' else
+                                            'learning_policy' if policy.startswith('L') else 'heuristic_policy')})
         else:
             raise ValueError('未知接口')
         self.frames.append(self._ui_frame())
@@ -182,6 +193,7 @@ class Handler(BaseHTTPRequestHandler):
 def main():
     parser=argparse.ArgumentParser(); parser.add_argument('--port',type=int,default=8765)
     args=parser.parse_args(); Handler.session=Session()
+    Handler.session.reset({'preset':'intermediate'})
     server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler)
     print(f'Minesweeper Resource Arena: http://127.0.0.1:{args.port}',flush=True)
     try: server.serve_forever()

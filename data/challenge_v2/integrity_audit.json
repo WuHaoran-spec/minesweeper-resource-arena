@@ -1,0 +1,25 @@
+{
+  "base_maps": 68,
+  "dihedral_map_overlap": 0,
+  "all_public_replays_verified_again": 568,
+  "public_truth_fields_absent": true,
+  "model_hashes": {
+    "challenge_initial": "3c064eb2d7675469d34de9a349185fef9f7285630b334670c602b6795ae058a8",
+    "challenge_final": "24eb8b59771a014389c31371fffc37f09b0c040f842e3249acebba56990eb8e2"
+  },
+  "feature_reconstruction": {
+    "train": {
+      "raw_transitions": 11020,
+      "selected_features_rebuilt": 9265
+    },
+    "validation": {
+      "raw_transitions": 2586,
+      "selected_features_rebuilt": 2385
+    },
+    "corrections": {
+      "raw_transitions": 10894,
+      "selected_features_rebuilt": 4463
+    }
+  },
+  "human_records": 0
+}

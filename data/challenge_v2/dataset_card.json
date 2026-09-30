@@ -1,0 +1,173 @@
+{
+  "schema": "challenge-dataset-card-v1",
+  "source": "self-generated arena-v2 simulation; MIT",
+  "human_records": 0,
+  "teacher": "B2-v2 heuristic labels, not optimal ground truth",
+  "allowed_observation": "public Arena.observe fields only",
+  "split_counts": {
+    "train": 20,
+    "validation": 6,
+    "test": 8
+  },
+  "presets": [
+    "intermediate",
+    "expert"
+  ],
+  "training_collection": {
+    "raw_transitions": 11020,
+    "teacher_disagreements": 1368,
+    "games": 80,
+    "learner_losses": 0,
+    "draws": 5,
+    "timeouts": 2,
+    "duplicate_states": 503,
+    "selected_states": 9265,
+    "risk_status_counts": {
+      "exact_global_model_count": 10795,
+      "approximate_cutoff": 225
+    },
+    "game_step_quantiles": {
+      "0": 41.0,
+      "0.1": 74.8,
+      "0.25": 91.75,
+      "0.5": 117.5,
+      "0.75": 149.25,
+      "0.9": 184.20000000000002,
+      "1": 800.0
+    },
+    "step_quantiles_by_preset": {
+      "intermediate": {
+        "0": 41.0,
+        "0.1": 53.9,
+        "0.25": 79.5,
+        "0.5": 101.0,
+        "0.75": 112.0,
+        "0.9": 126.00000000000001,
+        "1": 800.0
+      },
+      "expert": {
+        "0": 75.0,
+        "0.1": 111.7,
+        "0.25": 124.5,
+        "0.5": 141.0,
+        "0.75": 171.0,
+        "0.9": 192.0,
+        "1": 209.0
+      }
+    },
+    "elapsed_seconds": 81.7603839000003,
+    "all_replays_verified": 80,
+    "features_sha256": "29c45a8b79b8e1b2a880e2cc4656c2e8701ed1c711ec394476221a65cc1913dc",
+    "human_records": 0
+  },
+  "validation_collection": {
+    "raw_transitions": 2586,
+    "teacher_disagreements": 357,
+    "games": 24,
+    "learner_losses": 0,
+    "draws": 0,
+    "timeouts": 0,
+    "duplicate_states": 130,
+    "selected_states": 2385,
+    "risk_status_counts": {
+      "exact_global_model_count": 2526,
+      "approximate_cutoff": 60
+    },
+    "game_step_quantiles": {
+      "0": 45.0,
+      "0.1": 49.3,
+      "0.25": 73.25,
+      "0.5": 90.5,
+      "0.75": 141.0,
+      "0.9": 166.29999999999998,
+      "1": 228.0
+    },
+    "step_quantiles_by_preset": {
+      "intermediate": {
+        "0": 45.0,
+        "0.1": 46.3,
+        "0.25": 49.75,
+        "0.5": 71.5,
+        "0.75": 82.5,
+        "0.9": 90.6,
+        "1": 125.0
+      },
+      "expert": {
+        "0": 90.0,
+        "0.1": 91.8,
+        "0.25": 108.75,
+        "0.5": 141.0,
+        "0.75": 162.25,
+        "0.9": 221.20000000000002,
+        "1": 228.0
+      }
+    },
+    "elapsed_seconds": 22.357435799996892,
+    "all_replays_verified": 24,
+    "features_sha256": "af3a72a1196e3e52f0b3a707e34215c367870484c1d3eb85f513db1dc4224336",
+    "human_records": 0
+  },
+  "correction_collection": {
+    "raw_transitions": 10894,
+    "teacher_disagreements": 1707,
+    "games": 80,
+    "learner_losses": 25,
+    "draws": 4,
+    "timeouts": 2,
+    "selected_states": 4463,
+    "risk_status_counts": {
+      "exact_global_model_count": 10609,
+      "approximate_cutoff": 285
+    },
+    "game_step_quantiles": {
+      "0": 41.0,
+      "0.1": 73.9,
+      "0.25": 87.75,
+      "0.5": 115.5,
+      "0.75": 150.5,
+      "0.9": 172.30000000000013,
+      "1": 800.0
+    },
+    "step_quantiles_by_preset": {
+      "intermediate": {
+        "0": 41.0,
+        "0.1": 53.9,
+        "0.25": 75.0,
+        "0.5": 92.5,
+        "0.75": 109.5,
+        "0.9": 126.80000000000003,
+        "1": 800.0
+      },
+      "expert": {
+        "0": 75.0,
+        "0.1": 109.0,
+        "0.25": 124.5,
+        "0.5": 143.0,
+        "0.75": 163.0,
+        "0.9": 192.2,
+        "1": 283.0
+      }
+    },
+    "elapsed_seconds": 46.49629420000565,
+    "all_replays_verified": 80,
+    "features_sha256": "dae5aaf3f46425a259fafc01506814f120bcc69af6901a357889ac620573242f",
+    "human_records": 0
+  },
+  "model_sha256": "24eb8b59771a014389c31371fffc37f09b0c040f842e3249acebba56990eb8e2",
+  "quality_gates": [
+    "private truth fields excluded",
+    "legal teacher labels",
+    "finite public features",
+    "rule version verified",
+    "base-map disjoint including dihedral transforms",
+    "full replay audit",
+    "all chosen features rebuilt from public transitions"
+  ],
+  "limitations": [
+    "one training seed",
+    "heuristic imitation, not optimal control",
+    "time-outs retained",
+    "network uses only three selected resource slots",
+    "no real human records"
+  ]
+}

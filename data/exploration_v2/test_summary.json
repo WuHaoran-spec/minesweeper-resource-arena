@@ -1,0 +1,66 @@
+{
+  "groups": {
+    "initial": {
+      "games": 32,
+      "independent_maps": 4,
+      "wins": 0,
+      "draws": 4,
+      "losses": 28,
+      "timeouts": 4,
+      "mean_terminal_objective": -0.15625,
+      "mean_diamond_difference": -6.125,
+      "step_quantiles": {
+        "0": 69.0,
+        "0.5": 119.5,
+        "0.9": 735.8000000000013,
+        "1": 800.0
+      },
+      "behavior_events": {
+        "wait": 4612,
+        "switch": 12
+      },
+      "behavior_distinct_maps": {
+        "wait": 4,
+        "switch": 2
+      }
+    },
+    "final": {
+      "games": 32,
+      "independent_maps": 4,
+      "wins": 0,
+      "draws": 4,
+      "losses": 28,
+      "timeouts": 4,
+      "mean_terminal_objective": -0.15625,
+      "mean_diamond_difference": -6.125,
+      "step_quantiles": {
+        "0": 69.0,
+        "0.5": 119.0,
+        "0.9": 737.4000000000013,
+        "1": 800.0
+      },
+      "behavior_events": {
+        "detour": 2179,
+        "switch": 4
+      },
+      "behavior_distinct_maps": {
+        "detour": 4,
+        "switch": 1
+      }
+    }
+  },
+  "completed_games": 64,
+  "planned_games": 64,
+  "complete": true,
+  "paired_conditions": 32,
+  "paired_mean_objective_change": 0.0,
+  "elapsed_seconds": 17.53490320000128,
+  "budget_reached": false,
+  "frozen_models": {
+    "initial": "4a6a59b5e6e7dba6ee2eeeff19588c2e1de898434154498b447efa37c320e534",
+    "final": "e9e266e71cd2a4d4b3782467d582e614e9cde98265145a248bf5b0c01780bdbe"
+  },
+  "behavior_conclusion": "未发现有充分独立证据支持的稳定新策略；固定判据事件只作为可复核候选。",
+  "human_records": 0,
+  "small_sample_limit": "Only four independent held-out maps; no reliable superiority or emergence claim"
+}

@@ -1,0 +1,49 @@
+{
+  "method": "cross-entropy-method derivative-free search of eight linear action-scoring coefficients",
+  "parameter_count": 8,
+  "feature_names": [
+    "destination_mine_risk",
+    "destination_revealed",
+    "wait",
+    "nearest_resource_manhattan",
+    "nearest_resource_risk_route",
+    "best_resource_distance_lead",
+    "arrives_at_resource",
+    "distance_to_live_opponent"
+  ],
+  "training_seed": 20261002,
+  "teacher_action_labels_used": false,
+  "reward": "terminal win=1, draw=0.5, loss=0 + 0.25*(own_diamonds-opponent_diamonds)/7",
+  "completed_generations": 4,
+  "planned_generations": 4,
+  "training_games": 256,
+  "validation_games": 40,
+  "selected_candidate": "g0-c4",
+  "selected_validation_mean_objective": -0.24107142857142858,
+  "selected_parameters": [
+    0.23540701071943632,
+    0.8650489612688526,
+    -0.4229429543377463,
+    0.8533195464820709,
+    -2.782951274044822,
+    0.09910169088774767,
+    -2.6946750663188603,
+    -0.4198156715352413
+  ],
+  "initial_parameters": [
+    -0.10955722083632725,
+    0.46455354089881845,
+    0.31097782386937156,
+    -0.1750930768198264,
+    -0.49501601237302856,
+    0.3721087311562731,
+    -0.41036598843587174,
+    -0.4554132474019695
+  ],
+  "elapsed_seconds": 131.3290932999953,
+  "budget_reached": false,
+  "final_sha256": "e9e266e71cd2a4d4b3782467d582e614e9cde98265145a248bf5b0c01780bdbe",
+  "initial_sha256": "4a6a59b5e6e7dba6ee2eeeff19588c2e1de898434154498b447efa37c320e534",
+  "protocol_sha256": "33fa41a9f1c747256a06bef6388958acbbf0dde8f25746eb69b93a8d5be3077a",
+  "selection_uses_test": false
+}

@@ -5,10 +5,12 @@ The private snapshot API is for trusted replay branching, never policy input.
 from __future__ import annotations
 
 from copy import deepcopy
+from collections import deque
 import json
 import random
 from typing import Any
 import uuid
+from .config import arena_preset
 
 
 RULE_VERSION = "arena-v1.0"
@@ -18,12 +20,13 @@ ACTIONS = {"up": (-1, 0), "down": (1, 0), "left": (0, -1), "right": (0, 1), "wai
 STARTS = ((0, 0), (8, 8))
 
 
-def neighbors(cell: tuple[int, int], size: int = SIZE):
+def neighbors(cell: tuple[int, int], size: int = SIZE, height: int | None = None):
     """Eight-neighbor cells for classic clue semantics."""
     r, c = cell
+    height = size if height is None else height
     for dr in (-1, 0, 1):
         for dc in (-1, 0, 1):
-            if (dr or dc) and 0 <= r + dr < size and 0 <= c + dc < size:
+            if (dr or dc) and 0 <= r + dr < height and 0 <= c + dc < size:
                 yield r + dr, c + dc
 
 
@@ -61,7 +64,10 @@ class Arena:
     ``first`` is the identity (0 or 1) that takes the first action.
     """
 
-    def __init__(self, seed: int, first: int = 0, swap: bool = False, max_steps: int = 200):
+    def __init__(self, seed: int = 0, first: int = 0, swap: bool = False,
+                 max_steps: int | None = None, preset: str = 'legacy'):
+        config = arena_preset(preset)
+        max_steps = config['max_steps'] if max_steps is None else max_steps
         if type(seed) is not int:
             raise ValueError("seed must be an integer")
         if type(first) is not int or first not in (0, 1):
@@ -69,29 +75,58 @@ class Arena:
         if type(max_steps) is not int or max_steps < 1:
             raise ValueError("max_steps must be a positive integer")
         self._seed, self._first, self._swap = seed, first, bool(swap)
+        self._config, self.preset = config, preset
+        self.width, self.height = config['width'], config['height']
+        self.mine_count, self.resource_count = config['mine_count'], config['resource_count']
+        self.rule_version = config['rule_version']
+        self._corners = ((0, 0), (self.height - 1, self.width - 1))
+        self._starts = list(reversed(self._corners)) if swap else list(self._corners)
         self.max_steps = max_steps
         self.game_id = uuid.uuid4().hex
         self.revision = 0
         rng = random.Random(seed)
-        cells = [(r, c) for r in range(SIZE) for c in range(SIZE)]
-        self._initial_diamonds = set(rng.sample([x for x in cells if x not in STARTS], 3))
-        self._known_safe = set(STARTS) | self._initial_diamonds
-        self._mines = set(rng.sample([x for x in cells if x not in self._known_safe], MINE_COUNT))
+        cells = [(r, c) for r in range(self.height) for c in range(self.width)]
+        zone = config['start_zone_size']
+        start_safe = {(r, c) for r, c in cells if (r < zone and c < zone) or
+                      (r >= self.height - zone and c >= self.width - zone)}
+        diamond_cells = [x for x in cells if x not in start_safe and all(
+            abs(x[0] - s[0]) + abs(x[1] - s[1]) >= config['diamond_min_start_distance'] for s in self._corners)]
+        self._initial_diamonds = set(rng.sample(diamond_cells, self.resource_count))
+        self._known_safe = start_safe | self._initial_diamonds
+        self._mines = set(rng.sample([x for x in cells if x not in self._known_safe], self.mine_count))
         self._diamonds = self._initial_diamonds.copy()
-        self.positions = list(reversed(STARTS)) if swap else list(STARTS)
+        self.positions = self._starts.copy()
         self.scores = [0, 0]
         self.alive = [True, True]
+        self.lives = [config['initial_lives'], config['initial_lives']]
         self.turn = first
         self.steps = 0
         self.done = False
         self.winner: int | str | None = None
         self.reason: str | None = None
-        self._revealed = {cell: self._number(cell) for cell in STARTS}
+        self._revealed = {cell: self._number(cell) for cell in self._corners}
+        if config['zero_expansion']:
+            for cell in self._corners:
+                self._reveal_safe(cell)
         self._history: list[dict[str, Any]] = []
         self._initial_observation = self.observe()
 
     def _number(self, cell):
-        return -1 if cell in self._mines else sum(x in self._mines for x in neighbors(cell))
+        return -1 if cell in self._mines else sum(x in self._mines for x in neighbors(cell, self.width, self.height))
+
+    def _reveal_safe(self, cell):
+        """Public zero flood; resources score only on physical arrival."""
+        queue, visited = deque([cell]), set()
+        while queue:
+            current = queue.popleft()
+            if current in visited or current in self._mines:
+                continue
+            visited.add(current)
+            number = self._number(current)
+            self._revealed[current] = number
+            self._known_safe.add(current)
+            if number == 0 and self._config['zero_expansion']:
+                queue.extend(neighbors(current, self.width, self.height))
 
     def legal_actions(self) -> list[str]:
         if self.done:
@@ -99,16 +134,16 @@ class Arena:
         r, c = self.positions[self.turn]
         # Deliberately consult only PUBLIC revealed values, never _mines.
         return [name for name, (dr, dc) in ACTIONS.items()
-                if 0 <= r + dr < SIZE and 0 <= c + dc < SIZE
+                if 0 <= r + dr < self.height and 0 <= c + dc < self.width
                 and self._revealed.get((r + dr, c + dc)) != -1]
 
     def observe(self) -> dict:
-        return {
-            "rule_version": RULE_VERSION,
+        observation = {
+            "rule_version": self.rule_version,
             "game_id": self.game_id,
             "revision": self.revision,
-            "size": SIZE,
-            "mine_count": MINE_COUNT,
+            "size": self.width,
+            "mine_count": self.mine_count,
             "turn": self.turn,
             "positions": [list(x) for x in self.positions],
             "scores": self.scores.copy(),
@@ -123,6 +158,10 @@ class Arena:
             "reason": self.reason,
             "legal_actions": self.legal_actions(),
         }
+        if self.preset != 'legacy':
+            observation.update(width=self.width, height=self.height, resource_count=self.resource_count,
+                               lives=self.lives.copy(), preset=self.preset)
+        return observation
 
     def step(self, action: str, metadata: dict | None = None) -> dict:
         if self.done:
@@ -139,10 +178,15 @@ class Arena:
         exploded = cell in self._mines
         collected = cell in self._diamonds
         self._revealed[cell] = self._number(cell)
+        respawned = False
         if exploded:
-            self.alive[actor] = False
+            self.lives[actor] -= 1
+            self.alive[actor] = self.lives[actor] > 0
+            if self.alive[actor]:
+                self.positions[actor] = self._starts[actor]
+                respawned = True
         else:
-            self._known_safe.add(cell)
+            self._reveal_safe(cell)
         if collected:
             self._diamonds.remove(cell)
             self.scores[actor] += 1
@@ -161,26 +205,31 @@ class Arena:
             other = 1 - actor
             self.turn = other if self.alive[other] else actor
         after = self.observe()
+        feedback = {"collected": collected, "exploded": exploded, "score_delta": int(collected)}
+        if self.preset != 'legacy':
+            feedback.update(life_lost=int(exploded), respawned=respawned, lives_after=self.lives[actor])
         self._history.append({
-            "rule_version": RULE_VERSION,
+            "rule_version": self.rule_version,
             "game_id": self.game_id,
             "step": self.steps,
             "actor": actor,
             "observation": before,
             "action": action,
             "metadata": diagnostic,
-            "feedback": {"collected": collected, "exploded": exploded, "score_delta": int(collected)},
+            "feedback": feedback,
             "next_observation": after,
         })
         return after
 
     def reset(self, seed: int | None = None, first: int | None = None,
-              swap: bool | None = None, max_steps: int | None = None) -> dict:
+              swap: bool | None = None, max_steps: int | None = None,
+              preset: str | None = None) -> dict:
         """Reset atomically; the new opaque game_id invalidates old requests."""
+        limit = max_steps if max_steps is not None else (None if preset is not None and preset != self.preset else self.max_steps)
         self.__init__(self._seed if seed is None else seed,
                       self._first if first is None else first,
                       self._swap if swap is None else swap,
-                      self.max_steps if max_steps is None else max_steps)
+                      limit, self.preset if preset is None else preset)
         return self.observe()
 
     def render(self) -> dict:
@@ -191,7 +240,7 @@ class Arena:
         """Public, directly playable observations; neither seed nor private map."""
         return deepcopy({
             "schema": "arena-public-replay-v1",
-            "rule_version": RULE_VERSION,
+            "rule_version": self.rule_version,
             "game_id": self.game_id,
             "initial_observation": self._initial_observation,
             "records": self._history,
@@ -201,21 +250,29 @@ class Arena:
 
     def private_snapshot(self) -> dict:
         """Trusted local-only state. MUST NOT be passed to policies or web clients."""
-        return deepcopy({
-            "schema": "arena-private-snapshot-v1", "rule_version": RULE_VERSION,
+        snapshot = {
+            "schema": "arena-private-snapshot-v1", "rule_version": self.rule_version,
             "seed": self._seed, "first": self._first, "swap": self._swap,
             "mines": _cells(self._mines), "initial_diamonds": _cells(self._initial_diamonds),
             "observation": self.observe(), "history": self._history,
             "initial_observation": self._initial_observation,
-        })
+        }
+        if self.preset != 'legacy':
+            snapshot.update(schema='arena-private-snapshot-v2', config=self._config.copy())
+        return deepcopy(snapshot)
 
     @classmethod
     def from_snapshot(cls, snapshot: dict) -> "Arena":
         value = deepcopy(snapshot)
-        if value.get("schema") != "arena-private-snapshot-v1" or value.get("rule_version") != RULE_VERSION:
+        legacy = value.get('schema') == 'arena-private-snapshot-v1' and value.get('rule_version') == RULE_VERSION
+        modern = value.get('schema') == 'arena-private-snapshot-v2' and value.get('rule_version') == 'arena-v2.0'
+        if not (legacy or modern):
             raise ValueError("unsupported private snapshot version")
         obs = value["observation"]
-        env = cls(value["seed"], value["first"], value["swap"], obs["max_steps"])
+        preset = 'legacy' if legacy else value['config']['preset']
+        if modern and value['config'] != arena_preset(preset):
+            raise ValueError('snapshot preset configuration does not match its rule version')
+        env = cls(value["seed"], value["first"], value["swap"], obs["max_steps"], preset=preset)
         env._mines = {tuple(x) for x in value["mines"]}
         env._initial_diamonds = {tuple(x) for x in value["initial_diamonds"]}
         env._diamonds = {tuple(x) for x in obs["diamonds"]}
@@ -224,6 +281,7 @@ class Arena:
         env.positions = [tuple(x) for x in obs["positions"]]
         for name in ("game_id", "revision", "turn", "steps", "done", "winner", "reason", "scores", "alive"):
             setattr(env, name, deepcopy(obs[name]))
+        env.lives = obs['lives'].copy() if modern else [int(alive) for alive in obs['alive']]
         env._history = value["history"]
         env._initial_observation = value["initial_observation"]
         return env

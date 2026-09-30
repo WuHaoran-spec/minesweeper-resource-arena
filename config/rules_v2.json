@@ -1,0 +1,36 @@
+{
+  "rule_version": "arena-v2.0",
+  "presets": {
+    "intermediate": {"width": 16, "height": 16, "mine_count": 40, "resource_count": 7, "initial_lives": 3, "max_steps": 800},
+    "expert": {"width": 30, "height": 16, "mine_count": 99, "resource_count": 11, "initial_lives": 3, "max_steps": 1600}
+  },
+  "authoritative_preset_module": "arena/config.py",
+  "public_size_field": "width; the flattening stride is width, never height",
+  "starts": "top-left and bottom-right; swapping seats exchanges identity only",
+  "predetermined_safe_zones": "3x3 square at each start corner",
+  "diamond_placement": "uniform distinct sample outside both safe zones, Manhattan distance at least 6 from both starts",
+  "mine_placement": "uniform fixed-size sample excluding the predetermined safe zones and all initial diamonds",
+  "favorable_map_filtering": false,
+  "clue_neighborhood": 8,
+  "movement_neighborhood": 4,
+  "actions": ["up", "down", "left", "right", "wait"],
+  "zero_expansion": "at initialization from both starts and upon every safe arrival; reveal only, never collect remotely",
+  "mine_effect": "consume one life, permanently expose mine; respawn at own starting corner if lives remain, otherwise eliminate",
+  "turn_after_surviving_explosion": "opponent acts if alive; otherwise the surviving actor acts again",
+  "shared_occupancy": true,
+  "known_exploded_mines_traversable": false,
+  "unknown_mines_removed_from_mask": false,
+  "scoring": "one point only on actual arrival at a remaining diamond; previous score survives explosions",
+  "terminal_precedence": ["diamonds_collected", "no_survivors", "max_steps"],
+  "win_criterion": "diamond count only; equal counts draw",
+  "classic_v2": {
+    "beginner": {"width": 9, "height": 9, "mine_count": 10},
+    "intermediate": {"width": 16, "height": 16, "mine_count": 40},
+    "expert": {"width": 30, "height": 16, "mine_count": 99},
+    "first_click": "deferred uniform mine placement excluding first cell and its in-bounds neighbors",
+    "zero_expansion": true,
+    "chord": "revealed positive number with matching neighboring flag count opens all unflagged hidden neighbors; wrong flags can explode",
+    "terminal_loss_display": "reveal all mines after classic loss only, never in arena observations"
+  },
+  "legacy_compatibility": "Arena(seed) and Classic(seed) retain v1 defaults, public fields, placement and outcomes; new behavior requires a named v2 preset"
+}

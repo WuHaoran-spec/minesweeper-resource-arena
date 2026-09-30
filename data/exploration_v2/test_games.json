@@ -1,0 +1,1474 @@
+[
+  {
+    "episode_id": "test-m00-B1-s0-f0-initial",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": "draw",
+    "scores": [
+      0,
+      0
+    ],
+    "lives": [
+      0,
+      3
+    ],
+    "steps": 800,
+    "reason": "max_steps",
+    "objective": 0.5,
+    "elapsed_seconds": 0.5232123999958276,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m00-B1-s0-f0-final",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": "draw",
+    "scores": [
+      0,
+      0
+    ],
+    "lives": [
+      0,
+      3
+    ],
+    "steps": 800,
+    "reason": "max_steps",
+    "objective": 0.5,
+    "elapsed_seconds": 0.5745678000021144,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m00-B1-s0-f1-initial",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": "draw",
+    "scores": [
+      0,
+      0
+    ],
+    "lives": [
+      0,
+      3
+    ],
+    "steps": 800,
+    "reason": "max_steps",
+    "objective": 0.5,
+    "elapsed_seconds": 0.5661330000002636,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m00-B1-s0-f1-final",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": "draw",
+    "scores": [
+      0,
+      0
+    ],
+    "lives": [
+      0,
+      3
+    ],
+    "steps": 800,
+    "reason": "max_steps",
+    "objective": 0.5,
+    "elapsed_seconds": 0.5395023000019137,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m00-B1-s1-f0-initial",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 69,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.09559570000419626,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m00-B1-s1-f0-final",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 69,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.07982730000367155,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m00-B1-s1-f1-initial",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 70,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.06917460000113351,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m00-B1-s1-f1-final",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 70,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.07723499999701744,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m00-B2-s0-f0-initial",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": "draw",
+    "scores": [
+      0,
+      0
+    ],
+    "lives": [
+      0,
+      3
+    ],
+    "steps": 800,
+    "reason": "max_steps",
+    "objective": 0.5,
+    "elapsed_seconds": 0.5177408000017749,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m00-B2-s0-f0-final",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": "draw",
+    "scores": [
+      0,
+      0
+    ],
+    "lives": [
+      0,
+      3
+    ],
+    "steps": 800,
+    "reason": "max_steps",
+    "objective": 0.5,
+    "elapsed_seconds": 0.5707178999946336,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m00-B2-s0-f1-initial",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": "draw",
+    "scores": [
+      0,
+      0
+    ],
+    "lives": [
+      0,
+      3
+    ],
+    "steps": 800,
+    "reason": "max_steps",
+    "objective": 0.5,
+    "elapsed_seconds": 0.5179511000023922,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m00-B2-s0-f1-final",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": "draw",
+    "scores": [
+      0,
+      0
+    ],
+    "lives": [
+      0,
+      3
+    ],
+    "steps": 800,
+    "reason": "max_steps",
+    "objective": 0.5,
+    "elapsed_seconds": 0.5537259000047925,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m00-B2-s1-f0-initial",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 69,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.08473830000002636,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m00-B2-s1-f0-final",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 69,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.07977150000078836,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m00-B2-s1-f1-initial",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 70,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.06949710000480991,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m00-B2-s1-f1-final",
+    "map_id": "E-test-m00",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 70,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.07702989999961574,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m01-B1-s0-f0-initial",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 143,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.19144000000233063,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m01-B1-s0-f0-final",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 143,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1311400999984471,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m01-B1-s0-f1-initial",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 144,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.13360399999510264,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m01-B1-s0-f1-final",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 144,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.13375889999588253,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m01-B1-s1-f0-initial",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 133,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1742854999974952,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m01-B1-s1-f0-final",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 133,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.13089220000256319,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m01-B1-s1-f1-initial",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 134,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.13045150000107242,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m01-B1-s1-f1-final",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 134,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1458920000004582,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m01-B2-s0-f0-initial",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 131,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.11688039999717148,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m01-B2-s0-f0-final",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 109,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.13283159999991767,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m01-B2-s0-f1-initial",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 132,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.11992580000514863,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m01-B2-s0-f1-final",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 144,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1345071999967331,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m01-B2-s1-f0-initial",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 83,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.09741639999992913,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m01-B2-s1-f0-final",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 83,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.08721230000082869,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m01-B2-s1-f1-initial",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 84,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.07487740000215126,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m01-B2-s1-f1-final",
+    "map_id": "E-test-m01",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 84,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.08326059999671998,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m02-B1-s0-f0-initial",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 89,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1857458999947994,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m02-B1-s0-f0-final",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 89,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1125940999991144,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m02-B1-s0-f1-initial",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 90,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.11435850000270875,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m02-B1-s0-f1-final",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 90,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.09769599999708589,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m02-B1-s1-f0-initial",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 77,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1603975000034552,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m02-B1-s1-f0-final",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 77,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.09133309999742778,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m02-B1-s1-f1-initial",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 78,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.09447870000440162,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m02-B1-s1-f1-final",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 78,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.0956129999976838,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m02-B2-s0-f0-initial",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 89,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.11098559999663848,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m02-B2-s0-f0-final",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 89,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.11287720000109402,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m02-B2-s0-f1-initial",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 90,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.09921499999472871,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m02-B2-s0-f1-final",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 90,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1050286999961827,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m02-B2-s1-f0-initial",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 77,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.09347809999599122,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m02-B2-s1-f0-final",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 77,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.09515180000016699,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m02-B2-s1-f1-initial",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 78,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.0998329000067315,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m02-B2-s1-f1-final",
+    "map_id": "E-test-m02",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      3,
+      3
+    ],
+    "steps": 78,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.10147049999795854,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m03-B1-s0-f0-initial",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 119,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.18437619999895105,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m03-B1-s0-f0-final",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 119,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1350181000016164,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m03-B1-s0-f1-initial",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 120,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.13853350000135833,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m03-B1-s0-f1-final",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 120,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.13753210000140825,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m03-B1-s1-f0-initial",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 145,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.3109333999964292,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m03-B1-s1-f0-final",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 145,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.187979100002849,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m03-B1-s1-f1-initial",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 146,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.20804829999542562,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m03-B1-s1-f1-final",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B1",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 146,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.21075489999930141,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m03-B2-s0-f0-initial",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 119,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1378298999989056,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m03-B2-s0-f0-final",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 119,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.1343330000017886,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m03-B2-s0-f1-initial",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 120,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.13532519999716897,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m03-B2-s0-f1-final",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": false,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 120,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.133716700001969,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m03-B2-s1-f0-initial",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 157,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.31164259999786736,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m03-B2-s1-f0-final",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 0,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      2,
+      3
+    ],
+    "steps": 131,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.25417120000201976,
+    "model": "final"
+  },
+  {
+    "episode_id": "test-m03-B2-s1-f1-initial",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "7ff2d6e84cd18cf9ac5b9c7c20de1e5539c3fca5a2b2169b0f3cd5f57ccbad57",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 158,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.21473120000155177,
+    "model": "initial"
+  },
+  {
+    "episode_id": "test-m03-B2-s1-f1-final",
+    "map_id": "E-test-m03",
+    "stage": "test",
+    "opponent": "B2",
+    "swap": true,
+    "first": 1,
+    "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+    "winner": 0,
+    "scores": [
+      7,
+      0
+    ],
+    "lives": [
+      1,
+      3
+    ],
+    "steps": 174,
+    "reason": "diamonds_collected",
+    "objective": -0.25,
+    "elapsed_seconds": 0.3574637999990955,
+    "model": "final"
+  }
+]

@@ -1,0 +1,194 @@
+{
+  "cases": [
+    {
+      "episode": {
+        "episode_id": "test-m00-B1-s0-f0-final",
+        "map_id": "E-test-m00",
+        "stage": "test",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          0,
+          3
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.5745678000021144,
+        "model": "final"
+      },
+      "event": {
+        "kind": "detour",
+        "record_index": 9,
+        "step": 10,
+        "destination_risk": 0.0,
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0,
+          "life_lost": 0,
+          "respawned": false,
+          "lives_after": 3
+        },
+        "diagnostic_target": [
+          12,
+          10
+        ]
+      },
+      "review": "Automatically selected by frozen public predicate; not evidence of intention, causality or stable emergence",
+      "human_review": false,
+      "original_case": "detour_1",
+      "full_public_replay": "test-m00-B1-s0-f0-final.json.gz"
+    },
+    {
+      "episode": {
+        "episode_id": "test-m00-B1-s0-f0-final",
+        "map_id": "E-test-m00",
+        "stage": "test",
+        "opponent": "B1",
+        "swap": false,
+        "first": 0,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": "draw",
+        "scores": [
+          0,
+          0
+        ],
+        "lives": [
+          0,
+          3
+        ],
+        "steps": 800,
+        "reason": "max_steps",
+        "objective": 0.5,
+        "elapsed_seconds": 0.5745678000021144,
+        "model": "final"
+      },
+      "event": {
+        "kind": "detour",
+        "record_index": 13,
+        "step": 14,
+        "destination_risk": 0.0,
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0,
+          "life_lost": 0,
+          "respawned": false,
+          "lives_after": 3
+        },
+        "diagnostic_target": [
+          12,
+          10
+        ]
+      },
+      "review": "Automatically selected by frozen public predicate; not evidence of intention, causality or stable emergence",
+      "human_review": false,
+      "original_case": "detour_2",
+      "full_public_replay": "test-m00-B1-s0-f0-final.json.gz"
+    },
+    {
+      "episode": {
+        "episode_id": "test-m00-B1-s1-f0-final",
+        "map_id": "E-test-m00",
+        "stage": "test",
+        "opponent": "B1",
+        "swap": true,
+        "first": 0,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 69,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.07982730000367155,
+        "model": "final"
+      },
+      "event": {
+        "kind": "switch",
+        "record_index": 35,
+        "step": 36,
+        "destination_risk": 0.0,
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0,
+          "life_lost": 0,
+          "respawned": false,
+          "lives_after": 3
+        },
+        "diagnostic_target": [
+          5,
+          7
+        ]
+      },
+      "review": "Automatically selected by frozen public predicate; not evidence of intention, causality or stable emergence",
+      "human_review": false,
+      "original_case": "switch_1",
+      "full_public_replay": "test-m00-B1-s1-f0-final.json.gz"
+    },
+    {
+      "episode": {
+        "episode_id": "test-m00-B1-s1-f1-final",
+        "map_id": "E-test-m00",
+        "stage": "test",
+        "opponent": "B1",
+        "swap": true,
+        "first": 1,
+        "parameter_sha256": "baac87eeddf26fc669b4b8d34ec56e37551cde4b688a1a78107d833ddd145454",
+        "winner": 0,
+        "scores": [
+          7,
+          0
+        ],
+        "lives": [
+          3,
+          3
+        ],
+        "steps": 70,
+        "reason": "diamonds_collected",
+        "objective": -0.25,
+        "elapsed_seconds": 0.07723499999701744,
+        "model": "final"
+      },
+      "event": {
+        "kind": "switch",
+        "record_index": 36,
+        "step": 37,
+        "destination_risk": 0.0,
+        "feedback": {
+          "collected": false,
+          "exploded": false,
+          "score_delta": 0,
+          "life_lost": 0,
+          "respawned": false,
+          "lives_after": 3
+        },
+        "diagnostic_target": [
+          5,
+          7
+        ]
+      },
+      "review": "Automatically selected by frozen public predicate; not evidence of intention, causality or stable emergence",
+      "human_review": false,
+      "original_case": "switch_2",
+      "full_public_replay": "test-m00-B1-s1-f1-final.json.gz"
+    }
+  ],
+  "all_games": "../test_public_replays.jsonl.gz",
+  "format": "One full public replay per unique episode; every selected event retained"
+}

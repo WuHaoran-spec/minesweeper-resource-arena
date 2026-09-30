@@ -1,0 +1,414 @@
+{
+  "games": 48,
+  "independent_test_maps": 2,
+  "all_replays_verified": 48,
+  "risk_status_counts": {
+    "exact_global_model_count": 5227,
+    "approximate_cutoff": 140
+  },
+  "elapsed_seconds": 11.683616900001653,
+  "game_step_quantiles": {
+    "0": 61.0,
+    "0.1": 62.0,
+    "0.25": 68.25,
+    "0.5": 121.0,
+    "0.75": 147.0,
+    "0.9": 150.0,
+    "1": 214.0
+  },
+  "pairs": [
+    {
+      "preset": "intermediate",
+      "policy": "B2",
+      "opponent": "B1",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "timeouts": 0,
+      "policy_eliminations": 0,
+      "opponent_eliminations": 0,
+      "game_step_quantiles": {
+        "0": 61.0,
+        "0.1": 61.3,
+        "0.25": 61.75,
+        "0.5": 63.5,
+        "0.75": 65.25,
+        "0.9": 65.7,
+        "1": 66.0
+      },
+      "policy_mean_decision_ms": 0.7012992122556142
+    },
+    {
+      "preset": "intermediate",
+      "policy": "L_v2_initial",
+      "opponent": "B1",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "timeouts": 0,
+      "policy_eliminations": 0,
+      "opponent_eliminations": 0,
+      "game_step_quantiles": {
+        "0": 61.0,
+        "0.1": 61.3,
+        "0.25": 61.75,
+        "0.5": 65.5,
+        "0.75": 69.25,
+        "0.9": 69.7,
+        "1": 70.0
+      },
+      "policy_mean_decision_ms": 0.4230053436219024
+    },
+    {
+      "preset": "intermediate",
+      "policy": "L_v2_initial",
+      "opponent": "B2",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "timeouts": 0,
+      "policy_eliminations": 0,
+      "opponent_eliminations": 0,
+      "game_step_quantiles": {
+        "0": 65.0,
+        "0.1": 65.3,
+        "0.25": 65.75,
+        "0.5": 67.5,
+        "0.75": 69.25,
+        "0.9": 69.7,
+        "1": 70.0
+      },
+      "policy_mean_decision_ms": 0.3341214816491292
+    },
+    {
+      "preset": "intermediate",
+      "policy": "L_v2",
+      "opponent": "B1",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "timeouts": 0,
+      "policy_eliminations": 0,
+      "opponent_eliminations": 0,
+      "game_step_quantiles": {
+        "0": 61.0,
+        "0.1": 61.3,
+        "0.25": 61.75,
+        "0.5": 65.5,
+        "0.75": 69.25,
+        "0.9": 69.7,
+        "1": 70.0
+      },
+      "policy_mean_decision_ms": 0.4657610686240853
+    },
+    {
+      "preset": "intermediate",
+      "policy": "L_v2",
+      "opponent": "B2",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "timeouts": 0,
+      "policy_eliminations": 0,
+      "opponent_eliminations": 0,
+      "game_step_quantiles": {
+        "0": 65.0,
+        "0.1": 65.3,
+        "0.25": 65.75,
+        "0.5": 67.5,
+        "0.75": 69.25,
+        "0.9": 69.7,
+        "1": 70.0
+      },
+      "policy_mean_decision_ms": 0.483990370897421
+    },
+    {
+      "preset": "intermediate",
+      "policy": "L_v2",
+      "opponent": "B0",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 4,
+      "draws": 0,
+      "losses": 0,
+      "win_plus_half_draw": 1.0,
+      "map_bootstrap_95ci": [
+        1.0,
+        1.0
+      ],
+      "mean_diamond_difference": 5.75,
+      "timeouts": 0,
+      "policy_eliminations": 1,
+      "opponent_eliminations": 1,
+      "game_step_quantiles": {
+        "0": 116.0,
+        "0.1": 116.3,
+        "0.25": 116.75,
+        "0.5": 121.0,
+        "0.75": 125.25,
+        "0.9": 125.7,
+        "1": 126.0
+      },
+      "policy_mean_decision_ms": 0.4368361232390459
+    },
+    {
+      "preset": "expert",
+      "policy": "B2",
+      "opponent": "B1",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 0,
+      "draws": 4,
+      "losses": 0,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "timeouts": 0,
+      "policy_eliminations": 4,
+      "opponent_eliminations": 4,
+      "game_step_quantiles": {
+        "0": 147.0,
+        "0.1": 147.0,
+        "0.25": 147.0,
+        "0.5": 147.0,
+        "0.75": 147.0,
+        "0.9": 147.0,
+        "1": 147.0
+      },
+      "policy_mean_decision_ms": 0.875789115476053
+    },
+    {
+      "preset": "expert",
+      "policy": "L_v2_initial",
+      "opponent": "B1",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 0,
+      "draws": 4,
+      "losses": 0,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "timeouts": 0,
+      "policy_eliminations": 4,
+      "opponent_eliminations": 4,
+      "game_step_quantiles": {
+        "0": 147.0,
+        "0.1": 147.0,
+        "0.25": 147.0,
+        "0.5": 148.5,
+        "0.75": 150.0,
+        "0.9": 150.0,
+        "1": 150.0
+      },
+      "policy_mean_decision_ms": 0.6612755103214156
+    },
+    {
+      "preset": "expert",
+      "policy": "L_v2_initial",
+      "opponent": "B2",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 0,
+      "draws": 4,
+      "losses": 0,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "timeouts": 0,
+      "policy_eliminations": 4,
+      "opponent_eliminations": 4,
+      "game_step_quantiles": {
+        "0": 147.0,
+        "0.1": 147.0,
+        "0.25": 147.0,
+        "0.5": 148.5,
+        "0.75": 150.0,
+        "0.9": 150.0,
+        "1": 150.0
+      },
+      "policy_mean_decision_ms": 0.3862727894649689
+    },
+    {
+      "preset": "expert",
+      "policy": "L_v2",
+      "opponent": "B1",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 0,
+      "draws": 4,
+      "losses": 0,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "timeouts": 0,
+      "policy_eliminations": 4,
+      "opponent_eliminations": 4,
+      "game_step_quantiles": {
+        "0": 145.0,
+        "0.1": 145.6,
+        "0.25": 146.5,
+        "0.5": 147.0,
+        "0.75": 147.0,
+        "0.9": 147.0,
+        "1": 147.0
+      },
+      "policy_mean_decision_ms": 0.3865246576486691
+    },
+    {
+      "preset": "expert",
+      "policy": "L_v2",
+      "opponent": "B2",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 0,
+      "draws": 4,
+      "losses": 0,
+      "win_plus_half_draw": 0.5,
+      "map_bootstrap_95ci": [
+        0.5,
+        0.5
+      ],
+      "mean_diamond_difference": 0.0,
+      "timeouts": 0,
+      "policy_eliminations": 4,
+      "opponent_eliminations": 4,
+      "game_step_quantiles": {
+        "0": 145.0,
+        "0.1": 145.6,
+        "0.25": 146.5,
+        "0.5": 147.0,
+        "0.75": 147.0,
+        "0.9": 147.0,
+        "1": 147.0
+      },
+      "policy_mean_decision_ms": 0.38126061648753956
+    },
+    {
+      "preset": "expert",
+      "policy": "L_v2",
+      "opponent": "B0",
+      "games": 4,
+      "base_maps": 1,
+      "wins": 4,
+      "draws": 0,
+      "losses": 0,
+      "win_plus_half_draw": 1.0,
+      "map_bootstrap_95ci": [
+        1.0,
+        1.0
+      ],
+      "mean_diamond_difference": 6.0,
+      "timeouts": 0,
+      "policy_eliminations": 4,
+      "opponent_eliminations": 4,
+      "game_step_quantiles": {
+        "0": 90.0,
+        "0.1": 93.6,
+        "0.25": 99.0,
+        "0.5": 156.5,
+        "0.75": 211.75,
+        "0.9": 213.1,
+        "1": 214.0
+      },
+      "policy_mean_decision_ms": 0.7324552631488539
+    }
+  ],
+  "model_sha256": {
+    "L_v2_initial": "3c064eb2d7675469d34de9a349185fef9f7285630b334670c602b6795ae058a8",
+    "L_v2": "24eb8b59771a014389c31371fffc37f09b0c040f842e3249acebba56990eb8e2"
+  },
+  "draws": 20,
+  "timeouts": 0,
+  "human_records": 0,
+  "verified_case_candidates": [
+    {
+      "kind": "budgeted_approximate_risk",
+      "episode_id": "intermediate-m000-p0-s0-f0",
+      "step": 48,
+      "file": "cases/budgeted_approximate_risk_1.json"
+    },
+    {
+      "kind": "budgeted_approximate_risk",
+      "episode_id": "intermediate-m000-p0-s0-f0",
+      "step": 49,
+      "file": "cases/budgeted_approximate_risk_2.json"
+    },
+    {
+      "kind": "explicit_resource_contest",
+      "episode_id": "intermediate-m000-p0-s0-f1",
+      "step": 43,
+      "file": "cases/explicit_resource_contest_1.json"
+    },
+    {
+      "kind": "explicit_resource_contest",
+      "episode_id": "intermediate-m000-p0-s0-f1",
+      "step": 44,
+      "file": "cases/explicit_resource_contest_2.json"
+    },
+    {
+      "kind": "learned_mine_hit_and_respawn",
+      "episode_id": "intermediate-m000-p5-s0-f0",
+      "step": 52,
+      "file": "cases/learned_mine_hit_and_respawn_1.json"
+    },
+    {
+      "kind": "learned_mine_hit_and_respawn",
+      "episode_id": "intermediate-m000-p5-s0-f0",
+      "step": 66,
+      "file": "cases/learned_mine_hit_and_respawn_2.json"
+    }
+  ]
+}

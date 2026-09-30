@@ -35,7 +35,9 @@ def audit():
                 raise AssertionError('Duplicate/mirrored base map across experiment partitions')
             layouts[signature]=split
     model_info={}
-    for path in sorted(MODEL_DIR.glob('*_training.json')):
+    # This audit binds the frozen v1 experiment. V2 and exploration have their
+    # own architecture contracts and independent audit entry points.
+    for path in sorted(MODEL_DIR.glob('L_*_training.json')):
         info=json.loads(path.read_text(encoding='utf-8'))
         model_path=MODEL_DIR/info['file']
         assert sha(model_path)==info['sha256']

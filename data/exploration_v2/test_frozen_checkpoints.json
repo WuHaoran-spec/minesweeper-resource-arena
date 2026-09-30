@@ -1,0 +1,8 @@
+{
+  "models": {
+    "initial": "4a6a59b5e6e7dba6ee2eeeff19588c2e1de898434154498b447efa37c320e534",
+    "final": "e9e266e71cd2a4d4b3782467d582e614e9cde98265145a248bf5b0c01780bdbe"
+  },
+  "before_test": true,
+  "no_test_selection": true
+}
