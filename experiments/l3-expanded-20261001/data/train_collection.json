@@ -1,0 +1,29 @@
+{
+  "raw_transitions": 18933,
+  "teacher_disagreements": 1293,
+  "games": 144,
+  "learner_losses": 0,
+  "draws": 1,
+  "timeouts": 4,
+  "mine_hits": 404,
+  "duplicate_states": 492,
+  "selected_states": 15934,
+  "risk_status_counts": {
+    "exact_global_model_count": 17962,
+    "approximate_cutoff": 971
+  },
+  "game_step_quantiles": {
+    "0": 43.0,
+    "0.1": 55.3,
+    "0.25": 68.75,
+    "0.5": 112.0,
+    "0.75": 155.0,
+    "0.9": 181.40000000000003,
+    "1": 800.0
+  },
+  "elapsed_seconds": 107.79513039999983,
+  "all_replays_verified": 144,
+  "features_sha256": "7187a20ec33d58f62bab7b9a7a1139187a2bebf34cca78d5f76a19681d580c5a",
+  "human_records": 0,
+  "balanced_teacher_first": true
+}

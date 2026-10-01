@@ -1,0 +1,137 @@
+[
+  {
+    "path": "protocol.json",
+    "bytes": 2911,
+    "sha256": "e69e43f330e8cc0abb3cae4fc1dfc59e94e286243830d8936f0dc8707e4e9cdb"
+  },
+  {
+    "path": "selection_before_test.json",
+    "bytes": 309,
+    "sha256": "af908eb078bbdc36aa3a21e117a78e216c88ff5105f2a0c9665b3eb13e78d8f5"
+  },
+  {
+    "path": "integrity_audit.json",
+    "bytes": 545,
+    "sha256": "df77c39a7a47a51d4bc0ee4b327b8583b270dbcd9a4a6ed386a3b5ce313adc99"
+  },
+  {
+    "path": "models/L3_run01.npz",
+    "bytes": 8357,
+    "sha256": "1a4acf5f56b17efc0a89f2083634f8129ad0f168fe9c33c3182b3c3ef89cf2a7"
+  },
+  {
+    "path": "models/L3_run01_training.json",
+    "bytes": 12397,
+    "sha256": "ef710e8b3d8e0d457557985a6bef6600ec84e662e7cd37b24331c02e6dcf2fe9"
+  },
+  {
+    "path": "models/L3_run02.npz",
+    "bytes": 8363,
+    "sha256": "585039012476dcb7189923549407a4fefaa0de6c52f3c141601d5bcefc7b1cba"
+  },
+  {
+    "path": "models/L3_run02_training.json",
+    "bytes": 12395,
+    "sha256": "bbacff553d026118b976f2f3272581ab1681ef2c1d05a9649da70285923a6b92"
+  },
+  {
+    "path": "models/L3_run03.npz",
+    "bytes": 8350,
+    "sha256": "5310653378e3eb821601116320465f9ad857c8f6ae37cdb59ce11bc0d040217b"
+  },
+  {
+    "path": "models/L3_run03_training.json",
+    "bytes": 12397,
+    "sha256": "74fc03ef7dc347cb22b20a44629e31d1ad0e42412529b2ed2d808f3f5fd24123"
+  },
+  {
+    "path": "data/train_collection.json",
+    "bytes": 719,
+    "sha256": "44383154f7d916195668fd1e391833d6c36d2c0b185756e090df15e7591af48e"
+  },
+  {
+    "path": "data/train_features.npz",
+    "bytes": 2039510,
+    "sha256": "7187a20ec33d58f62bab7b9a7a1139187a2bebf34cca78d5f76a19681d580c5a"
+  },
+  {
+    "path": "data/train_public_replays.jsonl.gz",
+    "bytes": 4076083,
+    "sha256": "6f597269e1b7bff3fb4c42d5ff18d996d0cc253a33755e574f4329b83df0b767"
+  },
+  {
+    "path": "data/train_transitions.jsonl.gz",
+    "bytes": 4206189,
+    "sha256": "3e6bb39ace046f81f5b98ff51f244e6bddda9ea08eaf70fe49c5f14076955890"
+  },
+  {
+    "path": "data/validation_collection.json",
+    "bytes": 699,
+    "sha256": "ec256ff99e08505723cd7dda63604f002a61b686eadc34aafeeecc34f67226ca"
+  },
+  {
+    "path": "data/validation_features.npz",
+    "bytes": 779441,
+    "sha256": "e9c1f3f1972cf1c1f7fa1bc636b4986c8b2e41af1a9350c0e86b83ddc87242f8"
+  },
+  {
+    "path": "data/validation_public_replays.jsonl.gz",
+    "bytes": 1429697,
+    "sha256": "b1fecf61e61ec77443e59998278303cb696e005ebe66fc8e11ab17ab669244ca"
+  },
+  {
+    "path": "data/validation_transitions.jsonl.gz",
+    "bytes": 1473671,
+    "sha256": "19bd2288b917f6b310787edd5688c6fc98a4e197ce5da6dcf7b8beab54a9448d"
+  },
+  {
+    "path": "evaluation/games.csv",
+    "bytes": 291987,
+    "sha256": "e8333256ef9ec73b50dbcced650277c1b86eeb210511640f4cb0582b2893c818"
+  },
+  {
+    "path": "evaluation/paired_effects.json",
+    "bytes": 16964,
+    "sha256": "e1678724eb2d9d5362374315a134a8e3da118e9edb5c7bdfef81b7a3ddaefc15"
+  },
+  {
+    "path": "evaluation/posthoc_overall_comparison.json",
+    "bytes": 8627,
+    "sha256": "795c65294cdfca930f358a4369e5fdae7123115f3521d64ce3a2ced05bdbe8f0"
+  },
+  {
+    "path": "evaluation/public_replays.jsonl.gz",
+    "bytes": 35392544,
+    "sha256": "204d87c8f8963708f3b17c128f151a598a4def815d4af0632dfe79a5e8a9bb7f"
+  },
+  {
+    "path": "evaluation/run_manifest.json",
+    "bytes": 630,
+    "sha256": "b24c1814c5b3b757c67bc71409d12cd3e6bce00b0097cb8dfda5041208eb2f10"
+  },
+  {
+    "path": "evaluation/summary.json",
+    "bytes": 18897,
+    "sha256": "aea126e8303242645d473fe7ecd6c77ce55578f5f6dbf4ee75ae15d5598be7e8"
+  },
+  {
+    "path": "reports/L3_run01_result.json",
+    "bytes": 33776,
+    "sha256": "39ac1b03dd0856d70e3f7154cf02e497516e7e5bcfcd872198224805eeb3dbbc"
+  },
+  {
+    "path": "reports/L3_run02_result.json",
+    "bytes": 33817,
+    "sha256": "a34abc1cca5f5c848320f9691e53848b02b34c78d4cc4102610b1feee06bc9ca"
+  },
+  {
+    "path": "reports/L3_run03_result.json",
+    "bytes": 33809,
+    "sha256": "b5ffff2f888a80fc87e6a8339ae3d0866e72e51b6963d8aa3abfca9d247ae2be"
+  },
+  {
+    "path": "analyze_overall.py",
+    "bytes": 7517,
+    "sha256": "1b10f51e5801618dc4ca9cd2e82de5ff375ad3895283d481545fa6ecba4cb0f0"
+  }
+]

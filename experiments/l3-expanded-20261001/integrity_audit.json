@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-10-01T04:43:02.137443+00:00",
+  "independent_maps": 136,
+  "split_counts": {
+    "train": 72,
+    "validation": 24,
+    "test": 40
+  },
+  "overlap_with_prior_maps": 0,
+  "overlap_between_splits_including_dihedral": 0,
+  "public_replays_independently_verified": 1472,
+  "features_reconstructed": {
+    "train": 15934,
+    "validation": 5860
+  },
+  "all_checkpoint_hashes_and_validation_losses_verified": true,
+  "public_truth_fields_absent": true,
+  "baseline_unchanged": true,
+  "human_records": 0
+}

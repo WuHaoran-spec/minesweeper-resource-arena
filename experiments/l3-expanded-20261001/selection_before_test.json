@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-01T04:25:18.560842+00:00",
+  "policy": "L3_run02",
+  "sha256": "585039012476dcb7189923549407a4fefaa0de6c52f3c141601d5bcefc7b1cba",
+  "selection": "lowest validation cross entropy across three runs, frozen before test",
+  "test_read": false,
+  "game_default_changed": false
+}

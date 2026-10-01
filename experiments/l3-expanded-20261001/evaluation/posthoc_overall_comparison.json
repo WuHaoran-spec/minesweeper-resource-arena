@@ -1,0 +1,293 @@
+{
+  "schema": "l3-expanded-posthoc-overall-comparison-v1",
+  "created_utc": "2026-10-01T04:50:53.733611+00:00",
+  "analysis_kind": "post-hoc descriptive comparison; not a preregistered aggregate endpoint",
+  "used_for_training": false,
+  "used_for_checkpoint_selection": false,
+  "used_for_candidate_nomination": false,
+  "used_to_change_game_default": false,
+  "source_games_csv": "evaluation/games.csv",
+  "source_games_csv_sha256": "e8333256ef9ec73b50dbcced650277c1b86eeb210511640f4cb0582b2893c818",
+  "analysis_script_sha256": "1b10f51e5801618dc4ca9cd2e82de5ff375ad3895283d481545fa6ecba4cb0f0",
+  "validation_nominee_before_test": "L3_run02",
+  "validation_nominee_sha256": "585039012476dcb7189923549407a4fefaa0de6c52f3c141601d5bcefc7b1cba",
+  "selection_file_sha256": "af908eb078bbdc36aa3a21e117a78e216c88ff5105f2a0c9665b3eb13e78d8f5",
+  "selection_hash_matches_test_manifest": true,
+  "resampling_rng": "numpy.random.default_rng / PCG64",
+  "resampling_rng_seed": 62001,
+  "resamples": 10000,
+  "interval_method": "percentile 2.5% and 97.5%",
+  "resampling_order": {
+    "candidates": [
+      "L3_run01",
+      "L3_run02",
+      "L3_run03"
+    ],
+    "metrics": [
+      "win_half_draw",
+      "gems",
+      "lives",
+      "actions",
+      "normalized_utility"
+    ],
+    "presets": [
+      "intermediate",
+      "expert"
+    ],
+    "map_order": "first appearance in the frozen CSV",
+    "rng_reseed_per_comparison": false
+  },
+  "sampling_unit": "base map; all 2 opponents x 4 seat/first-turn conditions remain together",
+  "stratification": "sample 20 base maps with replacement inside each difficulty; average two difficulty means equally",
+  "independent_maps": 40,
+  "maps_per_difficulty": 20,
+  "opponents_per_map": 2,
+  "variants_per_opponent": 4,
+  "policies_share_same_maps": true,
+  "three_initializations_are_not_120_independent_test_maps": true,
+  "totals": [
+    {
+      "policy": "L3_previous",
+      "games": 320,
+      "wins": 161,
+      "draws": 0,
+      "losses": 159,
+      "timeouts": 0,
+      "win_half_draw": 0.503125,
+      "gems": 4.13125,
+      "lives": 1.54375,
+      "actions": 61.590625,
+      "normalized_utility": 0.466968610944319
+    },
+    {
+      "policy": "L3_run01",
+      "games": 320,
+      "wins": 165,
+      "draws": 0,
+      "losses": 155,
+      "timeouts": 0,
+      "win_half_draw": 0.515625,
+      "gems": 4.2375,
+      "lives": 1.55,
+      "actions": 63.271875,
+      "normalized_utility": 0.4749098902376424
+    },
+    {
+      "policy": "L3_run02",
+      "games": 320,
+      "wins": 162,
+      "draws": 0,
+      "losses": 158,
+      "timeouts": 0,
+      "win_half_draw": 0.50625,
+      "gems": 4.225,
+      "lives": 1.546875,
+      "actions": 64.31875,
+      "normalized_utility": 0.47347243446648835
+    },
+    {
+      "policy": "L3_run03",
+      "games": 320,
+      "wins": 163,
+      "draws": 0,
+      "losses": 157,
+      "timeouts": 0,
+      "win_half_draw": 0.509375,
+      "gems": 4.203125,
+      "lives": 1.546875,
+      "actions": 63.996875,
+      "normalized_utility": 0.4715216075670158
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "policy": "L3_run01",
+      "reference": "L3_previous",
+      "metric": "win_half_draw",
+      "difference": 0.0125,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.01875,
+        0.046875
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run01",
+      "reference": "L3_previous",
+      "metric": "gems",
+      "difference": 0.10625,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.06875,
+        0.33125
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run01",
+      "reference": "L3_previous",
+      "metric": "lives",
+      "difference": 0.006249999999999999,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.07500000000000001,
+        0.090625
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run01",
+      "reference": "L3_previous",
+      "metric": "actions",
+      "difference": 1.6812500000000001,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.806328125,
+        4.2375
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run01",
+      "reference": "L3_previous",
+      "metric": "normalized_utility",
+      "difference": 0.007941279293323434,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.008878923946865716,
+        0.02860478289745348
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run02",
+      "reference": "L3_previous",
+      "metric": "win_half_draw",
+      "difference": 0.003125,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.0375,
+        0.040625
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run02",
+      "reference": "L3_previous",
+      "metric": "gems",
+      "difference": 0.09374999999999999,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.078125,
+        0.31875000000000003
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run02",
+      "reference": "L3_previous",
+      "metric": "lives",
+      "difference": 0.0031250000000000028,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.090625,
+        0.09375
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run02",
+      "reference": "L3_previous",
+      "metric": "actions",
+      "difference": 2.728125,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.509375,
+        6.934374999999999
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run02",
+      "reference": "L3_previous",
+      "metric": "normalized_utility",
+      "difference": 0.006503823522169357,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.010458818533401772,
+        0.02797538065160833
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run03",
+      "reference": "L3_previous",
+      "metric": "win_half_draw",
+      "difference": 0.00625,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.021875000000000002,
+        0.040625
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run03",
+      "reference": "L3_previous",
+      "metric": "gems",
+      "difference": 0.071875,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.096875,
+        0.309375
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run03",
+      "reference": "L3_previous",
+      "metric": "lives",
+      "difference": 0.003124999999999996,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.078125,
+        0.084375
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run03",
+      "reference": "L3_previous",
+      "metric": "actions",
+      "difference": 2.40625,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.28132812499999993,
+        5.734453124999999
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    },
+    {
+      "policy": "L3_run03",
+      "reference": "L3_previous",
+      "metric": "normalized_utility",
+      "difference": 0.004552996622696691,
+      "stratified_paired_map_bootstrap_95ci": [
+        -0.01128403157650738,
+        0.025576000636204008
+      ],
+      "independent_maps": 40,
+      "includes_zero": true
+    }
+  ],
+  "conclusion": "All three aggregate win-rate-difference intervals include zero; no reliable improvement established.",
+  "efficiency_caution": "Candidate mean action counts increased; all corresponding difference intervals include zero. Fewer actions can also reflect early death, so no efficiency improvement is claimed.",
+  "limitations": [
+    "40 base maps and two fixed opponents only",
+    "same maps reused for all three independent initializations",
+    "descriptive multiple comparisons; no familywise multiplicity correction",
+    "test-best candidate must not replace the validation-nominated run02",
+    "larger data, fresh initialization and omission of prior correction differ together; not a controlled data-size-only ablation"
+  ]
+}

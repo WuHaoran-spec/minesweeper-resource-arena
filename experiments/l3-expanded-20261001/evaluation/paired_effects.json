@@ -1,0 +1,782 @@
+[
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": 0.0125,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.0375
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": -0.0375,
+    "paired_map_bootstrap_95ci": [
+      -0.1125,
+      0.0375
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": -0.05,
+    "paired_map_bootstrap_95ci": [
+      -0.15,
+      0.0
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 1.2875,
+    "paired_map_bootstrap_95ci": [
+      -0.0375,
+      3.1625
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": -0.0058241224315068495,
+    "paired_map_bootstrap_95ci": [
+      -0.018495528681506855,
+      0.00513405607876713
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": 0.0125,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.0375
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": -0.05,
+    "paired_map_bootstrap_95ci": [
+      -0.15,
+      0.0375
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": -0.05,
+    "paired_map_bootstrap_95ci": [
+      -0.15,
+      0.0
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 1.0625,
+    "paired_map_bootstrap_95ci": [
+      -0.5003124999999999,
+      3.0375
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": -0.007536065924657533,
+    "paired_map_bootstrap_95ci": [
+      -0.022259904216609592,
+      0.0051358786386986365
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": 0.0125,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.0375
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": -0.025,
+    "paired_map_bootstrap_95ci": [
+      -0.1125,
+      0.05
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": -0.05,
+    "paired_map_bootstrap_95ci": [
+      -0.15,
+      0.0
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 1.2,
+    "paired_map_bootstrap_95ci": [
+      -0.2128125,
+      3.0628124999999984
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B2",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": -0.00411164383561644,
+    "paired_map_bootstrap_95ci": [
+      -0.017810598244863012,
+      0.0068485707405821945
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": -0.0125,
+    "paired_map_bootstrap_95ci": [
+      -0.075,
+      0.0375
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": -0.075,
+    "paired_map_bootstrap_95ci": [
+      -0.2,
+      0.012812499999998296
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": -0.075,
+    "paired_map_bootstrap_95ci": [
+      -0.2,
+      0.0
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 0.1625,
+    "paired_map_bootstrap_95ci": [
+      -0.3,
+      0.7
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": -0.011301648116438358,
+    "paired_map_bootstrap_95ci": [
+      -0.029794744220890408,
+      0.0017123507063356168
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": -0.025,
+    "paired_map_bootstrap_95ci": [
+      -0.0875,
+      0.025
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": -0.0875,
+    "paired_map_bootstrap_95ci": [
+      -0.2125,
+      0.012812499999998296
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": -0.075,
+    "paired_map_bootstrap_95ci": [
+      -0.2,
+      0.0
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 0.25,
+    "paired_map_bootstrap_95ci": [
+      -0.2125,
+      0.8125
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": -0.013014126712328766,
+    "paired_map_bootstrap_95ci": [
+      -0.033228866117294524,
+      0.0013698635488013722
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": -0.0375,
+    "paired_map_bootstrap_95ci": [
+      -0.1125,
+      0.0125
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": -0.1125,
+    "paired_map_bootstrap_95ci": [
+      -0.2375,
+      -0.0125
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": -0.0875,
+    "paired_map_bootstrap_95ci": [
+      -0.2125,
+      0.0
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 0.15,
+    "paired_map_bootstrap_95ci": [
+      -0.2875,
+      0.675
+    ]
+  },
+  {
+    "preset": "intermediate",
+    "opponent": "B3",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": -0.01660984589041096,
+    "paired_map_bootstrap_95ci": [
+      -0.03510786333476027,
+      -0.0017121773330479426
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": 0.0,
+    "paired_map_bootstrap_95ci": [
+      -0.075,
+      0.075
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": 0.275,
+    "paired_map_bootstrap_95ci": [
+      -0.1125,
+      0.75
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": 0.0625,
+    "paired_map_bootstrap_95ci": [
+      -0.075,
+      0.2128124999999983
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 5.1125,
+    "paired_map_bootstrap_95ci": [
+      -0.775,
+      11.200624999999995
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": 0.02488655282079645,
+    "paired_map_bootstrap_95ci": [
+      -0.011620242325774341,
+      0.06891842228982294
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": -0.025,
+    "paired_map_bootstrap_95ci": [
+      -0.15,
+      0.075
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": 0.1625,
+    "paired_map_bootstrap_95ci": [
+      -0.2125,
+      0.6625
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": 0.025,
+    "paired_map_bootstrap_95ci": [
+      -0.1375,
+      0.1875
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 6.9625,
+    "paired_map_bootstrap_95ci": [
+      -0.6253124999999999,
+      16.052187499999988
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": 0.014597918971238938,
+    "paired_map_bootstrap_95ci": [
+      -0.017370822040929195,
+      0.05708256861863933
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": 0.0,
+    "paired_map_bootstrap_95ci": [
+      -0.075,
+      0.075
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": 0.15,
+    "paired_map_bootstrap_95ci": [
+      -0.175,
+      0.6125
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": 0.0125,
+    "paired_map_bootstrap_95ci": [
+      -0.125,
+      0.1625
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 5.975,
+    "paired_map_bootstrap_95ci": [
+      0.7496875000000001,
+      12.701874999999989
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B2",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": 0.01338165099557522,
+    "paired_map_bootstrap_95ci": [
+      -0.015934237762721248,
+      0.055315335833794166
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": 0.05,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.1125
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": 0.2625,
+    "paired_map_bootstrap_95ci": [
+      -0.1125,
+      0.725
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": 0.0875,
+    "paired_map_bootstrap_95ci": [
+      -0.06281249999999998,
+      0.25
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 0.1625,
+    "paired_map_bootstrap_95ci": [
+      -4.3134375,
+      4.75
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run01",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": 0.02400433490044248,
+    "paired_map_bootstrap_95ci": [
+      -0.007523283842643789,
+      0.06592707065818586
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": 0.05,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.1125
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": 0.35,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.775
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": 0.1125,
+    "paired_map_bootstrap_95ci": [
+      -0.0375,
+      0.25
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 2.6375,
+    "paired_map_bootstrap_95ci": [
+      -3.1509375,
+      9.225937499999995
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run02",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": 0.03196756775442478,
+    "paired_map_bootstrap_95ci": [
+      0.0014307219648783253,
+      0.07124366755392694
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "win_plus_half_draw",
+    "base_maps": 20,
+    "difference": 0.05,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.125
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "gems",
+    "base_maps": 20,
+    "difference": 0.275,
+    "paired_map_bootstrap_95ci": [
+      -0.0875,
+      0.725
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "lives",
+    "base_maps": 20,
+    "difference": 0.1375,
+    "paired_map_bootstrap_95ci": [
+      0.0,
+      0.2753124999999983
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "actions",
+    "base_maps": 20,
+    "difference": 2.3,
+    "paired_map_bootstrap_95ci": [
+      -3.388125,
+      8.738124999999997
+    ]
+  },
+  {
+    "preset": "expert",
+    "opponent": "B3",
+    "policy": "L3_run03",
+    "reference": "L3_previous",
+    "metric": "normalized_utility",
+    "base_maps": 20,
+    "difference": 0.025551825221238944,
+    "paired_map_bootstrap_95ci": [
+      -0.006857613384955739,
+      0.06637732179894903
+    ]
+  }
+]

@@ -107,18 +107,22 @@ def model_hash(policy):
     return sha(MODEL_DIR/name) if name else None
 
 
-def collect(split='train', correction=False):
-    truth, protocol = freeze()
+def collect(split='train', correction=False, *, frozen=None, data_dir=None, balance_first=False):
+    truth, protocol = freeze() if frozen is None else frozen
+    destination = DATA if data_dir is None else Path(data_dir)
+    destination.mkdir(parents=True, exist_ok=True)
     name = 'corrections' if correction else split
     arrays = {k: [] for k in ('X', 'y', 'mask')}
     counts, risk_counts, seen, lengths = Counter(), Counter(), set(), []
     began = time.perf_counter()
-    with gzip.open(DATA/(name+'_public_replays.jsonl.gz'), 'wt', encoding='utf-8') as replay_file, \
-         gzip.open(DATA/(name+'_transitions.jsonl.gz'), 'wt', encoding='utf-8') as transition_file:
+    with gzip.open(destination/(name+'_public_replays.jsonl.gz'), 'wt', encoding='utf-8') as replay_file, \
+         gzip.open(destination/(name+'_transitions.jsonl.gz'), 'wt', encoding='utf-8') as transition_file:
         for preset in PRESETS:
             for mi, seed in enumerate(truth['splits'][preset][split]):
                 for variant in (0, 1):
                     first, swap, learner = variant, bool(mi % 2), variant
+                    if balance_first:
+                        first, swap = variant ^ (mi % 2), bool((mi // 2) % 2)
                     env = Arena(seed, first=first, swap=swap, preset=preset, scoring='survival-v1')
                     opponent = ('B2', 'L_v2', 'B3')[mi % 3]
                     policies = [opponent, opponent]
@@ -177,11 +181,12 @@ def collect(split='train', correction=False):
                     replay_file.flush(); transition_file.flush()
                     print(f'{name}/{preset} map {mi+1} variant {variant}: {env.steps} actions, {len(arrays["y"])} features, {time.perf_counter()-began:.1f}s', flush=True)
     saved = {'X': np.asarray(arrays['X'], np.float32), 'mask': np.asarray(arrays['mask'], bool), 'y': np.asarray(arrays['y'], np.int64)}
-    np.savez_compressed(DATA/(name+'_features.npz'), **saved)
+    np.savez_compressed(destination/(name+'_features.npz'), **saved)
     result = dict(counts, selected_states=len(arrays['y']), risk_status_counts=dict(risk_counts),
                   game_step_quantiles=quantiles(lengths), elapsed_seconds=time.perf_counter()-began,
-                  all_replays_verified=counts['games'], features_sha256=sha(DATA/(name+'_features.npz')), human_records=0)
-    write(DATA/(name+'_collection.json'), result)
+                  all_replays_verified=counts['games'], features_sha256=sha(destination/(name+'_features.npz')), human_records=0,
+                  balanced_teacher_first=balance_first)
+    write(destination/(name+'_collection.json'), result)
     return saved
 
 
@@ -198,8 +203,10 @@ def measure(model, data):
     return float(-np.log(probs[np.arange(len(y)), y]+1e-12).mean()), float((probs.argmax(1) == y).mean())
 
 
-def fit(train, valid, filename, epochs, initial=None):
-    rng = np.random.default_rng(OPTIMIZER_SEED)
+def fit(train, valid, filename, epochs, initial=None, *, optimizer_seed=None, model_dir=None):
+    optimizer_seed = OPTIMIZER_SEED if optimizer_seed is None else optimizer_seed
+    model_dir = MODEL_DIR if model_dir is None else Path(model_dir)
+    rng = np.random.default_rng(optimizer_seed)
     model = {k: v.copy() for k, v in initial.items()} if initial else {
         'W1': rng.normal(0, .12, (FEATURES, HIDDEN)).astype(np.float32), 'b1': np.zeros(HIDDEN, np.float32),
         'W2': rng.normal(0, .12, (HIDDEN, 1)).astype(np.float32), 'b2': np.zeros(1, np.float32)}
@@ -225,15 +232,15 @@ def fit(train, valid, filename, epochs, initial=None):
             best, selected, best_model = vl, row.copy(), {k: x.copy() for k, x in model.items()}
         if epoch == 0 or epoch % 5 == 4:
             print(f'{filename}: epoch {epoch+1}/{epochs}, train loss {tl:.4f}, validation accuracy {va:.4f}', flush=True)
-    path = MODEL_DIR/filename; path.parent.mkdir(parents=True, exist_ok=True)
+    path = model_dir/filename; path.parent.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(path, **best_model)
     info = {'file': filename, 'sha256': sha(path), 'rule_version': 'arena-v3.0', 'scoring': 'survival-v1',
         'features': FEATURES, 'hidden': HIDDEN, 'parameters': PARAMETERS, 'method': 'supervised imitation of B3',
-        'optimizer_seed': OPTIMIZER_SEED, 'optimizer_steps': steps, 'epochs': epochs,
+        'optimizer_seed': optimizer_seed, 'optimizer_steps': steps, 'epochs': epochs,
         'train_examples': len(y), 'validation_examples': len(valid['y']), 'history': history,
         'selected': selected, 'selection': 'lowest validation cross entropy',
         'elapsed_optimization_seconds': time.perf_counter()-began, 'human_records': 0}
-    write(MODEL_DIR/(path.stem+'_training.json'), info)
+    write(model_dir/(path.stem+'_training.json'), info)
     return best_model
 
 

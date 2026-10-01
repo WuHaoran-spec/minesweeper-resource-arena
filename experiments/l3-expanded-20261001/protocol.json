@@ -1,0 +1,75 @@
+{
+  "schema": "l3-expanded-batch-v1",
+  "created_utc": "2026-10-01T04:22:44.170833+00:00",
+  "rule_version": "arena-v3.0",
+  "scoring": "survival-v1",
+  "base_maps_per_preset": {
+    "train": 36,
+    "validation": 12,
+    "test": 20
+  },
+  "presets": [
+    "intermediate",
+    "expert"
+  ],
+  "split_unit": "base map including all rotations, mirrors, seat and first-turn variants",
+  "private_manifest_sha256": "6a6c59ef5bbe5e22a3eff5ffae3800ccd920d6e009c37648a5c7e62f9807354e",
+  "excluded_prior_manifest_hashes": [
+    {
+      "sha256": "c1f57357d6ee361505cf429dd2292533dd3467c15b110d00908a779a13e1bfd0",
+      "fingerprints": 184
+    },
+    {
+      "sha256": "0bf321f8c8d3abb7a12150dc7721e919a4a8c4f35447d40689a9099d933f3241",
+      "fingerprints": 12
+    },
+    {
+      "sha256": "3be744b40b1fb1d62e8cd3ebf3e34ff25c3f2aef93da35f43397b7521a6abc15",
+      "fingerprints": 44
+    }
+  ],
+  "prior_fingerprints_excluded": 240,
+  "run_seeds": [
+    11001,
+    22002,
+    33003
+  ],
+  "runs": 3,
+  "epochs_per_run": 45,
+  "initialization": "independent random initialization; same expanded data for all runs",
+  "method": "supervised B3 imitation; no reinforcement learning or extra correction stage",
+  "features": 40,
+  "hidden": 48,
+  "parameters": 2017,
+  "optimizer": "Adam",
+  "learning_rate": 0.002,
+  "batch_size": 256,
+  "collection_games_per_map": 2,
+  "state_cap_per_episode": 192,
+  "collection_balance": "learner seat varies per map; teacher first/second and corner assignment balanced across maps",
+  "checkpoint_selection": "lowest validation cross entropy within 45 epochs",
+  "candidate_nomination": "lowest validation cross entropy across three runs, frozen before test",
+  "test_opponents": [
+    "B2",
+    "B3"
+  ],
+  "test_variants": "swap false/true x first 0/1",
+  "games_per_candidate": 320,
+  "baseline_games_shared_once": 320,
+  "total_test_games": 1280,
+  "independent_test_maps": 40,
+  "baseline": "existing L3 survival_v3_final.npz",
+  "baseline_sha256": "fd0a936822ebbc3d8c3fdb55d162528c054f29e3f8bc010450190ea321c26448",
+  "collection_opponent_L2_sha256": "24eb8b59771a014389c31371fffc37f09b0c040f842e3249acebba56990eb8e2",
+  "promote_to_game": false,
+  "all_losses_draws_timeouts_retained": true,
+  "human_records": 0,
+  "source_sha256": {
+    "arena/training_batch.py": "169b35e637568071f84849bb261aceb909b35490f68242b2f84a580773b2b974",
+    "arena/survival_training.py": "bb9fa5815b430998df401a7984ddd55b9c58b9caf2399a2762a56ca87d873ba7",
+    "arena/env.py": "c9778cbd4ad5d2d75edfc7bee80e559f1d1ff683e14dc5cce75fb475d839b5c4",
+    "arena/risk.py": "67d5d45a2c6176e31f8d6ad3098623023948a68a49ee5f4619101d3378c0f1a3",
+    "arena/policies.py": "d92b67879941cb6d7412c6b0c9d1000320eb7dd852fe947b1b2b1ffb84f37409",
+    "arena/survival.py": "b920cc5971b84398229ab15c0349daae59a93c115e3561a871d44efe71c40ae8"
+  }
+}
